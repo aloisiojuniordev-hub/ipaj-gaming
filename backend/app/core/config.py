@@ -12,13 +12,18 @@ REPO_ROOT = BACKEND_DIR.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
+# Modos do libpq que garantem conexão criptografada.
+SECURE_SSLMODES = {"require", "verify-ca", "verify-full"}
+
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=BACKEND_DIR / ".env", extra="ignore")
 
     environment: str = "development"
-    # SQLite local por padrão; em produção use a string do Supabase (postgresql+psycopg://...).
+    # SQLite local por padrão; em produção é OBRIGATÓRIA a string PostgreSQL do Supabase.
     database_url: str = f"sqlite:///{(BACKEND_DIR / 'ipaj_local.db').as_posix()}"
+    # SSL da conexão PostgreSQL. "require" por padrão; "disable" só para Postgres local/CI.
+    database_sslmode: str = "require"
     # Obrigatório em produção. O valor padrão serve apenas para desenvolvimento local.
     jwt_secret: str = "dev-only-insecure-secret-change-me"
     jwt_algorithm: str = "HS256"
@@ -35,17 +40,40 @@ class Settings(BaseSettings):
     @property
     def sqlalchemy_url(self) -> str:
         # Supabase/Render fornecem "postgres://" ou "postgresql://"; usamos o driver psycopg 3.
-        url = self.database_url
+        url = self.database_url.strip()
         if url.startswith("postgres://"):
             url = "postgresql://" + url[len("postgres://"):]
         if url.startswith("postgresql://"):
             url = "postgresql+psycopg://" + url[len("postgresql://"):]
         return url
 
+    @property
+    def is_postgres(self) -> bool:
+        return self.sqlalchemy_url.startswith("postgresql+psycopg://")
+
+    @property
+    def safe_database_target(self) -> str:
+        """Host/banco para logs, sem usuário nem senha."""
+        return self.sqlalchemy_url.split("@")[-1].split("?")[0] if self.is_postgres else "SQLite local"
+
+
+def validate_settings(s: Settings) -> Settings:
+    """Recusa configurações inseguras em produção (falha na inicialização, não em silêncio)."""
+    if s.environment != "production":
+        return s
+    problems = []
+    if s.jwt_secret.startswith("dev-only") or len(s.jwt_secret) < 32:
+        problems.append("JWT_SECRET ausente ou curto demais (mínimo 32 caracteres).")
+    if not s.is_postgres:
+        problems.append("DATABASE_URL deve ser uma string PostgreSQL (Supabase) em produção; "
+                        "o fallback para SQLite perderia dados a cada deploy.")
+    if s.is_postgres and s.database_sslmode not in SECURE_SSLMODES:
+        problems.append(f"DATABASE_SSLMODE deve ser um de {sorted(SECURE_SSLMODES)} em produção.")
+    if problems:
+        raise RuntimeError("Configuração de produção inválida: " + " ".join(problems))
+    return s
+
 
 @lru_cache
 def get_settings() -> Settings:
-    settings = Settings()
-    if settings.environment == "production" and settings.jwt_secret.startswith("dev-only"):
-        raise RuntimeError("JWT_SECRET deve ser definido em produção.")
-    return settings
+    return validate_settings(Settings())

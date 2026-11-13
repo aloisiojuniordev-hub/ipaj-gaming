@@ -224,7 +224,7 @@ Diagrama e decisões técnicas em [docs/architecture.md](docs/architecture.md). 
 
 Variáveis necessárias:
 
-- **Render:** `DATABASE_URL`, `JWT_SECRET`, `CORS_ORIGINS`, `ENVIRONMENT=production`, `SEED_ON_STARTUP`, `PYTHON_VERSION`.
+- **Render:** `DATABASE_URL`, `JWT_SECRET`, `CORS_ORIGINS`, `ENVIRONMENT=production`, `SEED_ON_STARTUP`, `DATABASE_SSLMODE`, `PYTHON_VERSION`.
 - **Vercel:** `VITE_API_URL`. Ela é pública, então nunca deve conter segredos.
 
 O passo a passo completo está em [docs/deployment.md](docs/deployment.md).

@@ -9,7 +9,8 @@ from sqlalchemy import func, select, text
 
 from app.api import laboratory, orders, products, recommendations, users
 from app.core.config import get_settings
-from app.database.connection import Base, SessionLocal, engine
+from app.database import models  # noqa: F401 - registra os modelos no metadata antes do ensure_schema
+from app.database.connection import SessionLocal, engine, ensure_schema, tables_without_rls
 from app.database.models import Product
 from app.services.catalog import seed_products
 from app.services.recommender import ArtifactsUnavailable, get_engine
@@ -20,8 +21,9 @@ log = logging.getLogger("ipaj")
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     settings = get_settings()
-    # Cria tabelas se ainda não existirem (em produção o schema vem de database/schema.sql).
-    Base.metadata.create_all(engine)
+    log.info("Banco: %s", settings.safe_database_target)
+    # Cria tabelas que faltarem e ativa RLS na mesma transação (ver connection.ensure_schema).
+    ensure_schema(engine)
     if settings.seed_on_startup:
         with SessionLocal() as db:
             if db.scalar(select(func.count()).select_from(Product)) == 0:
@@ -61,6 +63,9 @@ def health():
     try:
         with engine.connect() as conn:
             conn.execute(text("SELECT 1"))
+        # Nunca deveria acontecer após ensure_schema; se acontecer, a Data API pode expor dados.
+        if tables_without_rls(engine):
+            status.update(status="degraded", database="rls_disabled")
     except Exception:  # noqa: BLE001 - health check deve reportar, não quebrar
         status.update(status="degraded", database="unavailable")
     try:

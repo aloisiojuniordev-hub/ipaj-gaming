@@ -1,11 +1,19 @@
-"""Fixtures: banco SQLite temporário, sem Supabase nem rede."""
+"""Fixtures: banco temporário, sem Supabase nem credenciais reais.
+
+Padrão: SQLite temporário. Na CI, o job PostgreSQL define TEST_DATABASE_URL para rodar
+a mesma suíte da API contra um Postgres descartável (sem SSL, rede local do runner).
+"""
 import os
 import tempfile
 from pathlib import Path
 
 # Configura o ambiente ANTES de importar a aplicação.
 _tmp = Path(tempfile.mkdtemp(prefix="ipaj_test_"))
-os.environ["DATABASE_URL"] = f"sqlite:///{(_tmp / 'test.db').as_posix()}"
+if os.environ.get("TEST_DATABASE_URL"):
+    os.environ["DATABASE_URL"] = os.environ["TEST_DATABASE_URL"]
+    os.environ["DATABASE_SSLMODE"] = "disable"
+else:
+    os.environ["DATABASE_URL"] = f"sqlite:///{(_tmp / 'test.db').as_posix()}"
 os.environ["ENVIRONMENT"] = "test"
 os.environ["JWT_SECRET"] = "test-secret-not-used-anywhere-else-0123456789"
 os.environ["SEED_ON_STARTUP"] = "true"

@@ -13,17 +13,20 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "backend"))
 
 from app.core.config import get_settings  # noqa: E402
-from app.database.connection import Base, SessionLocal, engine  # noqa: E402
+from app.database import models  # noqa: E402, F401 - registra os modelos no metadata
+from app.database.connection import SessionLocal, ensure_schema, tables_without_rls  # noqa: E402
 from app.services.catalog import seed_products  # noqa: E402
 
 
 def main() -> None:
     settings = get_settings()
-    Base.metadata.create_all(engine)
+    ensure_schema()  # cria o que faltar + RLS, na mesma transação
     with SessionLocal() as db:
         n = seed_products(db, settings.catalog_csv)
-    target = settings.sqlalchemy_url.split("@")[-1]  # não imprime credenciais
-    print(f"{n} produtos carregados em {target}")
+    missing = tables_without_rls()
+    print(f"{n} produtos carregados em {settings.safe_database_target}")  # sem credenciais
+    if missing:
+        raise SystemExit(f"ATENÇÃO: tabelas sem RLS: {', '.join(missing)}")
 
 
 if __name__ == "__main__":

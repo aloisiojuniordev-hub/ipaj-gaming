@@ -56,3 +56,43 @@ jobs:
           # O dataset regenerado com a mesma semente deve ser idêntico ao versionado.
           git diff --exit-code -- data/
           python scripts/verify_project.py --artifacts-only
+
+  postgres:
+    # Mesma suíte contra PostgreSQL real (descartável, sem credenciais externas):
+    # valida RLS, compatibilidade schema.sql x ORM e comportamento dos tipos no Postgres.
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: ci
+          POSTGRES_PASSWORD: ci-only-password
+          POSTGRES_DB: ipaj_api
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U ci" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      # Senha via PGPASSWORD (lida pelo libpq), fora das URLs.
+      PGPASSWORD: ci-only-password
+      TEST_DATABASE_URL: postgresql://ci@localhost:5432/ipaj_api
+      TEST_POSTGRES_URL: postgresql://ci@localhost:5432/ipaj_rls
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements*.txt
+
+      - name: Instalar dependências
+        run: pip install -r requirements-dev.txt
+
+      - name: Criar banco separado para os testes de RLS
+        run: psql "$TEST_DATABASE_URL" -c "CREATE DATABASE ipaj_rls"
+
+      - name: Testes (API + RLS no PostgreSQL)
+        run: pytest -q -rs

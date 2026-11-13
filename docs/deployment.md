@@ -63,12 +63,29 @@ Depois:
 
 1. Crie um projeto em <https://supabase.com/dashboard> e **guarde a senha do banco** (ela não é mostrada de novo).
 2. **SQL Editor → New query**: cole o conteúdo de `database/schema.sql` e execute.
-   Isso cria tabelas, índices, restrições e ativa RLS.
+   Isso cria tabelas, índices, restrições e ativa RLS. Confira no **Table Editor** que as 4 tabelas
+   aparecem sem o aviso "RLS disabled".
+   *Rede de segurança:* se o backend subir antes deste passo, ele mesmo cria as tabelas e ativa RLS
+   na mesma transação (`ensure_schema`). Mesmo assim, rodar o `schema.sql` é o caminho recomendado,
+   porque ele também é a referência das migrações.
+   *Opcional (recomendado):* em **Project Settings → Data API**, remova `public` de *Exposed schemas*.
+   O projeto não usa a Data API, já que o frontend fala só com o FastAPI.
 3. **Connect** (ou Project Settings → Database) → **Connection string → URI**.
    Use o **Session pooler** (porta 5432), compatível com IPv4, que o Render exige:
    ```
    postgresql://postgres.<ref>:<SENHA>@aws-0-<regiao>.pooler.supabase.com:5432/postgres?sslmode=require
    ```
+
+   | Modo do Supabase | Funciona? |
+   |---|---|
+   | Direct connection (`db.<ref>.supabase.co`) | Não no Render: endereço só IPv6 |
+   | **Session pooler** (porta 5432) | **Sim, recomendado** |
+   | Transaction pooler (porta 6543) | Sim: o backend desativa prepared statements para ser compatível |
+
+   O backend força SSL (`DATABASE_SSLMODE=require`, que prevalece sobre o `sslmode` da URL).
+   Com `ENVIRONMENT=production`, ele **não inicia** se `DATABASE_URL` não for PostgreSQL, se o SSL
+   estiver desligado ou se `JWT_SECRET` tiver menos de 32 caracteres. Isso evita o fallback
+   silencioso para um SQLite efêmero.
 4. Carga inicial do catálogo. São duas opções equivalentes:
    - automática: o backend carrega `products.csv` na primeira inicialização se a tabela estiver vazia (`SEED_ON_STARTUP=true`);
    - manual, da sua máquina:
@@ -111,14 +128,16 @@ Contas e pedidos demonstrativos não têm backup automático no plano gratuito. 
 | Auto-Deploy | On Commit |
 
 Variáveis: `PYTHON_VERSION=3.12.8`, `ENVIRONMENT=production`, `DATABASE_URL`, `JWT_SECRET`
-(gere com `python -c "import secrets; print(secrets.token_urlsafe(48))"`), `CORS_ORIGINS`, `SEED_ON_STARTUP=true`.
+(gere com `python -c "import secrets; print(secrets.token_urlsafe(48))"`), `CORS_ORIGINS`, `SEED_ON_STARTUP=true`,
+`DATABASE_SSLMODE=require`.
 
 **Por que não `Root Directory = backend`?** O backend importa `ml/recommendation_engine.py` e lê
 `ml/artifacts/` e `data/catalog/`, que ficam fora de `backend/`. Rodar a partir da raiz garante que esses
 arquivos estejam no ambiente. O `buildFilter` do Blueprint evita redeploys quando só o frontend muda.
 
 Validação: abra `https://<servico>.onrender.com/health`. A resposta deve ser
-`"status": "ok"` e `"rules_loaded": 394`.
+`"status": "ok"`, `"database": "ok"` e `"rules_loaded": 394`. Se aparecer `"database": "rls_disabled"`,
+alguma tabela do app está sem RLS: rode `database/schema.sql` de novo.
 
 **Plano gratuito:** confira as condições atuais em <https://render.com/pricing> antes de publicar.
 Serviços gratuitos hibernam sem tráfego, e a primeira requisição depois disso pode levar dezenas de segundos.
@@ -169,5 +188,6 @@ O fallback de rotas da SPA está em `frontend/vercel.json`: tudo é reescrito pa
 | `CORS_ORIGINS` | Render | sim | `https://<projeto>.vercel.app` |
 | `ENVIRONMENT` | Render | sim | `production` |
 | `SEED_ON_STARTUP` | Render | não (padrão `true`) | `true` |
+| `DATABASE_SSLMODE` | Render | não (padrão `require`) | `require` |
 | `JWT_EXPIRES_MINUTES` | Render | não (padrão `120`) | `120` |
 | `PYTHON_VERSION` | Render | recomendado | `3.12.8` |

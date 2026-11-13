@@ -61,6 +61,11 @@ avaliado. Retreinar = rodar o pipeline, commitar os novos artefatos e as métric
 O frontend nunca acessa o banco diretamente. As tabelas têm RLS ativado sem políticas, o que bloqueia a API
 REST pública do Supabase (roles `anon`/`authenticated`). Só o backend conecta, com a string privada.
 
+Na inicialização, `ensure_schema()` cria as tabelas que faltarem e ativa RLS **na mesma transação**, então a
+proteção não depende da ordem dos passos de deploy. O `/health` reporta `database: rls_disabled` se alguma
+tabela do app estiver sem RLS. A conexão sempre usa SSL e não usa prepared statements, o que a torna compatível
+com os poolers do Supabase. Em produção, o backend recusa iniciar sem PostgreSQL, sem SSL ou com JWT fraco.
+
 ## Decisões técnicas
 
 | Decisão | Motivo |
