@@ -30,6 +30,10 @@ services:
         value: "true"
       - key: DATABASE_SSLMODE
         value: require
+      # Ref pública do projeto (https://lvukeuyexxewmnslucwj.supabase.co). Não é segredo:
+      # o backend recusa iniciar se DATABASE_URL apontar para outro projeto.
+      - key: SUPABASE_PROJECT_REF
+        value: lvukeuyexxewmnslucwj
       - key: JWT_SECRET
         generateValue: true
       - key: DATABASE_URL

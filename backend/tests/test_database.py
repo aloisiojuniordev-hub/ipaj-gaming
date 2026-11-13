@@ -5,7 +5,16 @@ import pytest
 from sqlalchemy import create_engine, inspect, text
 
 from app.core.config import REPO_ROOT, Settings, validate_settings
-from app.database.connection import Base, engine_options, ensure_schema, make_engine, tables_without_rls
+from app.database.connection import (
+    REVOKE_PUBLIC_ROLES_SQL,
+    Base,
+    engine_options,
+    ensure_schema,
+    make_engine,
+    tables_without_rls,
+)
+
+REF = "lvukeuyexxewmnslucwj"  # ref pública do projeto IPAJ Gaming (subdomínio do Supabase)
 
 PG_URL = os.environ.get("TEST_POSTGRES_URL")  # definido apenas no job PostgreSQL da CI
 requires_pg = pytest.mark.skipif(not PG_URL, reason="TEST_POSTGRES_URL não definido")
@@ -83,7 +92,37 @@ def test_sqlite_engine_options():
     assert engine_options(s) == {"connect_args": {"check_same_thread": False}}
 
 
+@pytest.mark.parametrize("url", [
+    f"postgresql://postgres.{REF}:x@aws-0-sa-east-1.pooler.supabase.com:5432/postgres",  # session pooler
+    f"postgresql://postgres.{REF}:x@aws-0-sa-east-1.pooler.supabase.com:6543/postgres",  # transaction pooler
+    f"postgresql://postgres:x@db.{REF}.supabase.co:5432/postgres",                       # direta
+])
+def test_production_accepts_url_of_the_configured_supabase_project(url):
+    validate_settings(_prod(database_url=url, supabase_project_ref=REF))
+
+
+@pytest.mark.parametrize("url", [
+    "postgresql://postgres.outroprojeto123:x@aws-0-sa-east-1.pooler.supabase.com:5432/postgres",
+    "postgresql://postgres:x@db.outroprojeto123.supabase.co:5432/postgres",
+    f"postgresql://postgres:x@db.{REF}.supabase.co.evil.com:5432/postgres",  # sufixo não engana
+])
+def test_production_rejects_url_of_another_project(url):
+    with pytest.raises(RuntimeError, match="SUPABASE_PROJECT_REF"):
+        validate_settings(_prod(database_url=url, supabase_project_ref=REF))
+
+
+def test_supabase_ref_is_optional():
+    validate_settings(_prod(supabase_project_ref=None))
+
+
 # ---------- Migrações ----------
+
+def test_migration_002_matches_code_and_is_non_destructive():
+    mig = _body(REPO_ROOT / "database" / "migrations" / "002_revoke_public_roles.sql")
+    assert mig == REVOKE_PUBLIC_ROLES_SQL
+    upper = mig.upper()
+    assert not any(k in upper for k in ("DROP ", "DELETE ", "TRUNCATE", "ALTER TABLE"))
+
 
 def test_migration_001_is_self_contained_and_matches_schema():
     schema = REPO_ROOT / "database" / "schema.sql"
@@ -177,3 +216,23 @@ def test_pg_anon_role_cannot_read_users(pg_engine):
         assert conn.execute(text("SELECT count(*) FROM users")).scalar() == 0  # RLS bloqueia
         conn.execute(text("RESET ROLE"))
         assert conn.execute(text("SELECT count(*) FROM users")).scalar() == 1  # dono enxerga
+
+
+@requires_pg
+def test_pg_ensure_schema_revokes_public_role_privileges(pg_engine):
+    """Simula o Supabase concedendo SELECT/INSERT à role anon: o backend retira na inicialização."""
+    ensure_schema(pg_engine)
+    with pg_engine.begin() as conn:
+        for role in ("anon", "authenticated"):
+            conn.execute(text(f"DO $$ BEGIN IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = '{role}') "
+                              f"THEN CREATE ROLE {role} NOLOGIN; END IF; END $$"))
+            conn.execute(text("GRANT SELECT, INSERT, UPDATE, DELETE "
+                              f"ON products, users, orders, order_items TO {role}"))
+    ensure_schema(pg_engine)  # como em um novo deploy
+    with pg_engine.connect() as conn:
+        for role in ("anon", "authenticated"):
+            for table in APP_TABLES:
+                for priv in ("SELECT", "INSERT", "UPDATE", "DELETE"):
+                    ok = conn.execute(text("SELECT has_table_privilege(:r, :t, :p)"),
+                                      {"r": role, "t": table, "p": priv}).scalar()
+                    assert ok is False, f"{role} ainda tem {priv} em {table}"

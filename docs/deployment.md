@@ -69,8 +69,26 @@ Depois:
 
 ## 2. Supabase (PostgreSQL)
 
-1. Crie um projeto em <https://supabase.com/dashboard> e **guarde a senha do banco** (ela não é mostrada de novo).
-2. **SQL Editor → New query**: cole o conteúdo de `database/schema.sql` e execute.
+**Projeto da IPAJ Gaming:** `https://lvukeuyexxewmnslucwj.supabase.co`, ref `lvukeuyexxewmnslucwj`.
+A URL só identifica o projeto. Ela **não** substitui a string de conexão PostgreSQL.
+
+| O que | Usado? | Onde fica |
+|---|---|---|
+| String de conexão PostgreSQL (com senha) | **Sim** | só no Render (`DATABASE_URL`) e no `backend/.env` local |
+| Ref do projeto | Sim, como verificação | `SUPABASE_PROJECT_REF` (pública, já no `render.yaml`) |
+| `anon` / publishable key | **Não** | o frontend não acessa o Supabase |
+| `service_role` / secret key | **Não** | nunca coloque em código nem em variável `VITE_` |
+| Supabase Auth | **Não** | o login é do próprio backend (bcrypt + JWT) |
+
+**Por que não usar Supabase Auth nem `supabase-js` no frontend?** Todo o acesso a dados passa pelo FastAPI,
+que calcula as recomendações Apriori e os preços dos pedidos no servidor. Um segundo canal (navegador → Supabase)
+exigiria políticas RLS por usuário, criaria duas fontes de verdade para contas e não traria ganho ao trabalho.
+As tabelas ficam fechadas para a Data API em duas camadas: RLS sem políticas e privilégios revogados das roles
+públicas (migração 002, também aplicada pelo backend a cada inicialização).
+
+1. No projeto acima, guarde a **senha do banco**. Se ela tiver sido perdida: *Project Settings → Database → Reset database password*.
+2. **SQL Editor → New query**: cole o conteúdo de `database/schema.sql` e execute. Depois, numa nova query,
+   cole e execute `database/migrations/002_revoke_public_roles.sql`. As duas são idempotentes e não destrutivas.
    Isso cria tabelas, índices, restrições e ativa RLS. Confira no **Table Editor** que as 4 tabelas
    aparecem sem o aviso "RLS disabled".
    *Rede de segurança:* se o backend subir antes deste passo, ele mesmo cria as tabelas e ativa RLS
@@ -227,5 +245,7 @@ O arquivo `frontend/vercel.json` foi mantido apenas como referência. Ele **não
 | `ENVIRONMENT` | Render | sim | `production` |
 | `SEED_ON_STARTUP` | Render | não (padrão `true`) | `true` |
 | `DATABASE_SSLMODE` | Render | não (padrão `require`) | `require` |
+| `SUPABASE_PROJECT_REF` | Render | recomendado | `lvukeuyexxewmnslucwj` (pública) |
+| `VITE_SUPABASE_URL` | — | não (só referência) | `https://lvukeuyexxewmnslucwj.supabase.co` |
 | `JWT_EXPIRES_MINUTES` | Render | não (padrão `120`) | `120` |
 | `PYTHON_VERSION` | Render | recomendado | `3.12.8` |

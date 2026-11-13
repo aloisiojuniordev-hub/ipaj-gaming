@@ -3,6 +3,7 @@ import re
 import sys
 from functools import lru_cache
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -36,6 +37,19 @@ class Settings(BaseSettings):
     artifacts_dir: Path = REPO_ROOT / "ml" / "artifacts"
     catalog_csv: Path = REPO_ROOT / "data" / "catalog" / "products.csv"
     seed_on_startup: bool = True
+    # Ref pública do projeto Supabase (subdomínio de https://<ref>.supabase.co). Não é segredo.
+    # Se definida, a produção confere que DATABASE_URL aponta para ESTE projeto.
+    supabase_project_ref: str | None = None
+
+    @property
+    def database_points_to_supabase_ref(self) -> bool:
+        """True se a URL é do projeto informado: pooler (usuário postgres.<ref>) ou direta (db.<ref>.supabase.co)."""
+        if not (self.is_postgres and self.supabase_project_ref):
+            return False
+        parts = urlsplit(self.sqlalchemy_url)
+        ref = self.supabase_project_ref.strip().lower()
+        user, host = (parts.username or "").lower(), (parts.hostname or "").lower()
+        return user == f"postgres.{ref}" or host == f"db.{ref}.supabase.co"
 
     @property
     def cors_origin_list(self) -> list[str]:
@@ -74,6 +88,9 @@ def validate_settings(s: Settings) -> Settings:
                         "o fallback para SQLite perderia dados a cada deploy.")
     if s.is_postgres and s.database_sslmode not in SECURE_SSLMODES:
         problems.append(f"DATABASE_SSLMODE deve ser um de {sorted(SECURE_SSLMODES)} em produção.")
+    if s.is_postgres and s.supabase_project_ref and not s.database_points_to_supabase_ref:
+        problems.append("DATABASE_URL não pertence ao projeto SUPABASE_PROJECT_REF informado "
+                        "(esperado usuário postgres.<ref> no pooler ou host db.<ref>.supabase.co).")
     if "*" in s.cors_origin_list:
         problems.append("CORS_ORIGINS não pode ser '*' em produção; informe a URL do Netlify.")
     if s.cors_origin_regex:

@@ -52,6 +52,24 @@ def ensure_schema(bind: Engine = engine) -> None:
         if conn.dialect.name == "postgresql":
             for table in Base.metadata.sorted_tables:
                 conn.execute(text(f'ALTER TABLE "{table.name}" ENABLE ROW LEVEL SECURITY'))
+            conn.exec_driver_sql(REVOKE_PUBLIC_ROLES_SQL)
+
+
+# Defesa em profundidade: além do RLS, retira das roles públicas do Supabase (Data API)
+# qualquer privilégio nas tabelas do app. Só atua se as roles existirem (no Postgres da CI
+# elas não existem). Sem '%' nem ':' para não colidir com placeholders do driver.
+# Mantenha igual a database/migrations/002_revoke_public_roles.sql.
+REVOKE_PUBLIC_ROLES_SQL = """
+DO $$
+DECLARE r text;
+BEGIN
+  FOREACH r IN ARRAY ARRAY['anon', 'authenticated'] LOOP
+    IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = r) THEN
+      EXECUTE 'REVOKE ALL ON TABLE products, users, orders, order_items FROM ' || quote_ident(r);
+    END IF;
+  END LOOP;
+END $$;
+""".strip()
 
 
 def tables_without_rls(bind: Engine = engine) -> list[str]:

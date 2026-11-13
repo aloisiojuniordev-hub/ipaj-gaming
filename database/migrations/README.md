@@ -5,6 +5,7 @@ Migrações SQL sequenciais e imutáveis. Aplique em ordem.
 | Arquivo | Descrição |
 |---|---|
 | `001_initial_schema.sql` | Tabelas `products`, `users`, `orders`, `order_items`, índices, restrições e RLS. |
+| `002_revoke_public_roles.sql` | Retira das roles `anon`/`authenticated` qualquer privilégio nas tabelas (não destrutiva, idempotente). |
 
 Cada arquivo é autocontido (não usa `\ir`) e roda tanto no SQL Editor do Supabase
 (colar e executar) quanto no psql:
