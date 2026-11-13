@@ -23,7 +23,8 @@ def _body(path) -> str:
 # ---------- Validação da configuração de produção ----------
 
 def _prod(**kw) -> Settings:
-    base = {"environment": "production", "jwt_secret": "x" * 48,
+    # Valores explícitos: não herdar DATABASE_SSLMODE etc. do ambiente (o job PostgreSQL da CI define disable).
+    base = {"environment": "production", "jwt_secret": "x" * 48, "database_sslmode": "require",
             "database_url": "postgresql://u:p@host.pooler.supabase.com:5432/postgres"}
     return Settings(_env_file=None, **{**base, **kw})
 
@@ -125,6 +126,23 @@ def test_pg_ensure_schema_enables_rls_atomically(pg_engine):
     ensure_schema(pg_engine)  # idempotente
     assert APP_TABLES <= set(inspect(pg_engine).get_table_names())
     assert tables_without_rls(pg_engine) == []
+
+
+@requires_pg
+def test_pg_orm_tables_have_same_db_defaults_as_schema_sql(pg_engine):
+    """Tabelas criadas pelo backend aceitam INSERT direto, como as do schema.sql."""
+    ensure_schema(pg_engine)
+    with pg_engine.begin() as conn:
+        conn.execute(text("INSERT INTO products (id, name, category, price) VALUES ('T1', 'n', 'c', 1)"))
+        uid = conn.execute(text("INSERT INTO users (name, email, password_hash) "
+                                "VALUES ('a', 'd@example.com', 'h') RETURNING id")).scalar()
+        oid = conn.execute(text("INSERT INTO orders (user_id, total) VALUES (:u, 1) RETURNING id"), {"u": uid}).scalar()
+        conn.execute(text("INSERT INTO order_items (order_id, product_id, quantity, unit_price) "
+                          "VALUES (:o, 'T1', 1, 1)"), {"o": oid})
+        row = conn.execute(text("SELECT o.status, o.created_at IS NOT NULL, i.from_recommendation, p.description "
+                                "FROM orders o JOIN order_items i ON i.order_id = o.id "
+                                "JOIN products p ON p.id = i.product_id")).one()
+    assert tuple(row) == ("demo_confirmed", True, False, "")
 
 
 @requires_pg

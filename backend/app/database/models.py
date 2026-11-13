@@ -2,7 +2,10 @@
 from datetime import UTC, datetime
 from decimal import Decimal
 
-from sqlalchemy import CheckConstraint, DateTime, ForeignKey, Integer, Numeric, String, Text
+from sqlalchemy import CheckConstraint, DateTime, ForeignKey, Integer, Numeric, String, Text, false, func, text
+
+# Os server_default espelham os DEFAULT de database/schema.sql: assim as tabelas criadas pelo
+# backend (ensure_schema) ficam idênticas às criadas pelo SQL, inclusive para INSERTs fora do ORM.
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.database.connection import Base
@@ -20,7 +23,7 @@ class Product(Base):
     name: Mapped[str] = mapped_column(String(150), nullable=False)
     category: Mapped[str] = mapped_column(String(50), nullable=False, index=True)
     price: Mapped[Decimal] = mapped_column(Numeric(10, 2), nullable=False)
-    description: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    description: Mapped[str] = mapped_column(Text, nullable=False, default="", server_default=text("''"))
 
 
 class User(Base):
@@ -30,7 +33,8 @@ class User(Base):
     name: Mapped[str] = mapped_column(String(120), nullable=False)
     email: Mapped[str] = mapped_column(String(255), unique=True, nullable=False, index=True)
     password_hash: Mapped[str] = mapped_column(String(255), nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now,
+                                                 server_default=func.now(), nullable=False)
 
     orders: Mapped[list["Order"]] = relationship(back_populates="user")
 
@@ -49,9 +53,11 @@ class Order(Base):
     )
     # Visitante: apenas um apelido opcional, nunca e-mail/endereço (minimização de dados).
     guest_label: Mapped[str | None] = mapped_column(String(60), nullable=True)
-    status: Mapped[str] = mapped_column(String(20), nullable=False, default="demo_confirmed")
+    status: Mapped[str] = mapped_column(String(20), nullable=False, default="demo_confirmed",
+                                        server_default=text("'demo_confirmed'"))
     total: Mapped[Decimal] = mapped_column(Numeric(12, 2), nullable=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now,
+                                                 server_default=func.now(), nullable=False)
 
     user: Mapped[User | None] = relationship(back_populates="orders")
     items: Mapped[list["OrderItem"]] = relationship(back_populates="order", cascade="all, delete-orphan")
@@ -70,7 +76,7 @@ class OrderItem(Base):
     quantity: Mapped[int] = mapped_column(Integer, nullable=False)
     unit_price: Mapped[Decimal] = mapped_column(Numeric(10, 2), nullable=False)
     # Item adicionado a partir de uma recomendação do IPAJ CORE (análise de adoção).
-    from_recommendation: Mapped[bool] = mapped_column(default=False, nullable=False)
+    from_recommendation: Mapped[bool] = mapped_column(default=False, server_default=false(), nullable=False)
 
     order: Mapped[Order] = relationship(back_populates="items")
     product: Mapped[Product] = relationship()
