@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 REQUIRED = [
     ".github/workflows/frontend-ci.yml", ".github/workflows/backend-ci.yml", ".github/pull_request_template.md",
     "frontend/package.json", "frontend/package-lock.json", "frontend/vite.config.ts", "frontend/tsconfig.json",
-    "frontend/.env.example", "frontend/vercel.json", "frontend/src/App.tsx", "frontend/src/main.tsx",
+    "frontend/.env.example", "netlify.toml", "frontend/src/App.tsx", "frontend/src/main.tsx",
     "backend/app/main.py", "backend/app/api/products.py", "backend/app/api/recommendations.py",
     "backend/app/api/laboratory.py", "backend/app/api/orders.py", "backend/app/api/users.py",
     "backend/app/core/config.py", "backend/app/core/security.py", "backend/app/database/connection.py",

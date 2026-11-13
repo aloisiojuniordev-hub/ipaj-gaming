@@ -1,4 +1,5 @@
 """Configuração do backend via variáveis de ambiente (ver backend/.env.example)."""
+import re
 import sys
 from functools import lru_cache
 from pathlib import Path
@@ -29,13 +30,17 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     jwt_expires_minutes: int = 120
     cors_origins: str = "http://localhost:5173"
+    # Opcional: regex de origens extras, ex. Deploy Previews do Netlify:
+    # https://([a-z0-9-]+--)?ipaj-gaming\.netlify\.app  (ancorado de ponta a ponta pelo Starlette)
+    cors_origin_regex: str | None = None
     artifacts_dir: Path = REPO_ROOT / "ml" / "artifacts"
     catalog_csv: Path = REPO_ROOT / "data" / "catalog" / "products.csv"
     seed_on_startup: bool = True
 
     @property
     def cors_origin_list(self) -> list[str]:
-        return [o.strip() for o in self.cors_origins.split(",") if o.strip()]
+        # O header Origin nunca tem barra final; "https://x.netlify.app/" não casaria sem o rstrip.
+        return [o.strip().rstrip("/") for o in self.cors_origins.split(",") if o.strip()]
 
     @property
     def sqlalchemy_url(self) -> str:
@@ -69,6 +74,13 @@ def validate_settings(s: Settings) -> Settings:
                         "o fallback para SQLite perderia dados a cada deploy.")
     if s.is_postgres and s.database_sslmode not in SECURE_SSLMODES:
         problems.append(f"DATABASE_SSLMODE deve ser um de {sorted(SECURE_SSLMODES)} em produção.")
+    if "*" in s.cors_origin_list:
+        problems.append("CORS_ORIGINS não pode ser '*' em produção; informe a URL do Netlify.")
+    if s.cors_origin_regex:
+        try:
+            re.compile(s.cors_origin_regex)
+        except re.error as exc:
+            problems.append(f"CORS_ORIGIN_REGEX inválida: {exc}.")
     if problems:
         raise RuntimeError("Configuração de produção inválida: " + " ".join(problems))
     return s

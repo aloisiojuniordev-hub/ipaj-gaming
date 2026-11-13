@@ -80,7 +80,7 @@ futuros: aplicar o método a dados reais, ajustar os limiares sistematicamente e
 | Treinamento e avaliação do Apriori | *a confirmar* |
 | Backend (FastAPI, banco) | *a confirmar* |
 | Frontend (React, Laboratório IA) | *a confirmar* |
-| Implantação (GitHub, Supabase, Render, Vercel) | *a confirmar* |
+| Implantação (GitHub, Supabase, Render, Netlify) | *a confirmar* |
 | Documentação e relatório | *a confirmar* |
 
 ## 8. Uso de inteligência artificial

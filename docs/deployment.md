@@ -1,6 +1,14 @@
-# Implantação — GitHub, Supabase, Render e Vercel
+# Implantação — GitHub, Supabase, Render e Netlify
 
-Ordem recomendada: **GitHub → Supabase → Render → Vercel → ajustar CORS no Render**.
+Ordem recomendada: **GitHub → Supabase → Render → Netlify → ajustar CORS no Render**.
+
+| Camada | Serviço | Configuração no repositório |
+|---|---|---|
+| Frontend (React/Vite) | **Netlify** | `netlify.toml` (raiz) |
+| Backend (FastAPI + Apriori) | **Render** | `render.yaml` (raiz) |
+| Banco (PostgreSQL) | **Supabase** | `database/schema.sql` |
+
+O Apriori roda **somente no backend**. O Netlify só serve os arquivos estáticos do React, que chamam a API do Render.
 
 > Nenhuma URL de produção aparece aqui porque o projeto ainda não foi publicado.
 > Depois do deploy, registre as URLs reais no README.
@@ -112,7 +120,7 @@ Contas e pedidos demonstrativos não têm backup automático no plano gratuito. 
 2. O Render lê `render.yaml` e cria o serviço `ipaj-gaming-api`.
 3. Preencha as variáveis marcadas como `sync: false`:
    - `DATABASE_URL`: a string do Supabase (passo 2.3);
-   - `CORS_ORIGINS`: por enquanto `http://localhost:5173`. Depois do passo 4, troque pela URL da Vercel.
+   - `CORS_ORIGINS`: por enquanto `http://localhost:5173`. Depois do passo 4, troque pela URL do Netlify.
 4. `JWT_SECRET` é gerado automaticamente pelo Blueprint.
 
 ### Opção B: Web Service manual
@@ -145,32 +153,61 @@ Abra `/health` alguns minutos antes da apresentação.
 
 ---
 
-## 4. Vercel (frontend)
+## 4. Netlify (frontend)
 
-1. <https://vercel.com/new> → importe o repositório do GitHub.
-2. Configure:
+A configuração de build já está versionada em `netlify.toml`, na raiz do repositório:
 
-| Campo | Valor |
-|---|---|
-| Framework Preset | Vite |
-| Root Directory | `frontend` |
-| Build Command | `npm run build` |
-| Output Directory | `dist` |
-| Install Command | `npm ci` |
+| Campo | Valor | Observação |
+|---|---|---|
+| Base directory | `frontend` | o Netlify roda `npm install` e o build dentro dela |
+| Build command | `npm run build` | `tsc -b && vite build` |
+| Publish directory | `dist` | relativo à base, ou seja, `frontend/dist` |
+| Node | 22 | `NODE_VERSION` em `[build.environment]` |
+| Fallback de SPA | `/*` → `/index.html` (200) | `/catalogo`, `/carrinho`, `/laboratorio` funcionam ao recarregar |
+| Headers | anti-clickjacking, `nosniff`, cache imutável em `/assets/*` | |
 
-3. **Environment Variables**: `VITE_API_URL = https://<servico>.onrender.com` (sem barra no final).
+Como o arquivo já define tudo, **não preencha** valores diferentes no painel: o `netlify.toml` tem prioridade.
+
+### Conectar ao GitHub (painel)
+
+1. Acesse <https://app.netlify.com> e entre com **GitHub**.
+2. **Add new project → Import an existing project → GitHub**. Autorize o app do Netlify
+   no repositório `aloisiojuniordev-hub/ipaj-gaming`, se ele pedir.
+3. Selecione `ipaj-gaming` e a branch **`main`**. Os campos de build aparecem preenchidos a partir do `netlify.toml`:
+   base `frontend`, comando `npm run build`, publish `frontend/dist`.
+4. **Environment variables → Add a variable**:
+   `VITE_API_URL = https://<servico>.onrender.com` (sem barra no final), escopo *Builds*, todos os contextos.
    Variáveis `VITE_` vão para o JavaScript público, então **nunca coloque segredos nelas**.
-4. Deploy. Pushes na `main` passam a publicar automaticamente, e PRs ganham *preview deployments*.
+5. **Deploy**. A partir daí:
+   - cada push na `main` publica em produção (*Branch deploys: production branch* ativado por padrão);
+   - cada PR ganha um *Deploy Preview* em `https://deploy-preview-<N>--<site>.netlify.app`.
 
-O fallback de rotas da SPA está em `frontend/vercel.json`: tudo é reescrito para `index.html`, então
-`/laboratorio` e `/produto/P001` funcionam ao recarregar a página.
+Se o site já tiver sido criado pela CLI, sem repositório, vincule em
+**Project configuration → Build & deploy → Continuous deployment → Link repository**.
+
+> **Importante:** o `VITE_API_URL` é embutido **no build**. Depois de criar ou alterar a variável, faça
+> **Deploys → Trigger deploy → Deploy project** (ou um novo push) para que ela entre em vigor.
+
+### Alternativa: Netlify CLI
+
+```bash
+npm install -g netlify-cli
+netlify login
+netlify link            # ou: netlify sites:create --name <nome>
+netlify deploy --build          # deploy de rascunho (URL única), para testar
+netlify deploy --build --prod   # produção
+```
+
+O arquivo `frontend/vercel.json` foi mantido apenas como referência. Ele **não é usado** pelo Netlify.
 
 ---
 
 ## 5. Fechar o ciclo
 
-1. No Render, atualize `CORS_ORIGINS` com a URL de produção da Vercel, por exemplo
-   `https://ipaj-gaming.vercel.app`. Para aceitar também os previews, liste as URLs separadas por vírgula.
+1. No Render, atualize `CORS_ORIGINS` com a URL de produção do Netlify, por exemplo
+   `https://ipaj-gaming.netlify.app`. A barra final é removida automaticamente.
+   Para aceitar também os Deploy Previews e branch deploys, defina a variável opcional
+   `CORS_ORIGIN_REGEX = https://([a-z0-9-]+--)?ipaj-gaming\.netlify\.app` (troque `ipaj-gaming` pelo nome real do site).
 2. O Render redeploya sozinho. Teste no site publicado:
    - [ ] catálogo carrega (API + banco);
    - [ ] adicionar PS5 ao carrinho mostra recomendações do IPAJ CORE;
@@ -182,10 +219,11 @@ O fallback de rotas da SPA está em `frontend/vercel.json`: tudo é reescrito pa
 
 | Variável | Onde | Obrigatória | Exemplo |
 |---|---|---|---|
-| `VITE_API_URL` | Vercel | sim | `https://<servico>.onrender.com` |
+| `VITE_API_URL` | Netlify | sim | `https://<servico>.onrender.com` |
 | `DATABASE_URL` | Render | sim (produção) | `postgresql://postgres.<ref>:<SENHA>@...pooler.supabase.com:5432/postgres?sslmode=require` |
 | `JWT_SECRET` | Render | sim (produção) | valor aleatório de 48+ caracteres |
-| `CORS_ORIGINS` | Render | sim | `https://<projeto>.vercel.app` |
+| `CORS_ORIGINS` | Render | sim | `https://<site>.netlify.app` |
+| `CORS_ORIGIN_REGEX` | Render | não | `https://([a-z0-9-]+--)?<site>\.netlify\.app` (Deploy Previews) |
 | `ENVIRONMENT` | Render | sim | `production` |
 | `SEED_ON_STARTUP` | Render | não (padrão `true`) | `true` |
 | `DATABASE_SSLMODE` | Render | não (padrão `require`) | `require` |

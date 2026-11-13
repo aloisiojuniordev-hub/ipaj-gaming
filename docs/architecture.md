@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart LR
-    U[Usuário / navegador] -->|HTTPS| V[Frontend React + Vite<br/>Vercel]
+    U[Usuário / navegador] -->|HTTPS| V[Frontend React + Vite<br/>Netlify]
     V -->|fetch JSON<br/>VITE_API_URL| R[Backend FastAPI<br/>Render]
     R -->|SQLAlchemy + psycopg<br/>DATABASE_URL| S[(PostgreSQL<br/>Supabase)]
     R -->|joblib.load na inicialização| A[ml/artifacts<br/>rules.joblib · itemsets.joblib · metrics.json]

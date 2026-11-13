@@ -15,7 +15,7 @@ bash scripts/setup.sh
 
 ## 2. Fluxo de branches
 
-- `main` é a versão estável e é publicada automaticamente (Vercel + Render).
+- `main` é a versão estável e é publicada automaticamente (Netlify + Render).
 - Cada tarefa ganha uma branch a partir da `main`:
 
 | Prefixo | Uso | Exemplo |
@@ -78,4 +78,4 @@ em `docs/evaluation.md` e em `docs/academic-report.md`. Nunca edite métricas à
 
 - Nunca versionar `.env`, senhas, tokens ou strings de conexão reais.
 - Variáveis `VITE_*` são públicas (vão para o bundle): nada sensível nelas.
-- Segredos de produção ficam apenas nos painéis da Vercel, do Render e do Supabase.
+- Segredos de produção ficam apenas nos painéis do Netlify, do Render e do Supabase.

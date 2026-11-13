@@ -17,6 +17,9 @@ else:
 os.environ["ENVIRONMENT"] = "test"
 os.environ["JWT_SECRET"] = "test-secret-not-used-anywhere-else-0123456789"
 os.environ["SEED_ON_STARTUP"] = "true"
+# Origem de produção com barra final (erro comum ao colar a URL) + regex de Deploy Previews.
+os.environ["CORS_ORIGINS"] = "http://localhost:5173,https://ipaj-gaming.netlify.app/"
+os.environ["CORS_ORIGIN_REGEX"] = r"https://([a-z0-9-]+--)?ipaj-gaming\.netlify\.app"
 
 import pytest  # noqa: E402
 from fastapi.testclient import TestClient  # noqa: E402

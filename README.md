@@ -7,7 +7,7 @@
 | Integrantes | Iran Pablo e Aloisio Junior |
 | Disciplina | Mineração de Dados |
 | Técnica | Regras de associação com **Apriori** (mlxtend) |
-| Stack | React + TypeScript · FastAPI · PostgreSQL (Supabase) · Vercel · Render |
+| Stack | React + TypeScript · FastAPI · PostgreSQL (Supabase) · Netlify · Render |
 
 ---
 
@@ -51,7 +51,7 @@ Funcionalidades principais:
 | Backend | Python, FastAPI, SQLAlchemy 2, Pydantic, PyJWT, bcrypt, Uvicorn |
 | Mineração | pandas, mlxtend (Apriori), joblib, Jupyter |
 | Banco | PostgreSQL no Supabase (SQLite local e nos testes) |
-| Deploy / CI | Vercel (frontend), Render (backend), GitHub Actions |
+| Deploy / CI | Netlify (frontend), Render (backend), GitHub Actions |
 
 ## Dataset
 
@@ -193,7 +193,7 @@ python scripts/verify_project.py     # estrutura, artefatos e varredura de segre
 
 ```text
 ipaj-gaming/
-├── frontend/      React + TypeScript (Vite)                → Vercel
+├── frontend/      React + TypeScript (Vite)                → Netlify (netlify.toml)
 ├── backend/       FastAPI (api, core, database, schemas)   → Render
 ├── ml/            simulador, pré-processamento, Apriori, avaliação, motor
 │   └── artifacts/ rules.joblib · itemsets.joblib · metrics.json
@@ -220,12 +220,14 @@ Diagrama e decisões técnicas em [docs/architecture.md](docs/architecture.md). 
 |---|---|---|
 | **Supabase** | PostgreSQL | rodar `database/schema.sql` no SQL Editor e usar a string do *Session pooler* |
 | **Render** | Backend | Blueprint `render.yaml`, health check em `/health` |
-| **Vercel** | Frontend | Root `frontend`, preset Vite, `npm run build`, saída `dist`, fallback de SPA em `vercel.json` |
+| **Netlify** | Frontend | `netlify.toml` na raiz: base `frontend`, `npm run build`, publish `dist`, fallback de SPA |
 
 Variáveis necessárias:
 
-- **Render:** `DATABASE_URL`, `JWT_SECRET`, `CORS_ORIGINS`, `ENVIRONMENT=production`, `SEED_ON_STARTUP`, `DATABASE_SSLMODE`, `PYTHON_VERSION`.
-- **Vercel:** `VITE_API_URL`. Ela é pública, então nunca deve conter segredos.
+- **Render:** `DATABASE_URL`, `JWT_SECRET`, `CORS_ORIGINS` (URL do Netlify), `ENVIRONMENT=production`, `SEED_ON_STARTUP`, `DATABASE_SSLMODE`, `PYTHON_VERSION`. Opcional: `CORS_ORIGIN_REGEX` para Deploy Previews.
+- **Netlify:** `VITE_API_URL`. Ela é pública, então nunca deve conter segredos.
+
+O Apriori roda no backend (Render). O Netlify hospeda só o frontend estático.
 
 O passo a passo completo está em [docs/deployment.md](docs/deployment.md).
 

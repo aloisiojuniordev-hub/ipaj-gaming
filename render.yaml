@@ -35,4 +35,6 @@ services:
       - key: DATABASE_URL
         sync: false   # informar no painel: string de conexão do Supabase
       - key: CORS_ORIGINS
-        sync: false   # informar no painel: URL da Vercel
+        sync: false   # informar no painel: URL do Netlify (ex.: https://<site>.netlify.app)
+      - key: CORS_ORIGIN_REGEX
+        sync: false   # opcional: Deploy Previews, ex.: https://([a-z0-9-]+--)?<site>\.netlify\.app

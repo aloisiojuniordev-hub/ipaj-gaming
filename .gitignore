@@ -31,6 +31,8 @@ frontend/.vite/
 *.tsbuildinfo
 npm-debug.log*
 .vercel
+# Estado local da Netlify CLI (id do site vinculado)
+.netlify/
 
 # ---- SO / IDE ----
 .DS_Store
