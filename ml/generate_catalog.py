@@ -1,0 +1,75 @@
+"""Gera o catálogo de 50 produtos gamer em data/catalog/products.csv.
+
+Uso: python -m ml.generate_catalog
+"""
+import csv
+
+from ml.config import CATALOG_CSV
+
+# (id, nome, categoria, preço em R$, descrição curta)
+PRODUCTS = [
+    ("P001", "PlayStation 5 Slim", "Consoles", 4499.00, "Console de nova geração com SSD ultrarrápido."),
+    ("P002", "Xbox Series X", "Consoles", 4299.00, "Console 4K com 1 TB e Game Pass."),
+    ("P003", "Nintendo Switch OLED", "Consoles", 2299.00, "Híbrido portátil com tela OLED de 7 polegadas."),
+    ("P004", "EA Sports FC 25 (PS5)", "Jogos", 249.00, "Simulador de futebol para PlayStation 5."),
+    ("P005", "God of War Ragnarök (PS5)", "Jogos", 199.00, "Aventura épica nórdica para PlayStation 5."),
+    ("P006", "Marvel's Spider-Man 2 (PS5)", "Jogos", 279.00, "Ação em mundo aberto para PlayStation 5."),
+    ("P007", "Forza Horizon 5 (Xbox)", "Jogos", 199.00, "Corrida em mundo aberto para Xbox."),
+    ("P008", "Starfield (Xbox)", "Jogos", 229.00, "RPG espacial para Xbox Series."),
+    ("P009", "Zelda: Tears of the Kingdom (Switch)", "Jogos", 349.00, "Aventura em Hyrule para Switch."),
+    ("P010", "Mario Kart 8 Deluxe (Switch)", "Jogos", 299.00, "Corrida multiplayer para Switch."),
+    ("P011", "Super Mario Bros. Wonder (Switch)", "Jogos", 299.00, "Plataforma 2D para Switch."),
+    ("P012", "Cyberpunk 2077 (PC)", "Jogos", 129.00, "RPG futurista para PC."),
+    ("P013", "Elden Ring (PC)", "Jogos", 199.00, "RPG de ação em mundo aberto para PC."),
+    ("P014", "Controle DualSense Extra", "Controles", 449.00, "Segundo controle para PlayStation 5."),
+    ("P015", "Controle Xbox Wireless", "Controles", 399.00, "Controle sem fio para Xbox e PC."),
+    ("P016", "Switch Pro Controller", "Controles", 429.00, "Controle profissional para Switch."),
+    ("P017", "Base Carregadora Dupla de Controle", "Controles", 129.00, "Carrega dois controles ao mesmo tempo."),
+    ("P018", "Headset Pulse 3D", "Headsets", 599.00, "Headset sem fio com áudio 3D."),
+    ("P019", "Headset HyperX Cloud II", "Headsets", 499.00, "Som surround 7.1 e microfone removível."),
+    ("P020", "Headset Logitech G435", "Headsets", 399.00, "Leve, sem fio e com Bluetooth."),
+    ("P021", "Teclado Mecânico Redragon Kumara", "Teclados", 249.00, "Teclado mecânico TKL com iluminação."),
+    ("P022", "Teclado Logitech G413 TKL", "Teclados", 399.00, "Teclado mecânico compacto."),
+    ("P023", "Teclado HyperX Alloy Origins", "Teclados", 549.00, "Teclado mecânico com estrutura de alumínio."),
+    ("P024", "Mouse Logitech G203", "Mouses", 119.00, "Mouse gamer com sensor de 8.000 DPI."),
+    ("P025", "Mouse Razer DeathAdder Essential", "Mouses", 299.00, "Mouse ergonômico para FPS."),
+    ("P026", "Mouse Logitech G305 Wireless", "Mouses", 229.00, "Mouse sem fio de baixa latência."),
+    ("P027", "Mousepad Speed Médio", "Mousepads", 69.00, "Superfície otimizada para velocidade."),
+    ("P028", "Mousepad Extended RGB", "Mousepads", 149.00, "Mousepad extra grande com iluminação RGB."),
+    ("P029", "Monitor Gamer 24\" 144 Hz", "Monitores", 899.00, "Full HD, 144 Hz e 1 ms."),
+    ("P030", "Monitor Gamer 27\" 165 Hz QHD", "Monitores", 1599.00, "QHD com painel IPS de 165 Hz."),
+    ("P031", "Braço Articulado para Monitor", "Monitores", 189.00, "Suporte ajustável com gerenciamento de cabos."),
+    ("P032", "Cadeira Gamer ThunderX3", "Cadeiras", 1199.00, "Cadeira reclinável com ajuste 4D."),
+    ("P033", "Cadeira Gamer Pichau Ergonômica", "Cadeiras", 899.00, "Cadeira com apoio de cabeça e lombar."),
+    ("P034", "Apoio Lombar Ergonômico", "Cadeiras", 99.00, "Almofada de espuma viscoelástica."),
+    ("P035", "SSD NVMe 1 TB para PS5", "Acessórios", 549.00, "Expansão de armazenamento com dissipador."),
+    ("P036", "Cartão microSD 128 GB", "Acessórios", 79.00, "Armazenamento extra para Switch."),
+    ("P037", "Capa Protetora para Switch", "Acessórios", 69.00, "Case rígido com compartimento para jogos."),
+    ("P038", "Cabo HDMI 2.1 8K", "Acessórios", 59.00, "Cabo de alta velocidade com 2 metros."),
+    ("P039", "Suporte Vertical para Console", "Acessórios", 89.00, "Suporte com ventilação."),
+    ("P040", "Base de Carregamento Switch", "Acessórios", 129.00, "Dock alternativo para Switch."),
+    ("P041", "Webcam Full HD 1080p", "Streaming", 299.00, "Webcam com foco automático."),
+    ("P042", "Microfone Condensador USB", "Streaming", 349.00, "Microfone cardioide para streaming."),
+    ("P043", "Ring Light 10\" com Tripé", "Streaming", 129.00, "Iluminação ajustável para transmissões."),
+    ("P044", "Placa de Captura 4K", "Streaming", 399.00, "Captura de console em 4K."),
+    ("P045", "Kit Streamer Iniciante", "Streaming", 599.00, "Webcam, microfone e suporte articulado."),
+    ("P046", "Placa de Vídeo RTX 4060", "Hardware", 2099.00, "8 GB GDDR6 com DLSS 3."),
+    ("P047", "Memória RAM 16 GB DDR4", "Hardware", 249.00, "Kit de 16 GB a 3200 MHz."),
+    ("P048", "SSD NVMe 1 TB para PC", "Hardware", 449.00, "SSD PCIe 4.0 de alta velocidade."),
+    ("P049", "Gabinete Gamer com Vidro Temperado", "Hardware", 399.00, "Gabinete ATX com 4 fans RGB."),
+    ("P050", "Fonte 650 W 80 Plus Bronze", "Hardware", 429.00, "Fonte com cabo modular."),
+]
+
+
+def main() -> None:
+    CATALOG_CSV.parent.mkdir(parents=True, exist_ok=True)
+    with CATALOG_CSV.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.writer(fh, lineterminator="\n")
+        writer.writerow(["product_id", "name", "category", "price", "description"])
+        for p in PRODUCTS:
+            writer.writerow([p[0], p[1], p[2], f"{p[3]:.2f}", p[4]])
+    print(f"Catálogo gerado: {len(PRODUCTS)} produtos em {CATALOG_CSV}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.joblib binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary
+*.ipynb text eol=lf linguist-documentation=false
+data/**/*.csv linguist-generated=true

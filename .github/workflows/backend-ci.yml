@@ -1,0 +1,58 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/**"
+      - "ml/**"
+      - "data/**"
+      - "database/**"
+      - "scripts/verify_project.py"
+      - ".github/workflows/backend-ci.yml"
+  pull_request:
+    paths:
+      - "backend/**"
+      - "ml/**"
+      - "data/**"
+      - "database/**"
+      - "scripts/verify_project.py"
+      - ".github/workflows/backend-ci.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            backend/requirements*.txt
+            ml/requirements.txt
+
+      - name: Instalar dependências
+        run: pip install -r requirements-dev.txt -r ../ml/requirements.txt
+
+      - name: Lint (ruff)
+        run: ruff check app tests ../ml ../database ../scripts ../notebooks
+
+      - name: Testes (SQLite temporário, sem credenciais externas)
+        run: pytest -q
+
+      - name: Reprodutibilidade do pipeline Apriori
+        working-directory: .
+        run: |
+          python -m ml.generate_catalog
+          python -m ml.generate_transactions
+          python -m ml.preprocess
+          python -m ml.train_apriori
+          python -m ml.evaluate_apriori
+          # O dataset regenerado com a mesma semente deve ser idêntico ao versionado.
+          git diff --exit-code -- data/
+          python scripts/verify_project.py --artifacts-only

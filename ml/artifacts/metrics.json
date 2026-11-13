@@ -1,0 +1,41 @@
+{
+  "training": {
+    "trained_at_utc": "2026-11-13T15:50:09Z",
+    "seed": 42,
+    "n_train_transactions": 4000,
+    "n_test_transactions": 1000,
+    "parameters": {
+      "min_support": 0.01,
+      "min_confidence": 0.3,
+      "min_lift": 1.2,
+      "max_len": 3
+    },
+    "n_itemsets": 248,
+    "n_rules": 394
+  },
+  "evaluation": {
+    "top_k": 3,
+    "n_test_carts_evaluated": 671,
+    "cart_coverage_pct": 95.53,
+    "hit_rate_at_k_all_carts_pct": 58.72,
+    "hit_rate_at_k_covered_carts_pct": 61.47,
+    "precision_at_k_covered_pct": 26.39,
+    "baseline_popularity_hit_rate_at_k_pct": 11.92,
+    "item_coverage_pct": 74.0,
+    "rule_quality": {
+      "n_rules": 394,
+      "train": {
+        "support": 0.0249,
+        "confidence": 0.6383,
+        "lift": 8.8599
+      },
+      "test": {
+        "support": 0.0233,
+        "confidence": 0.6182,
+        "lift": 8.603
+      },
+      "pct_rules_lift_gt_1_in_test": 100.0
+    },
+    "limitations": "Dados simulados; hit rate mede recuperação de associações geradas pelo simulador."
+  }
+}

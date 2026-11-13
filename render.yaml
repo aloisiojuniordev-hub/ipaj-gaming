@@ -1,0 +1,36 @@
+# Blueprint do Render para o backend FastAPI.
+# O serviço roda a partir da RAIZ do repositório (sem rootDir) porque o backend importa
+# o motor de recomendação de ml/ e lê ml/artifacts/ e data/catalog/.
+services:
+  - type: web
+    name: ipaj-gaming-api
+    runtime: python
+    plan: free
+    branch: main
+    autoDeploy: true
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    # Redeploy apenas quando algo relevante ao backend muda.
+    buildFilter:
+      paths:
+        - backend/**
+        - ml/recommendation_engine.py
+        - ml/config.py
+        - ml/__init__.py
+        - ml/artifacts/**
+        - data/catalog/**
+        - render.yaml
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: ENVIRONMENT
+        value: production
+      - key: SEED_ON_STARTUP
+        value: "true"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false   # informar no painel: string de conexão do Supabase
+      - key: CORS_ORIGINS
+        sync: false   # informar no painel: URL da Vercel

@@ -1,0 +1,47 @@
+# ---- Segredos e ambiente (NUNCA versionar) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Banco SQLite local de desenvolvimento
+backend/*.db
+*.sqlite3
+
+# ---- Node / Frontend ----
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+npm-debug.log*
+.vercel
+
+# ---- SO / IDE ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ---- Temporários dos scripts ----
+scripts/_*.log
+scripts/_*.ps1
+
+# Observação: ml/artifacts/*.joblib, metrics.json e data/*.csv SÃO versionados
+# de propósito: o backend em produção precisa dos artefatos e o dataset é pequeno (~200 KB).

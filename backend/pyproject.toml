@@ -1,0 +1,16 @@
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["app", "..", "tests"]
+extend-exclude = ["*.ipynb"]  # notebook gerado por notebooks/build_notebook.py (este sim é verificado)
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["B008"]  # Depends() em argumentos padrão é o padrão do FastAPI
+
+[tool.ruff.lint.isort]
+known-first-party = ["app", "ml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", ".."]
