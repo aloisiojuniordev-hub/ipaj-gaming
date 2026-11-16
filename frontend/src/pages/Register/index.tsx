@@ -9,6 +9,7 @@ export default function Register() {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [confirmEmail, setConfirmEmail] = useState(false);
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement>) => setForm({ ...form, [k]: e.target.value });
 
   const submit = async (e: FormEvent) => {
@@ -20,14 +21,27 @@ export default function Register() {
     setBusy(true);
     setError(null);
     try {
-      await register(form.name, form.email, form.password);
-      navigate("/perfil");
+      const { needsConfirmation } = await register(form.name, form.email, form.password);
+      if (needsConfirmation) setConfirmEmail(true);
+      else navigate("/perfil");
     } catch (err) {
       setError((err as Error).message);
     } finally {
       setBusy(false);
     }
   };
+
+  if (confirmEmail) {
+    return (
+      <section className="card form-card" aria-live="polite">
+        <h1>Confirme seu e-mail</h1>
+        <div className="alert alert--success">
+          Enviamos um link de confirmação para <strong>{form.email}</strong>. Depois de confirmar, é só entrar.
+        </div>
+        <Link to="/entrar">Ir para o login</Link>
+      </section>
+    );
+  }
 
   return (
     <form className="card form-card" onSubmit={submit}>

@@ -37,5 +37,3 @@ jobs:
         run: npm test
       - name: Build de produção
         run: npm run build
-        env:
-          VITE_API_URL: https://example.invalid

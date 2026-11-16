@@ -1,0 +1,352 @@
+[
+ {
+  "id": "P001",
+  "name": "PlayStation 5 Slim",
+  "category": "Consoles",
+  "price": "4499.00",
+  "description": "Console de nova geração com SSD ultrarrápido."
+ },
+ {
+  "id": "P002",
+  "name": "Xbox Series X",
+  "category": "Consoles",
+  "price": "4299.00",
+  "description": "Console 4K com 1 TB e Game Pass."
+ },
+ {
+  "id": "P003",
+  "name": "Nintendo Switch OLED",
+  "category": "Consoles",
+  "price": "2299.00",
+  "description": "Híbrido portátil com tela OLED de 7 polegadas."
+ },
+ {
+  "id": "P004",
+  "name": "EA Sports FC 25 (PS5)",
+  "category": "Jogos",
+  "price": "249.00",
+  "description": "Simulador de futebol para PlayStation 5."
+ },
+ {
+  "id": "P005",
+  "name": "God of War Ragnarök (PS5)",
+  "category": "Jogos",
+  "price": "199.00",
+  "description": "Aventura épica nórdica para PlayStation 5."
+ },
+ {
+  "id": "P006",
+  "name": "Marvel's Spider-Man 2 (PS5)",
+  "category": "Jogos",
+  "price": "279.00",
+  "description": "Ação em mundo aberto para PlayStation 5."
+ },
+ {
+  "id": "P007",
+  "name": "Forza Horizon 5 (Xbox)",
+  "category": "Jogos",
+  "price": "199.00",
+  "description": "Corrida em mundo aberto para Xbox."
+ },
+ {
+  "id": "P008",
+  "name": "Starfield (Xbox)",
+  "category": "Jogos",
+  "price": "229.00",
+  "description": "RPG espacial para Xbox Series."
+ },
+ {
+  "id": "P009",
+  "name": "Zelda: Tears of the Kingdom (Switch)",
+  "category": "Jogos",
+  "price": "349.00",
+  "description": "Aventura em Hyrule para Switch."
+ },
+ {
+  "id": "P010",
+  "name": "Mario Kart 8 Deluxe (Switch)",
+  "category": "Jogos",
+  "price": "299.00",
+  "description": "Corrida multiplayer para Switch."
+ },
+ {
+  "id": "P011",
+  "name": "Super Mario Bros. Wonder (Switch)",
+  "category": "Jogos",
+  "price": "299.00",
+  "description": "Plataforma 2D para Switch."
+ },
+ {
+  "id": "P012",
+  "name": "Cyberpunk 2077 (PC)",
+  "category": "Jogos",
+  "price": "129.00",
+  "description": "RPG futurista para PC."
+ },
+ {
+  "id": "P013",
+  "name": "Elden Ring (PC)",
+  "category": "Jogos",
+  "price": "199.00",
+  "description": "RPG de ação em mundo aberto para PC."
+ },
+ {
+  "id": "P014",
+  "name": "Controle DualSense Extra",
+  "category": "Controles",
+  "price": "449.00",
+  "description": "Segundo controle para PlayStation 5."
+ },
+ {
+  "id": "P015",
+  "name": "Controle Xbox Wireless",
+  "category": "Controles",
+  "price": "399.00",
+  "description": "Controle sem fio para Xbox e PC."
+ },
+ {
+  "id": "P016",
+  "name": "Switch Pro Controller",
+  "category": "Controles",
+  "price": "429.00",
+  "description": "Controle profissional para Switch."
+ },
+ {
+  "id": "P017",
+  "name": "Base Carregadora Dupla de Controle",
+  "category": "Controles",
+  "price": "129.00",
+  "description": "Carrega dois controles ao mesmo tempo."
+ },
+ {
+  "id": "P018",
+  "name": "Headset Pulse 3D",
+  "category": "Headsets",
+  "price": "599.00",
+  "description": "Headset sem fio com áudio 3D."
+ },
+ {
+  "id": "P019",
+  "name": "Headset HyperX Cloud II",
+  "category": "Headsets",
+  "price": "499.00",
+  "description": "Som surround 7.1 e microfone removível."
+ },
+ {
+  "id": "P020",
+  "name": "Headset Logitech G435",
+  "category": "Headsets",
+  "price": "399.00",
+  "description": "Leve, sem fio e com Bluetooth."
+ },
+ {
+  "id": "P021",
+  "name": "Teclado Mecânico Redragon Kumara",
+  "category": "Teclados",
+  "price": "249.00",
+  "description": "Teclado mecânico TKL com iluminação."
+ },
+ {
+  "id": "P022",
+  "name": "Teclado Logitech G413 TKL",
+  "category": "Teclados",
+  "price": "399.00",
+  "description": "Teclado mecânico compacto."
+ },
+ {
+  "id": "P023",
+  "name": "Teclado HyperX Alloy Origins",
+  "category": "Teclados",
+  "price": "549.00",
+  "description": "Teclado mecânico com estrutura de alumínio."
+ },
+ {
+  "id": "P024",
+  "name": "Mouse Logitech G203",
+  "category": "Mouses",
+  "price": "119.00",
+  "description": "Mouse gamer com sensor de 8.000 DPI."
+ },
+ {
+  "id": "P025",
+  "name": "Mouse Razer DeathAdder Essential",
+  "category": "Mouses",
+  "price": "299.00",
+  "description": "Mouse ergonômico para FPS."
+ },
+ {
+  "id": "P026",
+  "name": "Mouse Logitech G305 Wireless",
+  "category": "Mouses",
+  "price": "229.00",
+  "description": "Mouse sem fio de baixa latência."
+ },
+ {
+  "id": "P027",
+  "name": "Mousepad Speed Médio",
+  "category": "Mousepads",
+  "price": "69.00",
+  "description": "Superfície otimizada para velocidade."
+ },
+ {
+  "id": "P028",
+  "name": "Mousepad Extended RGB",
+  "category": "Mousepads",
+  "price": "149.00",
+  "description": "Mousepad extra grande com iluminação RGB."
+ },
+ {
+  "id": "P029",
+  "name": "Monitor Gamer 24\" 144 Hz",
+  "category": "Monitores",
+  "price": "899.00",
+  "description": "Full HD, 144 Hz e 1 ms."
+ },
+ {
+  "id": "P030",
+  "name": "Monitor Gamer 27\" 165 Hz QHD",
+  "category": "Monitores",
+  "price": "1599.00",
+  "description": "QHD com painel IPS de 165 Hz."
+ },
+ {
+  "id": "P031",
+  "name": "Braço Articulado para Monitor",
+  "category": "Monitores",
+  "price": "189.00",
+  "description": "Suporte ajustável com gerenciamento de cabos."
+ },
+ {
+  "id": "P032",
+  "name": "Cadeira Gamer ThunderX3",
+  "category": "Cadeiras",
+  "price": "1199.00",
+  "description": "Cadeira reclinável com ajuste 4D."
+ },
+ {
+  "id": "P033",
+  "name": "Cadeira Gamer Pichau Ergonômica",
+  "category": "Cadeiras",
+  "price": "899.00",
+  "description": "Cadeira com apoio de cabeça e lombar."
+ },
+ {
+  "id": "P034",
+  "name": "Apoio Lombar Ergonômico",
+  "category": "Cadeiras",
+  "price": "99.00",
+  "description": "Almofada de espuma viscoelástica."
+ },
+ {
+  "id": "P035",
+  "name": "SSD NVMe 1 TB para PS5",
+  "category": "Acessórios",
+  "price": "549.00",
+  "description": "Expansão de armazenamento com dissipador."
+ },
+ {
+  "id": "P036",
+  "name": "Cartão microSD 128 GB",
+  "category": "Acessórios",
+  "price": "79.00",
+  "description": "Armazenamento extra para Switch."
+ },
+ {
+  "id": "P037",
+  "name": "Capa Protetora para Switch",
+  "category": "Acessórios",
+  "price": "69.00",
+  "description": "Case rígido com compartimento para jogos."
+ },
+ {
+  "id": "P038",
+  "name": "Cabo HDMI 2.1 8K",
+  "category": "Acessórios",
+  "price": "59.00",
+  "description": "Cabo de alta velocidade com 2 metros."
+ },
+ {
+  "id": "P039",
+  "name": "Suporte Vertical para Console",
+  "category": "Acessórios",
+  "price": "89.00",
+  "description": "Suporte com ventilação."
+ },
+ {
+  "id": "P040",
+  "name": "Base de Carregamento Switch",
+  "category": "Acessórios",
+  "price": "129.00",
+  "description": "Dock alternativo para Switch."
+ },
+ {
+  "id": "P041",
+  "name": "Webcam Full HD 1080p",
+  "category": "Streaming",
+  "price": "299.00",
+  "description": "Webcam com foco automático."
+ },
+ {
+  "id": "P042",
+  "name": "Microfone Condensador USB",
+  "category": "Streaming",
+  "price": "349.00",
+  "description": "Microfone cardioide para streaming."
+ },
+ {
+  "id": "P043",
+  "name": "Ring Light 10\" com Tripé",
+  "category": "Streaming",
+  "price": "129.00",
+  "description": "Iluminação ajustável para transmissões."
+ },
+ {
+  "id": "P044",
+  "name": "Placa de Captura 4K",
+  "category": "Streaming",
+  "price": "399.00",
+  "description": "Captura de console em 4K."
+ },
+ {
+  "id": "P045",
+  "name": "Kit Streamer Iniciante",
+  "category": "Streaming",
+  "price": "599.00",
+  "description": "Webcam, microfone e suporte articulado."
+ },
+ {
+  "id": "P046",
+  "name": "Placa de Vídeo RTX 4060",
+  "category": "Hardware",
+  "price": "2099.00",
+  "description": "8 GB GDDR6 com DLSS 3."
+ },
+ {
+  "id": "P047",
+  "name": "Memória RAM 16 GB DDR4",
+  "category": "Hardware",
+  "price": "249.00",
+  "description": "Kit de 16 GB a 3200 MHz."
+ },
+ {
+  "id": "P048",
+  "name": "SSD NVMe 1 TB para PC",
+  "category": "Hardware",
+  "price": "449.00",
+  "description": "SSD PCIe 4.0 de alta velocidade."
+ },
+ {
+  "id": "P049",
+  "name": "Gabinete Gamer com Vidro Temperado",
+  "category": "Hardware",
+  "price": "399.00",
+  "description": "Gabinete ATX com 4 fans RGB."
+ },
+ {
+  "id": "P050",
+  "name": "Fonte 650 W 80 Plus Bronze",
+  "category": "Hardware",
+  "price": "429.00",
+  "description": "Fonte com cabo modular."
+ }
+]

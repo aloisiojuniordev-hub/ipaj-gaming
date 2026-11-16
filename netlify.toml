@@ -1,7 +1,8 @@
 # Netlify — frontend React/Vite da IPAJ Gaming (monorepo).
 # Este arquivo fica na RAIZ do repositório; "base" aponta para frontend/, e os caminhos
 # "publish" e "command" são relativos a essa base (publish = frontend/dist).
-# O backend FastAPI + Apriori NÃO roda aqui: ele fica no Render (render.yaml).
+# Sem servidor Python: as regras Apriori (geradas em Python/mlxtend) vêm em frontend/src/data,
+# e login/pedidos usam o Supabase com a chave pública (ver docs/deployment.md).
 
 [build]
   base = "frontend"
@@ -10,9 +11,10 @@
 
 [build.environment]
   NODE_VERSION = "22"
-  # VITE_API_URL NÃO fica aqui: configure no painel do Netlify
-  # (Site configuration > Environment variables) com a URL pública do Render.
-  # Variáveis VITE_ vão para o bundle público: nunca coloque segredos nelas.
+  # URL do projeto Supabase (pública).
+  VITE_SUPABASE_URL = "https://lvukeuyexxewmnslucwj.supabase.co"
+  # VITE_SUPABASE_PUBLISHABLE_KEY: configure no painel do Netlify (Environment variables).
+  # É a chave PÚBLICA (sb_publishable_...). Nunca use a secret/service_role: VITE_ vai para o bundle.
 
 # Fallback de SPA: /catalogo, /carrinho, /laboratorio, /produto/P001... servem o index.html.
 # Arquivos existentes (ex.: /assets/*.js, /favicon.svg) têm prioridade, pois não usamos force.

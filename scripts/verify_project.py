@@ -32,7 +32,12 @@ REQUIRED = [
     "docs/architecture.md", "docs/dataset.md", "docs/apriori-methodology.md", "docs/evaluation.md",
     "docs/api.md", "docs/deployment.md", "docs/presentation-guide.md", "docs/academic-report.md",
     "scripts/setup.ps1", "scripts/setup.sh", ".gitignore", ".gitattributes", ".editorconfig",
-    "README.md", "CONTRIBUTING.md", "render.yaml", ".env.example",
+    "README.md", "CONTRIBUTING.md", ".env.example", "scripts/export_static.py",
+    "frontend/src/core/apriori.ts", "frontend/src/services/supabase.ts",
+    "frontend/src/data/rules.json", "frontend/src/data/itemsets.json", "frontend/src/data/metrics.json",
+    "frontend/src/data/catalog.json", "frontend/src/test/fixtures/expected_recommendations.json",
+    "database/migrations/002_revoke_public_roles.sql", "database/migrations/003_frontend_supabase_access.sql",
+    "database/migrations/004_seed_products.sql",
 ]
 
 SECRET_PATTERNS = [

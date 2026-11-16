@@ -2,7 +2,7 @@
 
 ## Antes de começar (15 min antes)
 
-- [ ] Abrir `https://<backend>/health` para “acordar” o Render (plano gratuito hiberna).
+- [ ] Conferir se o projeto Supabase está ativo. Projetos gratuitos pausam após dias sem uso: reative no painel.
 - [ ] Abrir o site publicado em aba anônima (carrinho limpo).
 - [ ] Deixar abertos: Laboratório IA, `docs/evaluation.md` e o notebook executado.
 - [ ] Plano B: ambiente local rodando (`uvicorn` + `npm run dev`), caso a internet falhe.

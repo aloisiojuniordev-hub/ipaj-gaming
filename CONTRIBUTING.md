@@ -15,7 +15,7 @@ bash scripts/setup.sh
 
 ## 2. Fluxo de branches
 
-- `main` é a versão estável e é publicada automaticamente (Netlify + Render).
+- `main` é a versão estável e é publicada automaticamente no Netlify.
 - Cada tarefa ganha uma branch a partir da `main`:
 
 | Prefixo | Uso | Exemplo |
@@ -78,4 +78,5 @@ em `docs/evaluation.md` e em `docs/academic-report.md`. Nunca edite métricas à
 
 - Nunca versionar `.env`, senhas, tokens ou strings de conexão reais.
 - Variáveis `VITE_*` são públicas (vão para o bundle): nada sensível nelas.
-- Segredos de produção ficam apenas nos painéis do Netlify, do Render e do Supabase.
+- O site usa só a chave **pública** do Supabase. Senha do banco e secret/service_role key nunca vão para o código.
+- Se `ml/` ou `data/` mudarem, rode `python scripts/export_static.py`. O teste `test_export_static.py` cobra isso.

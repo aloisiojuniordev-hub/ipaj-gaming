@@ -7,7 +7,7 @@
 | Integrantes | Iran Pablo e Aloisio Junior |
 | Disciplina | Mineração de Dados |
 | Técnica | Regras de associação com **Apriori** (mlxtend) |
-| Stack | React + TypeScript · FastAPI · PostgreSQL (Supabase) · Netlify · Render |
+| Stack | Python (mlxtend) · React + TypeScript · Supabase (PostgreSQL + Auth) · Netlify |
 
 ---
 
@@ -24,9 +24,11 @@ a justifica, junto com a confiança e o lift.
 (“frequentemente comprados juntos”), carrinho, checkout demonstrativo, cadastro e login. O checkout funciona
 com conta ou como visitante.
 
-**IPAJ CORE.** É o motor de recomendação. O treino roda offline com o Apriori e grava as regras em
-`ml/artifacts/`. O backend carrega essas regras e, a cada mudança no carrinho, procura as que têm o
-antecedente contido nele. Se nenhuma regra se aplica, nada é recomendado: o sistema não inventa sugestões.
+**IPAJ CORE.** É o motor de recomendação. O treino roda com o Apriori em Python (mlxtend) e grava as
+394 regras em `ml/artifacts/`. Elas são publicadas, sem alteração, junto com o site
+(`scripts/export_static.py`). A cada mudança no carrinho, o motor procura as regras cujo antecedente está
+contido nele. Se nenhuma regra se aplica, nada é recomendado: o sistema não inventa sugestões. Um teste
+automático garante que o motor do site dá exatamente as mesmas respostas do motor Python.
 
 ## Demonstração
 
@@ -40,7 +42,7 @@ Funcionalidades principais:
 - Página de produto com “frequentemente comprados juntos”
 - **Laboratório IA**: métricas reais de treino e teste, tabela de regras com filtros, itemsets frequentes e simulador de carrinho
 - Página “Como funciona” explicando o Apriori
-- Cadastro e login (JWT) com histórico de pedidos. Os itens que vieram de recomendação ficam marcados
+- Cadastro e login (Supabase Auth) com histórico de pedidos salvo no PostgreSQL. Os itens que vieram de recomendação ficam marcados
 - Cena 3D (Three.js) na página inicial representando o grafo de associações
 
 ## Tecnologias
@@ -48,10 +50,10 @@ Funcionalidades principais:
 | Área | Tecnologias |
 |---|---|
 | Frontend | React 18, TypeScript, Vite, React Router, Three.js, Vitest + Testing Library |
-| Backend | Python, FastAPI, SQLAlchemy 2, Pydantic, PyJWT, bcrypt, Uvicorn |
-| Mineração | pandas, mlxtend (Apriori), joblib, Jupyter |
-| Banco | PostgreSQL no Supabase (SQLite local e nos testes) |
-| Deploy / CI | Netlify (frontend), Render (backend), GitHub Actions |
+| Mineração | Python, pandas, mlxtend (Apriori), joblib, Jupyter |
+| Banco e login | Supabase: PostgreSQL (RLS + função `create_order`) e Supabase Auth, via `@supabase/supabase-js` |
+| API de referência (local) | FastAPI, SQLAlchemy 2, Pydantic, PyJWT, bcrypt. Roda localmente e não é publicada |
+| Deploy / CI | Netlify (site), GitHub Actions |
 
 ## Dataset
 
@@ -148,9 +150,10 @@ cd frontend && npm ci && cd ..
 ### Variáveis de ambiente
 
 ```bash
-cp backend/.env.example backend/.env           # sem DATABASE_URL, usa SQLite local
-cp frontend/.env.example frontend/.env.local   # VITE_API_URL=http://localhost:8000
+cp frontend/.env.example frontend/.env.local   # preencha VITE_SUPABASE_PUBLISHABLE_KEY (chave pública)
 ```
+
+Sem a chave, o site funciona normalmente: catálogo, recomendações Apriori e Laboratório. Só login e pedidos ficam indisponíveis.
 
 A lista completa está em [docs/deployment.md](docs/deployment.md#variáveis-de-ambiente-resumo).
 
@@ -162,6 +165,7 @@ python -m ml.generate_transactions
 python -m ml.preprocess
 python -m ml.train_apriori
 python -m ml.evaluate_apriori
+python scripts/export_static.py   # publica as regras/métricas no site e gera database/migrations/004
 ```
 
 Notebook: `pip install -r notebooks/requirements.txt` e depois `python notebooks/build_notebook.py --execute`.
@@ -170,16 +174,13 @@ Também dá para abrir `notebooks/apriori_analysis.ipynb` no Jupyter ou no VS Co
 ### Executar
 
 ```bash
-# Terminal 1: backend em http://localhost:8000 (docs em /docs)
-cd backend
-uvicorn app.main:app --reload
-
-# Terminal 2: frontend em http://localhost:5173
 cd frontend
-npm run dev
+npm run dev          # http://localhost:5173
 ```
 
-Na primeira execução o backend cria as tabelas e carrega o catálogo sozinho.
+A API FastAPI em `backend/` é opcional e serve como referência local (`cd backend && uvicorn app.main:app --reload`,
+docs em `/docs`). Ela usa SQLite local. **Não aponte essa API para o banco do Supabase:** na inicialização, ela
+retira os privilégios públicos das tabelas, e o site deixaria de funcionar.
 
 ### Testes
 
@@ -193,41 +194,37 @@ python scripts/verify_project.py     # estrutura, artefatos e varredura de segre
 
 ```text
 ipaj-gaming/
-├── frontend/      React + TypeScript (Vite)                → Netlify (netlify.toml)
-├── backend/       FastAPI (api, core, database, schemas)   → Render
-├── ml/            simulador, pré-processamento, Apriori, avaliação, motor
+├── ml/            simulador, pré-processamento, Apriori (mlxtend), avaliação, motor Python
 │   └── artifacts/ rules.joblib · itemsets.joblib · metrics.json
+├── frontend/      React + TypeScript (Vite)                → Netlify (netlify.toml)
+│   └── src/data/  regras, itemsets, métricas e catálogo exportados dos artefatos
+├── database/      schema.sql · migrations/ 001–004         → Supabase
+├── backend/       API FastAPI de referência (local, não publicada)
 ├── data/          catalog/ · raw/ · processed/
 ├── notebooks/     apriori_analysis.ipynb
-├── database/      schema.sql · migrations/ · seed.py      → Supabase
 ├── docs/          documentação técnica e acadêmica
-└── scripts/       setup e verificação
+└── scripts/       setup, export_static.py, verificação
 ```
 
-- **React ↔ FastAPI:** chamadas `fetch` com JSON para `VITE_API_URL`. O CORS é restrito às origens em `CORS_ORIGINS`
-  e a autenticação usa `Authorization: Bearer <JWT>`.
-- **PostgreSQL:** guarda catálogo, usuários e pedidos demonstrativos. Os preços dos pedidos vêm sempre do banco.
-  Só o backend acessa o banco, e o RLS bloqueia a API pública do Supabase.
-- **Artefatos do Apriori:** são gerados offline e versionados. O backend só precisa de `joblib` e do
-  `recommendation_engine.py` (não usa pandas nem mlxtend em produção), então o que roda publicado é exatamente
-  o que foi avaliado.
+- **Apriori:** a mineração é feita em Python e os artefatos são versionados. O site usa essas mesmas regras,
+  então o que está publicado é exatamente o que foi avaliado.
+- **Supabase:** o navegador usa só a chave **pública**.
+  - Login: Supabase Auth.
+  - Catálogo: leitura pública.
+  - Pedidos: só pela função `create_order`, que valida a entrada e usa os **preços do banco**.
+  - RLS: cada usuário lê apenas os próprios pedidos. Ninguém grava direto nas tabelas.
 
-Diagrama e decisões técnicas em [docs/architecture.md](docs/architecture.md). Endpoints em [docs/api.md](docs/api.md).
+Diagrama e decisões técnicas em [docs/architecture.md](docs/architecture.md).
 
 ## Implantação
 
 | Serviço | Papel | Configuração |
 |---|---|---|
-| **Supabase** | PostgreSQL | rodar `database/schema.sql` no SQL Editor e usar a string do *Session pooler* |
-| **Render** | Backend | Blueprint `render.yaml`, health check em `/health` |
-| **Netlify** | Frontend | `netlify.toml` na raiz: base `frontend`, `npm run build`, publish `dist`, fallback de SPA |
+| **Supabase** | PostgreSQL + Auth | rodar no SQL Editor `schema.sql` e as migrações 002, 003 e 004 |
+| **Netlify** | Site | `netlify.toml` na raiz: base `frontend`, `npm run build`, publish `dist`, fallback de SPA |
 
-Variáveis necessárias:
-
-- **Render:** `DATABASE_URL`, `JWT_SECRET`, `CORS_ORIGINS` (URL do Netlify), `ENVIRONMENT=production`, `SEED_ON_STARTUP`, `DATABASE_SSLMODE`, `PYTHON_VERSION`. Opcional: `CORS_ORIGIN_REGEX` para Deploy Previews.
-- **Netlify:** `VITE_API_URL`. Ela é pública, então nunca deve conter segredos.
-
-O Apriori roda no backend (Render). O Netlify hospeda só o frontend estático.
+Variável no Netlify: `VITE_SUPABASE_PUBLISHABLE_KEY`, a chave **pública** do Supabase (`sb_publishable_...`).
+`VITE_SUPABASE_URL` já está no `netlify.toml`. Nunca use a secret/service_role key no site.
 
 O passo a passo completo está em [docs/deployment.md](docs/deployment.md).
 

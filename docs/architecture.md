@@ -4,75 +4,64 @@
 
 ```mermaid
 flowchart LR
-    U[Usuário / navegador] -->|HTTPS| V[Frontend React + Vite<br/>Netlify]
-    V -->|fetch JSON<br/>VITE_API_URL| R[Backend FastAPI<br/>Render]
-    R -->|SQLAlchemy + psycopg<br/>DATABASE_URL| S[(PostgreSQL<br/>Supabase)]
-    R -->|joblib.load na inicialização| A[ml/artifacts<br/>rules.joblib · itemsets.joblib · metrics.json]
-    subgraph Offline [Pipeline offline - ml/]
+    subgraph Offline [Mineração em Python - ml/]
       G[generate_catalog / generate_transactions] --> P[preprocess<br/>split 80/20]
       P --> T[train_apriori<br/>mlxtend]
       T --> E[evaluate_apriori]
     end
-    T --> A
+    T --> A[ml/artifacts<br/>rules · itemsets · metrics]
     E --> A
+    A -->|scripts/export_static.py<br/>sem alteração| D[frontend/src/data<br/>JSON]
+    A -->|004_seed_products.sql| S
+    U[Usuário / navegador] -->|HTTPS| V[Site React + Vite<br/>Netlify]
+    D --> V
+    V -->|supabase-js<br/>chave pública| S[(Supabase<br/>PostgreSQL + Auth)]
 ```
 
 ## Camadas
 
 | Camada | Pasta | Responsabilidade |
 |---|---|---|
-| Frontend | `frontend/` | SPA React + TypeScript. Catálogo, carrinho, checkout, Laboratório IA, autenticação. Three.js na Home. |
-| API | `backend/app/api/` | Rotas FastAPI: produtos, recomendações, laboratório, pedidos, usuários. |
-| Domínio | `backend/app/services/` | Carga do catálogo, carregamento único (cache) do motor Apriori. |
-| Persistência | `backend/app/database/` | Modelos SQLAlchemy e sessão. PostgreSQL em produção, SQLite local/testes. |
-| Segurança | `backend/app/core/security.py` | Hash bcrypt, JWT (HS256), dependências de usuário opcional/obrigatório. |
-| Mineração | `ml/` | Geração do dataset, pré-processamento, treino e avaliação do Apriori, motor de recomendação. |
-| Banco | `database/` | `schema.sql`, migrações e `seed.py`. |
+| Mineração | `ml/` | Dataset simulado, pré-processamento, treino e avaliação do Apriori (mlxtend), motor de referência em Python. |
+| Exportação | `scripts/export_static.py` | Publica regras, itemsets, métricas e catálogo para o site, e gera a carga SQL do catálogo. |
+| Site | `frontend/` | SPA React + TypeScript: catálogo, Carrinho Inteligente, checkout, Laboratório IA, login. Three.js na Home. |
+| IPAJ CORE (navegador) | `frontend/src/core/apriori.ts` | Consulta às regras Apriori. Tradução fiel de `ml/recommendation_engine.py`. |
+| Dados | `frontend/src/services/api.ts` | Dados estáticos + Supabase (Auth, `create_order`, leitura dos pedidos). |
+| Banco | `database/` | `schema.sql` e migrações 002–004 (RLS, privilégios, função de pedido, catálogo). |
+| API de referência | `backend/` | FastAPI equivalente, só para uso local e testes. Não é publicada. |
 
 ## Fluxo de uma recomendação
 
 1. O usuário altera o carrinho (estado no `CartContext`, persistido no `localStorage`).
-2. `useCartRecommendations` aguarda 250 ms (debounce) e chama `POST /api/recommendations` com os IDs.
-3. O backend valida os IDs no banco (422 se algum não existir).
-4. `RecommendationEngine.recommend()` percorre as regras cujo antecedente está **contido** no carrinho e cujo
-   consequente **não** está no carrinho. Para cada candidato fica a regra de maior confiança (desempate por lift).
-5. O resultado é ordenado por confiança → lift → ID e limitado a `limit`.
-6. A API enriquece cada item com os dados do produto e um texto explicativo (“72% de quem levou…”).
-7. Sem regra aplicável, a lista volta vazia com `message`; **não há fallback** por popularidade, para que toda
+2. `useCartRecommendations` aguarda 250 ms (debounce) e chama `api.recommend`.
+3. `recommend()` percorre as 394 regras cujo antecedente está **contido** no carrinho e cujo consequente
+   **não** está. Para cada candidato fica a regra de maior confiança (desempate por lift).
+4. O resultado é ordenado por confiança → lift → ID e limitado a `limit`.
+5. Cada item recebe os dados do produto e um texto explicativo (“72% de quem levou…”).
+6. Sem regra aplicável, a lista volta vazia com uma mensagem. **Não há fallback** por popularidade, para que toda
    recomendação exibida seja de fato uma regra Apriori.
 
-## Papel dos artefatos
+**Equivalência com o Python:** `export_static.py` grava as saídas do motor Python para todos os 50 produtos e
+para os 105 pares frequentes. O teste `frontend/src/test/apriori.test.ts` exige resultado idêntico em todos esses
+casos, e `backend/tests/test_export_static.py` exige que `rules.json` seja exatamente o `rules.joblib`.
 
-O treinamento roda **offline** (local ou CI) e grava listas de dicionários Python puros via `joblib`.
-O backend **não** depende de pandas nem de mlxtend em produção: só precisa de `joblib` e de
-`ml/recommendation_engine.py`. Isso deixa o deploy no Render leve e evita divergência de versões.
+## Papel do Supabase
 
-Os artefatos são versionados no Git (arquivos pequenos) para que o deploy seja reproduzível e idêntico ao
-avaliado. Retreinar = rodar o pipeline, commitar os novos artefatos e as métricas atualizadas.
-
-## Papel do PostgreSQL
-
-- `products`: catálogo (carregado de `data/catalog/products.csv`). Os preços do pedido saem sempre daqui,
-  nunca do cliente.
-- `users`: contas (senha com hash bcrypt).
-- `orders` / `order_items`: pedidos demonstrativos. `user_id` nulo = visitante. `from_recommendation` registra
-  itens adicionados a partir do IPAJ CORE.
-
-O frontend nunca acessa o banco diretamente. As tabelas têm RLS ativado sem políticas, o que bloqueia a API
-REST pública do Supabase (roles `anon`/`authenticated`). Só o backend conecta, com a string privada.
-
-Na inicialização, `ensure_schema()` cria as tabelas que faltarem e ativa RLS **na mesma transação**, então a
-proteção não depende da ordem dos passos de deploy. O `/health` reporta `database: rls_disabled` se alguma
-tabela do app estiver sem RLS. A conexão sempre usa SSL e não usa prepared statements, o que a torna compatível
-com os poolers do Supabase. Em produção, o backend recusa iniciar sem PostgreSQL, sem SSL ou com JWT fraco.
+- `products`: catálogo com leitura pública. Os preços dos pedidos saem **sempre** daqui.
+- `orders` / `order_items`: pedidos demonstrativos. `auth_user_id` liga o pedido à conta do Supabase Auth. Quando é nulo, o pedido é de visitante.
+  `from_recommendation` registra os itens que vieram do IPAJ CORE.
+- `public.create_order(items, guest_label)`: a **única** forma de gravar. É `SECURITY DEFINER` com `search_path` vazio,
+  valida quantidades e produtos, ignora qualquer preço enviado pelo cliente e usa `auth.uid()` como dono.
+- RLS: o usuário logado lê só os próprios pedidos. Nenhuma role pública tem INSERT, UPDATE ou DELETE em tabela alguma.
+- `users`: tabela da API de referência. Fica fechada para o site, porque o login é o Supabase Auth.
 
 ## Decisões técnicas
 
 | Decisão | Motivo |
 |---|---|
-| Regras com consequente único | Recomendação item a item, explicação simples. |
+| Treino em Python, consulta no navegador | Mantém o Apriori (mlxtend) como núcleo do trabalho sem precisar de servidor Python publicado. |
+| Regras exportadas sem alteração + teste de equivalência | Garante que o site usa as regras avaliadas, não uma aproximação. |
+| Pedido via função SQL | O navegador não define preço nem dono do pedido. |
+| Regras com consequente único | Recomendação item a item, com explicação simples. |
 | `max_len = 3` | Cobre combinações “console + acessório → jogo” sem explosão combinatória. |
-| Artefatos sem DataFrame | Backend leve; carregamento rápido e sem pandas em produção. |
-| Render a partir da raiz do repo | O backend importa `ml/` e lê `ml/artifacts/` e `data/catalog/`. |
-| SQLite nos testes | CI sem credenciais nem rede; mesmo ORM do PostgreSQL. |
-| JWT em `localStorage` | Simplicidade num projeto acadêmico. Em produção real, preferir cookie `HttpOnly`. |
+| Chave pública no navegador | É pública por desenho. A proteção está no RLS, nos privilégios e na função. |

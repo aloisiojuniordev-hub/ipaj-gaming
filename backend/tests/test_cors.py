@@ -1,4 +1,4 @@
-"""CORS: o frontend no Netlify precisa chamar a API no Render; outras origens não."""
+"""CORS da API de referência: origens permitidas recebem os headers; as demais, não."""
 import pytest
 
 from app.core.config import Settings, validate_settings

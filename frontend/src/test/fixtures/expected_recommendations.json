@@ -1,0 +1,5597 @@
+[
+ {
+  "cart": [
+   "P001"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.716714,
+    "lift": 7.221299,
+    "because": [
+     "P001"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.617564,
+    "lift": 7.440527,
+    "because": [
+     "P001"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.555241,
+    "lift": 8.22579,
+    "because": [
+     "P001"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.439093,
+    "lift": 8.324047,
+    "because": [
+     "P001"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.345609,
+    "lift": 3.456091,
+    "because": [
+     "P001"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P002"
+  ],
+  "recs": [
+   {
+    "product_id": "P007",
+    "confidence": 0.702602,
+    "lift": 9.462656,
+    "because": [
+     "P002"
+    ]
+   },
+   {
+    "product_id": "P015",
+    "confidence": 0.684015,
+    "lift": 10.482987,
+    "because": [
+     "P002"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.364312,
+    "lift": 3.643123,
+    "because": [
+     "P002"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P003"
+  ],
+  "recs": [
+   {
+    "product_id": "P036",
+    "confidence": 0.651079,
+    "lift": 10.761639,
+    "because": [
+     "P003"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.629496,
+    "lift": 7.40584,
+    "because": [
+     "P003"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.618705,
+    "lift": 10.854474,
+    "because": [
+     "P003"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.453237,
+    "lift": 7.585563,
+    "because": [
+     "P003"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.327338,
+    "lift": 9.220792,
+    "because": [
+     "P003"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P004"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.710843,
+    "lift": 7.16215,
+    "because": [
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.656627,
+    "lift": 7.440527,
+    "because": [
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.463855,
+    "lift": 6.871932,
+    "because": [
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.349398,
+    "lift": 6.623651,
+    "because": [
+     "P004"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P005"
+  ],
+  "recs": [
+   {
+    "product_id": "P004",
+    "confidence": 0.328125,
+    "lift": 3.953313,
+    "because": [
+     "P005"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.328125,
+    "lift": 3.306045,
+    "because": [
+     "P005"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P006"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.373418,
+    "lift": 3.762395,
+    "because": [
+     "P006"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.360759,
+    "lift": 4.087926,
+    "because": [
+     "P006"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.316456,
+    "lift": 3.812719,
+    "because": [
+     "P006"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P007"
+  ],
+  "recs": [
+   {
+    "product_id": "P002",
+    "confidence": 0.636364,
+    "lift": 9.462656,
+    "because": [
+     "P007"
+    ]
+   },
+   {
+    "product_id": "P015",
+    "confidence": 0.552189,
+    "lift": 8.46266,
+    "because": [
+     "P007"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.309764,
+    "lift": 3.097643,
+    "because": [
+     "P007"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P008"
+  ],
+  "recs": [
+   {
+    "product_id": "P007",
+    "confidence": 0.350318,
+    "lift": 4.718094,
+    "because": [
+     "P008"
+    ]
+   },
+   {
+    "product_id": "P015",
+    "confidence": 0.33758,
+    "lift": 5.173634,
+    "because": [
+     "P008"
+    ]
+   },
+   {
+    "product_id": "P002",
+    "confidence": 0.33121,
+    "lift": 4.925059,
+    "because": [
+     "P008"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P009"
+  ],
+  "recs": [
+   {
+    "product_id": "P016",
+    "confidence": 0.44186,
+    "lift": 7.395154,
+    "because": [
+     "P009"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.372093,
+    "lift": 4.377565,
+    "because": [
+     "P009"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P010"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.514706,
+    "lift": 7.40584,
+    "because": [
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.432353,
+    "lift": 7.14633,
+    "because": [
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.408824,
+    "lift": 7.172343,
+    "because": [
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.373529,
+    "lift": 6.251538,
+    "because": [
+     "P010"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P011"
+  ],
+  "recs": [
+   {
+    "product_id": "P010",
+    "confidence": 0.375758,
+    "lift": 4.420677,
+    "because": [
+     "P011"
+    ]
+   },
+   {
+    "product_id": "P003",
+    "confidence": 0.309091,
+    "lift": 4.447351,
+    "because": [
+     "P011"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P012"
+  ],
+  "recs": []
+ },
+ {
+  "cart": [
+   "P013"
+  ],
+  "recs": [
+   {
+    "product_id": "P046",
+    "confidence": 0.35,
+    "lift": 5.555556,
+    "because": [
+     "P013"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P014"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.63728,
+    "lift": 7.221299,
+    "because": [
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.594458,
+    "lift": 7.16215,
+    "because": [
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.458438,
+    "lift": 6.791678,
+    "because": [
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.347607,
+    "lift": 6.589707,
+    "because": [
+     "P014"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P015"
+  ],
+  "recs": [
+   {
+    "product_id": "P002",
+    "confidence": 0.704981,
+    "lift": 10.482987,
+    "because": [
+     "P015"
+    ]
+   },
+   {
+    "product_id": "P007",
+    "confidence": 0.628352,
+    "lift": 8.46266,
+    "because": [
+     "P015"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.321839,
+    "lift": 3.218391,
+    "because": [
+     "P015"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P016"
+  ],
+  "recs": [
+   {
+    "product_id": "P010",
+    "confidence": 0.531381,
+    "lift": 6.251538,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P003",
+    "confidence": 0.527197,
+    "lift": 7.585563,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.468619,
+    "lift": 7.745773,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.439331,
+    "lift": 7.707553,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P009",
+    "confidence": 0.317992,
+    "lift": 7.395154,
+    "because": [
+     "P016"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P017"
+  ],
+  "recs": []
+ },
+ {
+  "cart": [
+   "P018"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.725926,
+    "lift": 8.22579,
+    "because": [
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.674074,
+    "lift": 6.791678,
+    "because": [
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.57037,
+    "lift": 6.871932,
+    "because": [
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.362963,
+    "lift": 6.880814,
+    "because": [
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.303704,
+    "lift": 3.037037,
+    "because": [
+     "P018"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P019"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.74581,
+    "lift": 5.404421,
+    "because": [
+     "P019"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.675978,
+    "lift": 5.429539,
+    "because": [
+     "P019"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.402235,
+    "lift": 4.66359,
+    "because": [
+     "P019"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P020"
+  ],
+  "recs": []
+ },
+ {
+  "cart": [
+   "P021"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.77971,
+    "lift": 5.650074,
+    "because": [
+     "P021"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.753623,
+    "lift": 6.053198,
+    "because": [
+     "P021"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.417391,
+    "lift": 4.66359,
+    "because": [
+     "P021"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P022"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.680365,
+    "lift": 4.930183,
+    "because": [
+     "P022"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.56621,
+    "lift": 4.547872,
+    "because": [
+     "P022"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.388128,
+    "lift": 4.336624,
+    "because": [
+     "P022"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P023"
+  ],
+  "recs": [
+   {
+    "product_id": "P025",
+    "confidence": 0.393939,
+    "lift": 6.941663,
+    "because": [
+     "P023"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.318182,
+    "lift": 2.555677,
+    "because": [
+     "P023"
+    ]
+   },
+   {
+    "product_id": "P024",
+    "confidence": 0.310606,
+    "lift": 2.250769,
+    "because": [
+     "P023"
+    ]
+   },
+   {
+    "product_id": "P028",
+    "confidence": 0.30303,
+    "lift": 6.346184,
+    "because": [
+     "P023"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P024"
+  ],
+  "recs": [
+   {
+    "product_id": "P027",
+    "confidence": 0.780797,
+    "lift": 6.271463,
+    "because": [
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.487319,
+    "lift": 5.650074,
+    "because": [
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.483696,
+    "lift": 5.404421,
+    "because": [
+     "P024"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P025"
+  ],
+  "recs": [
+   {
+    "product_id": "P028",
+    "confidence": 0.555066,
+    "lift": 11.624421,
+    "because": [
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P024",
+    "confidence": 0.436123,
+    "lift": 3.160314,
+    "because": [
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.39207,
+    "lift": 3.149161,
+    "because": [
+     "P025"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P026"
+  ],
+  "recs": [
+   {
+    "product_id": "P027",
+    "confidence": 0.37037,
+    "lift": 2.974862,
+    "because": [
+     "P026"
+    ]
+   },
+   {
+    "product_id": "P024",
+    "confidence": 0.364198,
+    "lift": 2.639113,
+    "because": [
+     "P026"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P027"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.865462,
+    "lift": 6.271463,
+    "because": [
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.522088,
+    "lift": 6.053198,
+    "because": [
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.485944,
+    "lift": 5.429539,
+    "because": [
+     "P027"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P028"
+  ],
+  "recs": [
+   {
+    "product_id": "P025",
+    "confidence": 0.659686,
+    "lift": 11.624421,
+    "because": [
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P024",
+    "confidence": 0.429319,
+    "lift": 3.11101,
+    "because": [
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.371728,
+    "lift": 2.985765,
+    "because": [
+     "P028"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P029"
+  ],
+  "recs": [
+   {
+    "product_id": "P038",
+    "confidence": 0.606796,
+    "lift": 6.067961,
+    "because": [
+     "P029"
+    ]
+   },
+   {
+    "product_id": "P031",
+    "confidence": 0.42233,
+    "lift": 9.385113,
+    "because": [
+     "P029"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P030"
+  ],
+  "recs": [
+   {
+    "product_id": "P031",
+    "confidence": 0.515723,
+    "lift": 11.460517,
+    "because": [
+     "P030"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P031"
+  ],
+  "recs": [
+   {
+    "product_id": "P029",
+    "confidence": 0.483333,
+    "lift": 9.385113,
+    "because": [
+     "P031"
+    ]
+   },
+   {
+    "product_id": "P030",
+    "confidence": 0.455556,
+    "lift": 11.460517,
+    "because": [
+     "P031"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.361111,
+    "lift": 3.611111,
+    "because": [
+     "P031"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P032"
+  ],
+  "recs": [
+   {
+    "product_id": "P034",
+    "confidence": 0.358333,
+    "lift": 11.653117,
+    "because": [
+     "P032"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P033"
+  ],
+  "recs": []
+ },
+ {
+  "cart": [
+   "P034"
+  ],
+  "recs": [
+   {
+    "product_id": "P032",
+    "confidence": 0.349593,
+    "lift": 11.653117,
+    "because": [
+     "P034"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P035"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.734597,
+    "lift": 8.324047,
+    "because": [
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.654028,
+    "lift": 6.589707,
+    "because": [
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.549763,
+    "lift": 6.623651,
+    "because": [
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.464455,
+    "lift": 6.880814,
+    "because": [
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.345972,
+    "lift": 3.459716,
+    "because": [
+     "P035"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P036"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.747934,
+    "lift": 10.761639,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.607438,
+    "lift": 7.14633,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.595041,
+    "lift": 10.439321,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.46281,
+    "lift": 7.745773,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.326446,
+    "lift": 9.19567,
+    "because": [
+     "P036"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P037"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.754386,
+    "lift": 10.854474,
+    "because": [
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.631579,
+    "lift": 10.439321,
+    "because": [
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.609649,
+    "lift": 7.172343,
+    "because": [
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.460526,
+    "lift": 7.707553,
+    "because": [
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.346491,
+    "lift": 9.760316,
+    "because": [
+     "P037"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P029",
+    "confidence": 0.3125,
+    "lift": 6.067961,
+    "because": [
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.305,
+    "lift": 3.456091,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P039"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.693252,
+    "lift": 7.855541,
+    "because": [
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.607362,
+    "lift": 6.119516,
+    "because": [
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.546012,
+    "lift": 6.578461,
+    "because": [
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.484663,
+    "lift": 7.180186,
+    "because": [
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.349693,
+    "lift": 6.629256,
+    "because": [
+     "P039"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P040"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.640845,
+    "lift": 9.220792,
+    "because": [
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.556338,
+    "lift": 9.760316,
+    "because": [
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.556338,
+    "lift": 9.19567,
+    "because": [
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.528169,
+    "lift": 6.213753,
+    "because": [
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.394366,
+    "lift": 6.600271,
+    "because": [
+     "P040"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P041"
+  ],
+  "recs": [
+   {
+    "product_id": "P042",
+    "confidence": 0.597156,
+    "lift": 8.879649,
+    "because": [
+     "P041"
+    ]
+   },
+   {
+    "product_id": "P043",
+    "confidence": 0.563981,
+    "lift": 10.898184,
+    "because": [
+     "P041"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P042"
+  ],
+  "recs": [
+   {
+    "product_id": "P043",
+    "confidence": 0.546468,
+    "lift": 10.559776,
+    "because": [
+     "P042"
+    ]
+   },
+   {
+    "product_id": "P041",
+    "confidence": 0.468401,
+    "lift": 8.879649,
+    "because": [
+     "P042"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P043"
+  ],
+  "recs": [
+   {
+    "product_id": "P042",
+    "confidence": 0.710145,
+    "lift": 10.559776,
+    "because": [
+     "P043"
+    ]
+   },
+   {
+    "product_id": "P041",
+    "confidence": 0.574879,
+    "lift": 10.898184,
+    "because": [
+     "P043"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P044"
+  ],
+  "recs": []
+ },
+ {
+  "cart": [
+   "P045"
+  ],
+  "recs": []
+ },
+ {
+  "cart": [
+   "P046"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.555556,
+    "lift": 7.122507,
+    "because": [
+     "P046"
+    ]
+   },
+   {
+    "product_id": "P047",
+    "confidence": 0.460317,
+    "lift": 7.835191,
+    "because": [
+     "P046"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.333333,
+    "lift": 5.509642,
+    "because": [
+     "P046"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P047"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.557447,
+    "lift": 7.146754,
+    "because": [
+     "P047"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.548936,
+    "lift": 9.073325,
+    "because": [
+     "P047"
+    ]
+   },
+   {
+    "product_id": "P046",
+    "confidence": 0.493617,
+    "lift": 7.835191,
+    "because": [
+     "P047"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P048"
+  ],
+  "recs": [
+   {
+    "product_id": "P047",
+    "confidence": 0.533058,
+    "lift": 9.073325,
+    "because": [
+     "P048"
+    ]
+   },
+   {
+    "product_id": "P050",
+    "confidence": 0.495868,
+    "lift": 6.357279,
+    "because": [
+     "P048"
+    ]
+   },
+   {
+    "product_id": "P046",
+    "confidence": 0.347107,
+    "lift": 5.509642,
+    "because": [
+     "P048"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P049"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.592105,
+    "lift": 7.591093,
+    "because": [
+     "P049"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.342105,
+    "lift": 5.654632,
+    "because": [
+     "P049"
+    ]
+   },
+   {
+    "product_id": "P047",
+    "confidence": 0.315789,
+    "lift": 5.37514,
+    "because": [
+     "P049"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P050"
+  ],
+  "recs": [
+   {
+    "product_id": "P046",
+    "confidence": 0.448718,
+    "lift": 7.122507,
+    "because": [
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P047",
+    "confidence": 0.419872,
+    "lift": 7.146754,
+    "because": [
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.384615,
+    "lift": 6.357279,
+    "because": [
+     "P050"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P001",
+   "P004"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.899083,
+    "lift": 9.058766,
+    "because": [
+     "P001",
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.669725,
+    "lift": 9.921848,
+    "because": [
+     "P001",
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.522936,
+    "lift": 9.913474,
+    "because": [
+     "P001",
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.40367,
+    "lift": 9.906006,
+    "because": [
+     "P001",
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.40367,
+    "lift": 4.036697,
+    "because": [
+     "P001",
+     "P004"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P001",
+   "P006"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.859649,
+    "lift": 8.661452,
+    "because": [
+     "P001",
+     "P006"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.789474,
+    "lift": 9.511731,
+    "because": [
+     "P001",
+     "P006"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.719298,
+    "lift": 10.65627,
+    "because": [
+     "P001",
+     "P006"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.439093,
+    "lift": 8.324047,
+    "because": [
+     "P001"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.345609,
+    "lift": 3.456091,
+    "because": [
+     "P001"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P001",
+   "P014"
+  ],
+  "recs": [
+   {
+    "product_id": "P004",
+    "confidence": 0.774704,
+    "lift": 9.333778,
+    "because": [
+     "P001",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.667984,
+    "lift": 9.896062,
+    "because": [
+     "P001",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.541502,
+    "lift": 10.26544,
+    "because": [
+     "P001",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.403162,
+    "lift": 4.031621,
+    "because": [
+     "P001",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.383399,
+    "lift": 9.40857,
+    "because": [
+     "P001",
+     "P014"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P001",
+   "P018"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.862245,
+    "lift": 8.687606,
+    "because": [
+     "P001",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.744898,
+    "lift": 8.974674,
+    "because": [
+     "P001",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.5,
+    "lift": 9.478673,
+    "because": [
+     "P001",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.413265,
+    "lift": 4.132653,
+    "because": [
+     "P001",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.392857,
+    "lift": 9.640666,
+    "because": [
+     "P001",
+     "P018"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P001",
+   "P035"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.883871,
+    "lift": 8.905501,
+    "because": [
+     "P001",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.735484,
+    "lift": 8.861251,
+    "because": [
+     "P001",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.632258,
+    "lift": 9.366786,
+    "because": [
+     "P001",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.458065,
+    "lift": 4.580645,
+    "because": [
+     "P001",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.367742,
+    "lift": 9.024342,
+    "because": [
+     "P001",
+     "P035"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P001",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.836066,
+    "lift": 8.423834,
+    "because": [
+     "P001",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.721311,
+    "lift": 8.6905,
+    "because": [
+     "P001",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.663934,
+    "lift": 9.836066,
+    "because": [
+     "P001",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.581967,
+    "lift": 11.032554,
+    "because": [
+     "P001",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.320113,
+    "lift": 7.855541,
+    "because": [
+     "P001"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P001",
+   "P039"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.858407,
+    "lift": 8.648938,
+    "because": [
+     "P001",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.778761,
+    "lift": 9.382663,
+    "because": [
+     "P001",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.681416,
+    "lift": 10.095051,
+    "because": [
+     "P001",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.504425,
+    "lift": 9.562555,
+    "because": [
+     "P001",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.345609,
+    "lift": 3.456091,
+    "because": [
+     "P001"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P002",
+   "P007"
+  ],
+  "recs": [
+   {
+    "product_id": "P015",
+    "confidence": 0.830688,
+    "lift": 12.730848,
+    "because": [
+     "P002",
+     "P007"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.460317,
+    "lift": 4.603175,
+    "because": [
+     "P002",
+     "P007"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P002",
+   "P008"
+  ],
+  "recs": [
+   {
+    "product_id": "P015",
+    "confidence": 0.884615,
+    "lift": 13.557324,
+    "because": [
+     "P002",
+     "P008"
+    ]
+   },
+   {
+    "product_id": "P007",
+    "confidence": 0.826923,
+    "lift": 11.137011,
+    "because": [
+     "P002",
+     "P008"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.364312,
+    "lift": 3.643123,
+    "because": [
+     "P002"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P002",
+   "P015"
+  ],
+  "recs": [
+   {
+    "product_id": "P007",
+    "confidence": 0.853261,
+    "lift": 11.491729,
+    "because": [
+     "P002",
+     "P015"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.423913,
+    "lift": 4.23913,
+    "because": [
+     "P002",
+     "P015"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P002",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P007",
+    "confidence": 0.887755,
+    "lift": 11.956298,
+    "because": [
+     "P002",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P015",
+    "confidence": 0.795918,
+    "lift": 12.197983,
+    "because": [
+     "P002",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P029",
+    "confidence": 0.3125,
+    "lift": 6.067961,
+    "because": [
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.305,
+    "lift": 3.456091,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P003",
+   "P009"
+  ],
+  "recs": [
+   {
+    "product_id": "P036",
+    "confidence": 0.854167,
+    "lift": 14.118457,
+    "because": [
+     "P003",
+     "P009"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.629496,
+    "lift": 7.40584,
+    "because": [
+     "P003"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.618705,
+    "lift": 10.854474,
+    "because": [
+     "P003"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.453237,
+    "lift": 7.585563,
+    "because": [
+     "P003"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.327338,
+    "lift": 9.220792,
+    "because": [
+     "P003"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P003",
+   "P010"
+  ],
+  "recs": [
+   {
+    "product_id": "P036",
+    "confidence": 0.828571,
+    "lift": 13.695396,
+    "because": [
+     "P003",
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.788571,
+    "lift": 13.834586,
+    "because": [
+     "P003",
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.56,
+    "lift": 9.372385,
+    "because": [
+     "P003",
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.428571,
+    "lift": 12.072435,
+    "because": [
+     "P003",
+     "P010"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P003",
+   "P011"
+  ],
+  "recs": [
+   {
+    "product_id": "P037",
+    "confidence": 0.882353,
+    "lift": 15.479876,
+    "because": [
+     "P003",
+     "P011"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.823529,
+    "lift": 13.612056,
+    "because": [
+     "P003",
+     "P011"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.803922,
+    "lift": 9.457901,
+    "because": [
+     "P003",
+     "P011"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.453237,
+    "lift": 7.585563,
+    "because": [
+     "P003"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.327338,
+    "lift": 9.220792,
+    "because": [
+     "P003"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P003",
+   "P016"
+  ],
+  "recs": [
+   {
+    "product_id": "P036",
+    "confidence": 0.873016,
+    "lift": 14.430014,
+    "because": [
+     "P003",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.833333,
+    "lift": 14.619883,
+    "because": [
+     "P003",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.777778,
+    "lift": 9.150327,
+    "because": [
+     "P003",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.428571,
+    "lift": 12.072435,
+    "because": [
+     "P003",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P009",
+    "confidence": 0.317992,
+    "lift": 7.395154,
+    "because": [
+     "P016"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P003",
+   "P036"
+  ],
+  "recs": [
+   {
+    "product_id": "P010",
+    "confidence": 0.801105,
+    "lift": 9.424764,
+    "because": [
+     "P003",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.790055,
+    "lift": 13.860618,
+    "because": [
+     "P003",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.607735,
+    "lift": 10.171294,
+    "because": [
+     "P003",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.425414,
+    "lift": 11.983503,
+    "because": [
+     "P003",
+     "P036"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P003",
+   "P037"
+  ],
+  "recs": [
+   {
+    "product_id": "P036",
+    "confidence": 0.831395,
+    "lift": 13.742072,
+    "because": [
+     "P003",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.802326,
+    "lift": 9.439124,
+    "because": [
+     "P003",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.610465,
+    "lift": 10.216989,
+    "because": [
+     "P003",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.459302,
+    "lift": 12.938094,
+    "because": [
+     "P003",
+     "P037"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P003",
+   "P040"
+  ],
+  "recs": [
+   {
+    "product_id": "P037",
+    "confidence": 0.868132,
+    "lift": 15.230384,
+    "because": [
+     "P003",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.846154,
+    "lift": 13.986014,
+    "because": [
+     "P003",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.824176,
+    "lift": 9.696186,
+    "because": [
+     "P003",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.593407,
+    "lift": 9.931491,
+    "because": [
+     "P003",
+     "P040"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P004",
+   "P005"
+  ],
+  "recs": [
+   {
+    "product_id": "P014",
+    "confidence": 0.710843,
+    "lift": 7.16215,
+    "because": [
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.656627,
+    "lift": 7.440527,
+    "because": [
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.463855,
+    "lift": 6.871932,
+    "because": [
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.349398,
+    "lift": 6.623651,
+    "because": [
+     "P004"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P004",
+   "P006"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.9,
+    "lift": 10.1983,
+    "because": [
+     "P004",
+     "P006"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.84,
+    "lift": 8.463476,
+    "because": [
+     "P004",
+     "P006"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.463855,
+    "lift": 6.871932,
+    "because": [
+     "P004"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.349398,
+    "lift": 6.623651,
+    "because": [
+     "P004"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P004",
+   "P014"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.830508,
+    "lift": 9.410861,
+    "because": [
+     "P004",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.580508,
+    "lift": 8.600126,
+    "because": [
+     "P004",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.440678,
+    "lift": 8.354085,
+    "because": [
+     "P004",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.347458,
+    "lift": 3.474576,
+    "because": [
+     "P004",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.334746,
+    "lift": 8.21462,
+    "because": [
+     "P004",
+     "P014"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P004",
+   "P018"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.948052,
+    "lift": 10.742798,
+    "because": [
+     "P004",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.88961,
+    "lift": 8.963329,
+    "because": [
+     "P004",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.448052,
+    "lift": 8.493876,
+    "because": [
+     "P004",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.38961,
+    "lift": 9.560991,
+    "because": [
+     "P004",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.37013,
+    "lift": 3.701299,
+    "because": [
+     "P004",
+     "P018"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P004",
+   "P035"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.982759,
+    "lift": 11.136075,
+    "because": [
+     "P004",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.896552,
+    "lift": 9.033267,
+    "because": [
+     "P004",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.594828,
+    "lift": 8.812261,
+    "because": [
+     "P004",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.439655,
+    "lift": 4.396552,
+    "because": [
+     "P004",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.362069,
+    "lift": 8.885128,
+    "because": [
+     "P004",
+     "P035"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P004",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.93617,
+    "lift": 10.608161,
+    "because": [
+     "P004",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.87234,
+    "lift": 8.789324,
+    "because": [
+     "P004",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.606383,
+    "lift": 8.983452,
+    "because": [
+     "P004",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.542553,
+    "lift": 10.285369,
+    "because": [
+     "P004",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P029",
+    "confidence": 0.3125,
+    "lift": 6.067961,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P004",
+   "P039"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.988764,
+    "lift": 11.204125,
+    "because": [
+     "P004",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.88764,
+    "lift": 8.943481,
+    "because": [
+     "P004",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.674157,
+    "lift": 9.987516,
+    "because": [
+     "P004",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.47191,
+    "lift": 8.946163,
+    "because": [
+     "P004",
+     "P039"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P005",
+   "P014"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.63728,
+    "lift": 7.221299,
+    "because": [
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.594458,
+    "lift": 7.16215,
+    "because": [
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.458438,
+    "lift": 6.791678,
+    "because": [
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.347607,
+    "lift": 6.589707,
+    "because": [
+     "P014"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P006",
+   "P014"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.830508,
+    "lift": 9.410861,
+    "because": [
+     "P006",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.711864,
+    "lift": 8.57668,
+    "because": [
+     "P006",
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.458438,
+    "lift": 6.791678,
+    "because": [
+     "P014"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.347607,
+    "lift": 6.589707,
+    "because": [
+     "P014"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P006",
+   "P018"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.931818,
+    "lift": 10.558846,
+    "because": [
+     "P006",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.674074,
+    "lift": 6.791678,
+    "because": [
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.57037,
+    "lift": 6.871932,
+    "because": [
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.362963,
+    "lift": 6.880814,
+    "because": [
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.303704,
+    "lift": 3.037037,
+    "because": [
+     "P018"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P007",
+   "P008"
+  ],
+  "recs": [
+   {
+    "product_id": "P002",
+    "confidence": 0.781818,
+    "lift": 11.625549,
+    "because": [
+     "P007",
+     "P008"
+    ]
+   },
+   {
+    "product_id": "P015",
+    "confidence": 0.745455,
+    "lift": 11.424591,
+    "because": [
+     "P007",
+     "P008"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.309764,
+    "lift": 3.097643,
+    "because": [
+     "P007"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P007",
+   "P015"
+  ],
+  "recs": [
+   {
+    "product_id": "P002",
+    "confidence": 0.957317,
+    "lift": 14.235198,
+    "because": [
+     "P007",
+     "P015"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.432927,
+    "lift": 4.329268,
+    "because": [
+     "P007",
+     "P015"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P007",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P002",
+    "confidence": 0.945652,
+    "lift": 14.061742,
+    "because": [
+     "P007",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P015",
+    "confidence": 0.771739,
+    "lift": 11.82742,
+    "because": [
+     "P007",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P029",
+    "confidence": 0.3125,
+    "lift": 6.067961,
+    "because": [
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.305,
+    "lift": 3.456091,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P008",
+   "P015"
+  ],
+  "recs": [
+   {
+    "product_id": "P002",
+    "confidence": 0.867925,
+    "lift": 12.905941,
+    "because": [
+     "P008",
+     "P015"
+    ]
+   },
+   {
+    "product_id": "P007",
+    "confidence": 0.773585,
+    "lift": 10.418652,
+    "because": [
+     "P008",
+     "P015"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.321839,
+    "lift": 3.218391,
+    "because": [
+     "P015"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P009",
+   "P010"
+  ],
+  "recs": [
+   {
+    "product_id": "P016",
+    "confidence": 0.703125,
+    "lift": 11.767782,
+    "because": [
+     "P009",
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P003",
+    "confidence": 0.514706,
+    "lift": 7.40584,
+    "because": [
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.432353,
+    "lift": 7.14633,
+    "because": [
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.408824,
+    "lift": 7.172343,
+    "because": [
+     "P010"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P009",
+   "P016"
+  ],
+  "recs": [
+   {
+    "product_id": "P010",
+    "confidence": 0.592105,
+    "lift": 6.965944,
+    "because": [
+     "P009",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P003",
+    "confidence": 0.527197,
+    "lift": 7.585563,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.468619,
+    "lift": 7.745773,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.439331,
+    "lift": 7.707553,
+    "because": [
+     "P016"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P009",
+   "P036"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.953488,
+    "lift": 13.719257,
+    "because": [
+     "P009",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.607438,
+    "lift": 7.14633,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.595041,
+    "lift": 10.439321,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.46281,
+    "lift": 7.745773,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.326446,
+    "lift": 9.19567,
+    "because": [
+     "P036"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P010",
+   "P011"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.66129,
+    "lift": 9.514969,
+    "because": [
+     "P010",
+     "P011"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.432353,
+    "lift": 7.14633,
+    "because": [
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.408824,
+    "lift": 7.172343,
+    "because": [
+     "P010"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.373529,
+    "lift": 6.251538,
+    "because": [
+     "P010"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P010",
+   "P016"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.771654,
+    "lift": 11.102929,
+    "because": [
+     "P010",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.653543,
+    "lift": 10.802369,
+    "because": [
+     "P010",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.614173,
+    "lift": 10.774969,
+    "because": [
+     "P010",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P009",
+    "confidence": 0.354331,
+    "lift": 8.240249,
+    "because": [
+     "P010",
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.330709,
+    "lift": 9.315737,
+    "because": [
+     "P010",
+     "P016"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P010",
+   "P036"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.986395,
+    "lift": 14.192727,
+    "because": [
+     "P010",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.755102,
+    "lift": 13.247404,
+    "because": [
+     "P010",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.564626,
+    "lift": 9.449805,
+    "because": [
+     "P010",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.421769,
+    "lift": 11.880809,
+    "because": [
+     "P010",
+     "P036"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P010",
+   "P037"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.992806,
+    "lift": 14.284975,
+    "because": [
+     "P010",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.798561,
+    "lift": 13.199358,
+    "because": [
+     "P010",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.561151,
+    "lift": 9.39165,
+    "because": [
+     "P010",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.460432,
+    "lift": 12.969906,
+    "because": [
+     "P010",
+     "P037"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P010",
+   "P040"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 1.0,
+    "lift": 14.388489,
+    "because": [
+     "P010",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.853333,
+    "lift": 14.97076,
+    "because": [
+     "P010",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.826667,
+    "lift": 13.663912,
+    "because": [
+     "P010",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.56,
+    "lift": 9.372385,
+    "because": [
+     "P010",
+     "P040"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P011",
+   "P016"
+  ],
+  "recs": [
+   {
+    "product_id": "P010",
+    "confidence": 0.531381,
+    "lift": 6.251538,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P003",
+    "confidence": 0.527197,
+    "lift": 7.585563,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.468619,
+    "lift": 7.745773,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.439331,
+    "lift": 7.707553,
+    "because": [
+     "P016"
+    ]
+   },
+   {
+    "product_id": "P009",
+    "confidence": 0.317992,
+    "lift": 7.395154,
+    "because": [
+     "P016"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P011",
+   "P036"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.976744,
+    "lift": 14.053873,
+    "because": [
+     "P011",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.607438,
+    "lift": 7.14633,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.595041,
+    "lift": 10.439321,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.46281,
+    "lift": 7.745773,
+    "because": [
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.326446,
+    "lift": 9.19567,
+    "because": [
+     "P036"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P011",
+   "P037"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.957447,
+    "lift": 13.776213,
+    "because": [
+     "P011",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.631579,
+    "lift": 10.439321,
+    "because": [
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.609649,
+    "lift": 7.172343,
+    "because": [
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.460526,
+    "lift": 7.707553,
+    "because": [
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.346491,
+    "lift": 9.760316,
+    "because": [
+     "P037"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P012",
+   "P013"
+  ],
+  "recs": [
+   {
+    "product_id": "P046",
+    "confidence": 0.35,
+    "lift": 5.555556,
+    "because": [
+     "P013"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P012",
+   "P046"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.555556,
+    "lift": 7.122507,
+    "because": [
+     "P046"
+    ]
+   },
+   {
+    "product_id": "P047",
+    "confidence": 0.460317,
+    "lift": 7.835191,
+    "because": [
+     "P046"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.333333,
+    "lift": 5.509642,
+    "because": [
+     "P046"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P013",
+   "P046"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.555556,
+    "lift": 7.122507,
+    "because": [
+     "P046"
+    ]
+   },
+   {
+    "product_id": "P047",
+    "confidence": 0.460317,
+    "lift": 7.835191,
+    "because": [
+     "P046"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.333333,
+    "lift": 5.509642,
+    "because": [
+     "P046"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P014",
+   "P018"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.928571,
+    "lift": 10.522056,
+    "because": [
+     "P014",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.752747,
+    "lift": 9.069244,
+    "because": [
+     "P014",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.467033,
+    "lift": 8.853706,
+    "because": [
+     "P014",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.384615,
+    "lift": 3.846154,
+    "because": [
+     "P014",
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.362637,
+    "lift": 8.899076,
+    "because": [
+     "P014",
+     "P018"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P014",
+   "P035"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.992754,
+    "lift": 11.249333,
+    "because": [
+     "P014",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.753623,
+    "lift": 9.079797,
+    "because": [
+     "P014",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.615942,
+    "lift": 9.125067,
+    "because": [
+     "P014",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.434783,
+    "lift": 4.347826,
+    "because": [
+     "P014",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P039",
+    "confidence": 0.347826,
+    "lift": 8.535609,
+    "because": [
+     "P014",
+     "P035"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P014",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.927273,
+    "lift": 10.50734,
+    "because": [
+     "P014",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.745455,
+    "lift": 8.98138,
+    "because": [
+     "P014",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.636364,
+    "lift": 9.427609,
+    "because": [
+     "P014",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.545455,
+    "lift": 10.340371,
+    "because": [
+     "P014",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P029",
+    "confidence": 0.3125,
+    "lift": 6.067961,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P014",
+   "P039"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.979798,
+    "lift": 11.102527,
+    "because": [
+     "P014",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.79798,
+    "lift": 9.614214,
+    "because": [
+     "P014",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.666667,
+    "lift": 9.876543,
+    "because": [
+     "P014",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.484848,
+    "lift": 9.19144,
+    "because": [
+     "P014",
+     "P039"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P015",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P002",
+    "confidence": 0.928571,
+    "lift": 13.807754,
+    "because": [
+     "P015",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P007",
+    "confidence": 0.845238,
+    "lift": 11.383678,
+    "because": [
+     "P015",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P029",
+    "confidence": 0.3125,
+    "lift": 6.067961,
+    "because": [
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.305,
+    "lift": 3.456091,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P016",
+   "P036"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.982143,
+    "lift": 14.131552,
+    "because": [
+     "P016",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.8125,
+    "lift": 14.254386,
+    "because": [
+     "P016",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.741071,
+    "lift": 8.718487,
+    "because": [
+     "P016",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.428571,
+    "lift": 12.072435,
+    "because": [
+     "P016",
+     "P036"
+    ]
+   },
+   {
+    "product_id": "P009",
+    "confidence": 0.317992,
+    "lift": 7.395154,
+    "because": [
+     "P016"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P016",
+   "P037"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 1.0,
+    "lift": 14.388489,
+    "because": [
+     "P016",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.866667,
+    "lift": 14.325069,
+    "because": [
+     "P016",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.742857,
+    "lift": 8.739496,
+    "because": [
+     "P016",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.457143,
+    "lift": 12.877264,
+    "because": [
+     "P016",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P009",
+    "confidence": 0.317992,
+    "lift": 7.395154,
+    "because": [
+     "P016"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P016",
+   "P040"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.964286,
+    "lift": 13.874615,
+    "because": [
+     "P016",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.857143,
+    "lift": 15.037594,
+    "because": [
+     "P016",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.857143,
+    "lift": 14.167651,
+    "because": [
+     "P016",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.75,
+    "lift": 8.823529,
+    "because": [
+     "P016",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P009",
+    "confidence": 0.317992,
+    "lift": 7.395154,
+    "because": [
+     "P016"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P018",
+   "P035"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 1.0,
+    "lift": 11.331445,
+    "because": [
+     "P018",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.867347,
+    "lift": 8.739012,
+    "because": [
+     "P018",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.704082,
+    "lift": 8.482911,
+    "because": [
+     "P018",
+     "P035"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.44898,
+    "lift": 4.489796,
+    "because": [
+     "P018",
+     "P035"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P018",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.987805,
+    "lift": 11.193256,
+    "because": [
+     "P018",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.853659,
+    "lift": 8.601094,
+    "because": [
+     "P018",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.695122,
+    "lift": 8.374963,
+    "because": [
+     "P018",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.536585,
+    "lift": 10.172234,
+    "because": [
+     "P018",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P029",
+    "confidence": 0.3125,
+    "lift": 6.067961,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P018",
+   "P039"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.974684,
+    "lift": 11.044573,
+    "because": [
+     "P018",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.835443,
+    "lift": 8.417562,
+    "because": [
+     "P018",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.759494,
+    "lift": 9.150526,
+    "because": [
+     "P018",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P035",
+    "confidence": 0.362963,
+    "lift": 6.880814,
+    "because": [
+     "P018"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.303704,
+    "lift": 3.037037,
+    "because": [
+     "P018"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P019",
+   "P021"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.972222,
+    "lift": 7.045089,
+    "because": [
+     "P019",
+     "P021"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.9375,
+    "lift": 7.53012,
+    "because": [
+     "P019",
+     "P021"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P019",
+   "P022"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.952941,
+    "lift": 6.905371,
+    "because": [
+     "P019",
+     "P022"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.8,
+    "lift": 6.425703,
+    "because": [
+     "P019",
+     "P022"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.402235,
+    "lift": 4.66359,
+    "because": [
+     "P019"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P019",
+   "P024"
+  ],
+  "recs": [
+   {
+    "product_id": "P027",
+    "confidence": 0.891386,
+    "lift": 7.159725,
+    "because": [
+     "P019",
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.524345,
+    "lift": 6.079357,
+    "because": [
+     "P019",
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P022",
+    "confidence": 0.303371,
+    "lift": 5.541019,
+    "because": [
+     "P019",
+     "P024"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P019",
+   "P025"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.83871,
+    "lift": 6.077606,
+    "because": [
+     "P019",
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P028",
+    "confidence": 0.774194,
+    "lift": 16.213477,
+    "because": [
+     "P019",
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.709677,
+    "lift": 5.70022,
+    "because": [
+     "P019",
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.402235,
+    "lift": 4.66359,
+    "because": [
+     "P019"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P019",
+   "P027"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.983471,
+    "lift": 7.126602,
+    "because": [
+     "P019",
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.557851,
+    "lift": 6.46784,
+    "because": [
+     "P019",
+     "P027"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P019",
+   "P028"
+  ],
+  "recs": [
+   {
+    "product_id": "P025",
+    "confidence": 0.96,
+    "lift": 16.9163,
+    "because": [
+     "P019",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P024",
+    "confidence": 0.86,
+    "lift": 6.231884,
+    "because": [
+     "P019",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.675978,
+    "lift": 5.429539,
+    "because": [
+     "P019"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.402235,
+    "lift": 4.66359,
+    "because": [
+     "P019"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P021",
+   "P022"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 1.0,
+    "lift": 7.246377,
+    "because": [
+     "P021",
+     "P022"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.913793,
+    "lift": 7.339704,
+    "because": [
+     "P021",
+     "P022"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.417391,
+    "lift": 4.66359,
+    "because": [
+     "P021"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P021",
+   "P024"
+  ],
+  "recs": [
+   {
+    "product_id": "P027",
+    "confidence": 0.929368,
+    "lift": 7.464803,
+    "because": [
+     "P021",
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.520446,
+    "lift": 5.81504,
+    "because": [
+     "P021",
+     "P024"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P021",
+   "P025"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.867925,
+    "lift": 6.289308,
+    "because": [
+     "P021",
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.849057,
+    "lift": 6.819732,
+    "because": [
+     "P021",
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P028",
+    "confidence": 0.555066,
+    "lift": 11.624421,
+    "because": [
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.417391,
+    "lift": 4.66359,
+    "because": [
+     "P021"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P021",
+   "P027"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.961538,
+    "lift": 6.96767,
+    "because": [
+     "P021",
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.519231,
+    "lift": 5.801461,
+    "because": [
+     "P021",
+     "P027"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P021",
+   "P028"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.77971,
+    "lift": 5.650074,
+    "because": [
+     "P021"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.753623,
+    "lift": 6.053198,
+    "because": [
+     "P021"
+    ]
+   },
+   {
+    "product_id": "P025",
+    "confidence": 0.659686,
+    "lift": 11.624421,
+    "because": [
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.417391,
+    "lift": 4.66359,
+    "because": [
+     "P021"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P022",
+   "P024"
+  ],
+  "recs": [
+   {
+    "product_id": "P027",
+    "confidence": 0.818792,
+    "lift": 6.576642,
+    "because": [
+     "P022",
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.543624,
+    "lift": 6.074013,
+    "because": [
+     "P022",
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.487319,
+    "lift": 5.650074,
+    "because": [
+     "P024"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P022",
+   "P027"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.983871,
+    "lift": 7.1295,
+    "because": [
+     "P022",
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.548387,
+    "lift": 6.12723,
+    "because": [
+     "P022",
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.522088,
+    "lift": 6.053198,
+    "because": [
+     "P027"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P023",
+   "P024"
+  ],
+  "recs": [
+   {
+    "product_id": "P027",
+    "confidence": 0.780797,
+    "lift": 6.271463,
+    "because": [
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.487319,
+    "lift": 5.650074,
+    "because": [
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.483696,
+    "lift": 5.404421,
+    "because": [
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P025",
+    "confidence": 0.393939,
+    "lift": 6.941663,
+    "because": [
+     "P023"
+    ]
+   },
+   {
+    "product_id": "P028",
+    "confidence": 0.30303,
+    "lift": 6.346184,
+    "because": [
+     "P023"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P023",
+   "P025"
+  ],
+  "recs": [
+   {
+    "product_id": "P028",
+    "confidence": 0.555066,
+    "lift": 11.624421,
+    "because": [
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P024",
+    "confidence": 0.436123,
+    "lift": 3.160314,
+    "because": [
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.39207,
+    "lift": 3.149161,
+    "because": [
+     "P025"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P023",
+   "P027"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.865462,
+    "lift": 6.271463,
+    "because": [
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.522088,
+    "lift": 6.053198,
+    "because": [
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.485944,
+    "lift": 5.429539,
+    "because": [
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P025",
+    "confidence": 0.393939,
+    "lift": 6.941663,
+    "because": [
+     "P023"
+    ]
+   },
+   {
+    "product_id": "P028",
+    "confidence": 0.30303,
+    "lift": 6.346184,
+    "because": [
+     "P023"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P023",
+   "P028"
+  ],
+  "recs": [
+   {
+    "product_id": "P025",
+    "confidence": 0.659686,
+    "lift": 11.624421,
+    "because": [
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P024",
+    "confidence": 0.429319,
+    "lift": 3.11101,
+    "because": [
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.371728,
+    "lift": 2.985765,
+    "because": [
+     "P028"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P024",
+   "P025"
+  ],
+  "recs": [
+   {
+    "product_id": "P027",
+    "confidence": 0.848485,
+    "lift": 6.815139,
+    "because": [
+     "P024",
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P028",
+    "confidence": 0.777778,
+    "lift": 16.28854,
+    "because": [
+     "P024",
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.525253,
+    "lift": 5.868743,
+    "because": [
+     "P024",
+     "P025"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.487319,
+    "lift": 5.650074,
+    "because": [
+     "P024"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P024",
+   "P026"
+  ],
+  "recs": [
+   {
+    "product_id": "P027",
+    "confidence": 0.949153,
+    "lift": 7.623715,
+    "because": [
+     "P024",
+     "P026"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.487319,
+    "lift": 5.650074,
+    "because": [
+     "P024"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.483696,
+    "lift": 5.404421,
+    "because": [
+     "P024"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P024",
+   "P027"
+  ],
+  "recs": [
+   {
+    "product_id": "P021",
+    "confidence": 0.580046,
+    "lift": 6.725176,
+    "because": [
+     "P024",
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.552204,
+    "lift": 6.169879,
+    "because": [
+     "P024",
+     "P027"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P024",
+   "P028"
+  ],
+  "recs": [
+   {
+    "product_id": "P025",
+    "confidence": 0.939024,
+    "lift": 16.546685,
+    "because": [
+     "P024",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.829268,
+    "lift": 6.660789,
+    "because": [
+     "P024",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.52439,
+    "lift": 5.859109,
+    "because": [
+     "P024",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.487319,
+    "lift": 5.650074,
+    "because": [
+     "P024"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P025",
+   "P027"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.94382,
+    "lift": 6.839277,
+    "because": [
+     "P025",
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P028",
+    "confidence": 0.764045,
+    "lift": 16.000941,
+    "because": [
+     "P025",
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.522088,
+    "lift": 6.053198,
+    "because": [
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.494382,
+    "lift": 5.523821,
+    "because": [
+     "P025",
+     "P027"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P025",
+   "P028"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.611111,
+    "lift": 4.428341,
+    "because": [
+     "P025",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P027",
+    "confidence": 0.539683,
+    "lift": 4.3348,
+    "because": [
+     "P025",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.380952,
+    "lift": 4.256451,
+    "because": [
+     "P025",
+     "P028"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P026",
+   "P027"
+  ],
+  "recs": [
+   {
+    "product_id": "P024",
+    "confidence": 0.933333,
+    "lift": 6.763285,
+    "because": [
+     "P026",
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.522088,
+    "lift": 6.053198,
+    "because": [
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.485944,
+    "lift": 5.429539,
+    "because": [
+     "P027"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P027",
+   "P028"
+  ],
+  "recs": [
+   {
+    "product_id": "P025",
+    "confidence": 0.957746,
+    "lift": 16.87659,
+    "because": [
+     "P027",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P024",
+    "confidence": 0.957746,
+    "lift": 6.940192,
+    "because": [
+     "P027",
+     "P028"
+    ]
+   },
+   {
+    "product_id": "P021",
+    "confidence": 0.522088,
+    "lift": 6.053198,
+    "because": [
+     "P027"
+    ]
+   },
+   {
+    "product_id": "P019",
+    "confidence": 0.485944,
+    "lift": 5.429539,
+    "because": [
+     "P027"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P029",
+   "P030"
+  ],
+  "recs": [
+   {
+    "product_id": "P038",
+    "confidence": 0.606796,
+    "lift": 6.067961,
+    "because": [
+     "P029"
+    ]
+   },
+   {
+    "product_id": "P031",
+    "confidence": 0.515723,
+    "lift": 11.460517,
+    "because": [
+     "P030"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P029",
+   "P031"
+  ],
+  "recs": [
+   {
+    "product_id": "P038",
+    "confidence": 0.724138,
+    "lift": 7.241379,
+    "because": [
+     "P029",
+     "P031"
+    ]
+   },
+   {
+    "product_id": "P030",
+    "confidence": 0.455556,
+    "lift": 11.460517,
+    "because": [
+     "P031"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P029",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P031",
+    "confidence": 0.504,
+    "lift": 11.2,
+    "because": [
+     "P029",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.305,
+    "lift": 3.456091,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P030",
+   "P031"
+  ],
+  "recs": [
+   {
+    "product_id": "P029",
+    "confidence": 0.483333,
+    "lift": 9.385113,
+    "because": [
+     "P031"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.361111,
+    "lift": 3.611111,
+    "because": [
+     "P031"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P031",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P029",
+    "confidence": 0.969231,
+    "lift": 18.820015,
+    "because": [
+     "P031",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P030",
+    "confidence": 0.455556,
+    "lift": 11.460517,
+    "because": [
+     "P031"
+    ]
+   },
+   {
+    "product_id": "P001",
+    "confidence": 0.305,
+    "lift": 3.456091,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P032",
+   "P034"
+  ],
+  "recs": []
+ },
+ {
+  "cart": [
+   "P035",
+   "P038"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 0.972603,
+    "lift": 11.020994,
+    "because": [
+     "P035",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.821918,
+    "lift": 8.281288,
+    "because": [
+     "P035",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.69863,
+    "lift": 8.417231,
+    "because": [
+     "P035",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.60274,
+    "lift": 8.929477,
+    "because": [
+     "P035",
+     "P038"
+    ]
+   },
+   {
+    "product_id": "P029",
+    "confidence": 0.3125,
+    "lift": 6.067961,
+    "because": [
+     "P038"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P035",
+   "P039"
+  ],
+  "recs": [
+   {
+    "product_id": "P001",
+    "confidence": 1.0,
+    "lift": 11.331445,
+    "because": [
+     "P035",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P014",
+    "confidence": 0.842105,
+    "lift": 8.484688,
+    "because": [
+     "P035",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P004",
+    "confidence": 0.736842,
+    "lift": 8.877616,
+    "because": [
+     "P035",
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P018",
+    "confidence": 0.484663,
+    "lift": 7.180186,
+    "because": [
+     "P039"
+    ]
+   },
+   {
+    "product_id": "P038",
+    "confidence": 0.345972,
+    "lift": 3.459716,
+    "because": [
+     "P035"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P036",
+   "P037"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.993056,
+    "lift": 14.288569,
+    "because": [
+     "P036",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.770833,
+    "lift": 9.068627,
+    "because": [
+     "P036",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.631944,
+    "lift": 10.576476,
+    "because": [
+     "P036",
+     "P037"
+    ]
+   },
+   {
+    "product_id": "P040",
+    "confidence": 0.451389,
+    "lift": 12.71518,
+    "because": [
+     "P036",
+     "P037"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P036",
+   "P040"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 0.974684,
+    "lift": 14.024224,
+    "because": [
+     "P036",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P037",
+    "confidence": 0.822785,
+    "lift": 14.434821,
+    "because": [
+     "P036",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.78481,
+    "lift": 9.23306,
+    "because": [
+     "P036",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.607595,
+    "lift": 10.168953,
+    "because": [
+     "P036",
+     "P040"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P037",
+   "P040"
+  ],
+  "recs": [
+   {
+    "product_id": "P003",
+    "confidence": 1.0,
+    "lift": 14.388489,
+    "because": [
+     "P037",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P036",
+    "confidence": 0.822785,
+    "lift": 13.599749,
+    "because": [
+     "P037",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P010",
+    "confidence": 0.810127,
+    "lift": 9.530901,
+    "because": [
+     "P037",
+     "P040"
+    ]
+   },
+   {
+    "product_id": "P016",
+    "confidence": 0.607595,
+    "lift": 10.168953,
+    "because": [
+     "P037",
+     "P040"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P041",
+   "P042"
+  ],
+  "recs": [
+   {
+    "product_id": "P043",
+    "confidence": 0.84127,
+    "lift": 16.256422,
+    "because": [
+     "P041",
+     "P042"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P041",
+   "P043"
+  ],
+  "recs": [
+   {
+    "product_id": "P042",
+    "confidence": 0.890756,
+    "lift": 13.245447,
+    "because": [
+     "P041",
+     "P043"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P042",
+   "P043"
+  ],
+  "recs": [
+   {
+    "product_id": "P041",
+    "confidence": 0.721088,
+    "lift": 13.669923,
+    "because": [
+     "P042",
+     "P043"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P046",
+   "P047"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.836207,
+    "lift": 10.720601,
+    "because": [
+     "P046",
+     "P047"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.62069,
+    "lift": 10.259333,
+    "because": [
+     "P046",
+     "P047"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P046",
+   "P048"
+  ],
+  "recs": [
+   {
+    "product_id": "P047",
+    "confidence": 0.857143,
+    "lift": 14.589666,
+    "because": [
+     "P046",
+     "P048"
+    ]
+   },
+   {
+    "product_id": "P050",
+    "confidence": 0.857143,
+    "lift": 10.989011,
+    "because": [
+     "P046",
+     "P048"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P046",
+   "P050"
+  ],
+  "recs": [
+   {
+    "product_id": "P047",
+    "confidence": 0.692857,
+    "lift": 11.793313,
+    "because": [
+     "P046",
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.514286,
+    "lift": 8.50059,
+    "because": [
+     "P046",
+     "P050"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P047",
+   "P048"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.697674,
+    "lift": 8.944544,
+    "because": [
+     "P047",
+     "P048"
+    ]
+   },
+   {
+    "product_id": "P046",
+    "confidence": 0.55814,
+    "lift": 8.859358,
+    "because": [
+     "P047",
+     "P048"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P047",
+   "P049"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.958333,
+    "lift": 12.286325,
+    "because": [
+     "P047",
+     "P049"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.548936,
+    "lift": 9.073325,
+    "because": [
+     "P047"
+    ]
+   },
+   {
+    "product_id": "P046",
+    "confidence": 0.493617,
+    "lift": 7.835191,
+    "because": [
+     "P047"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P047",
+   "P050"
+  ],
+  "recs": [
+   {
+    "product_id": "P046",
+    "confidence": 0.740458,
+    "lift": 11.753302,
+    "because": [
+     "P047",
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P048",
+    "confidence": 0.687023,
+    "lift": 11.35575,
+    "because": [
+     "P047",
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P049",
+    "confidence": 0.351145,
+    "lift": 9.240659,
+    "because": [
+     "P047",
+     "P050"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P048",
+   "P049"
+  ],
+  "recs": [
+   {
+    "product_id": "P050",
+    "confidence": 0.903846,
+    "lift": 11.587771,
+    "because": [
+     "P048",
+     "P049"
+    ]
+   },
+   {
+    "product_id": "P047",
+    "confidence": 0.533058,
+    "lift": 9.073325,
+    "because": [
+     "P048"
+    ]
+   },
+   {
+    "product_id": "P046",
+    "confidence": 0.347107,
+    "lift": 5.509642,
+    "because": [
+     "P048"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P048",
+   "P050"
+  ],
+  "recs": [
+   {
+    "product_id": "P047",
+    "confidence": 0.75,
+    "lift": 12.765957,
+    "because": [
+     "P048",
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P046",
+    "confidence": 0.6,
+    "lift": 9.52381,
+    "because": [
+     "P048",
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P049",
+    "confidence": 0.391667,
+    "lift": 10.307018,
+    "because": [
+     "P048",
+     "P050"
+    ]
+   }
+  ]
+ },
+ {
+  "cart": [
+   "P049",
+   "P050"
+  ],
+  "recs": [
+   {
+    "product_id": "P048",
+    "confidence": 0.522222,
+    "lift": 8.631772,
+    "because": [
+     "P049",
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P047",
+    "confidence": 0.511111,
+    "lift": 8.699764,
+    "because": [
+     "P049",
+     "P050"
+    ]
+   },
+   {
+    "product_id": "P046",
+    "confidence": 0.448718,
+    "lift": 7.122507,
+    "because": [
+     "P050"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,5774 @@
+[
+ {
+  "antecedents": [
+   "P010",
+   "P040"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.01875,
+  "antecedent_support": 0.01875,
+  "consequent_support": 0.0695,
+  "confidence": 1.0,
+  "lift": 14.388489,
+  "leverage": 0.017447
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P037"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.02625,
+  "antecedent_support": 0.02625,
+  "consequent_support": 0.0695,
+  "confidence": 1.0,
+  "lift": 14.388489,
+  "leverage": 0.024426
+ },
+ {
+  "antecedents": [
+   "P037",
+   "P040"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.0695,
+  "confidence": 1.0,
+  "lift": 14.388489,
+  "leverage": 0.018377
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P035"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.0245,
+  "consequent_support": 0.08825,
+  "confidence": 1.0,
+  "lift": 11.331445,
+  "leverage": 0.022338
+ },
+ {
+  "antecedents": [
+   "P035",
+   "P039"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.01425,
+  "antecedent_support": 0.01425,
+  "consequent_support": 0.08825,
+  "confidence": 1.0,
+  "lift": 11.331445,
+  "leverage": 0.012992
+ },
+ {
+  "antecedents": [
+   "P021",
+   "P022"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.0145,
+  "antecedent_support": 0.0145,
+  "consequent_support": 0.138,
+  "confidence": 1.0,
+  "lift": 7.246377,
+  "leverage": 0.012499
+ },
+ {
+  "antecedents": [
+   "P036",
+   "P037"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.03575,
+  "antecedent_support": 0.036,
+  "consequent_support": 0.0695,
+  "confidence": 0.993056,
+  "lift": 14.288569,
+  "leverage": 0.033248
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P037"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.0345,
+  "antecedent_support": 0.03475,
+  "consequent_support": 0.0695,
+  "confidence": 0.992806,
+  "lift": 14.284975,
+  "leverage": 0.032085
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P035"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.03425,
+  "antecedent_support": 0.0345,
+  "consequent_support": 0.08825,
+  "confidence": 0.992754,
+  "lift": 11.249333,
+  "leverage": 0.031205
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P039"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.022,
+  "antecedent_support": 0.02225,
+  "consequent_support": 0.08825,
+  "confidence": 0.988764,
+  "lift": 11.204125,
+  "leverage": 0.020036
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P038"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.02025,
+  "antecedent_support": 0.0205,
+  "consequent_support": 0.08825,
+  "confidence": 0.987805,
+  "lift": 11.193256,
+  "leverage": 0.018441
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P036"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.03625,
+  "antecedent_support": 0.03675,
+  "consequent_support": 0.0695,
+  "confidence": 0.986395,
+  "lift": 14.192727,
+  "leverage": 0.033696
+ },
+ {
+  "antecedents": [
+   "P022",
+   "P027"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.0305,
+  "antecedent_support": 0.031,
+  "consequent_support": 0.138,
+  "confidence": 0.983871,
+  "lift": 7.1295,
+  "leverage": 0.026222
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P027"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.0595,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.138,
+  "confidence": 0.983471,
+  "lift": 7.126602,
+  "leverage": 0.051151
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P035"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.0285,
+  "antecedent_support": 0.029,
+  "consequent_support": 0.08825,
+  "confidence": 0.982759,
+  "lift": 11.136075,
+  "leverage": 0.025941
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P036"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.0275,
+  "antecedent_support": 0.028,
+  "consequent_support": 0.0695,
+  "confidence": 0.982143,
+  "lift": 14.131552,
+  "leverage": 0.025554
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P039"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.02425,
+  "antecedent_support": 0.02475,
+  "consequent_support": 0.08825,
+  "confidence": 0.979798,
+  "lift": 11.102527,
+  "leverage": 0.022066
+ },
+ {
+  "antecedents": [
+   "P011",
+   "P036"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.01075,
+  "consequent_support": 0.0695,
+  "confidence": 0.976744,
+  "lift": 14.053873,
+  "leverage": 0.009753
+ },
+ {
+  "antecedents": [
+   "P036",
+   "P040"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.0695,
+  "confidence": 0.974684,
+  "lift": 14.024224,
+  "leverage": 0.017877
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P039"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.08825,
+  "confidence": 0.974684,
+  "lift": 11.044573,
+  "leverage": 0.017507
+ },
+ {
+  "antecedents": [
+   "P035",
+   "P038"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.01775,
+  "antecedent_support": 0.01825,
+  "consequent_support": 0.08825,
+  "confidence": 0.972603,
+  "lift": 11.020994,
+  "leverage": 0.016139
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P021"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.035,
+  "antecedent_support": 0.036,
+  "consequent_support": 0.138,
+  "confidence": 0.972222,
+  "lift": 7.045089,
+  "leverage": 0.030032
+ },
+ {
+  "antecedents": [
+   "P031",
+   "P038"
+  ],
+  "consequents": [
+   "P029"
+  ],
+  "support": 0.01575,
+  "antecedent_support": 0.01625,
+  "consequent_support": 0.0515,
+  "confidence": 0.969231,
+  "lift": 18.820015,
+  "leverage": 0.014913
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P040"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.0135,
+  "antecedent_support": 0.014,
+  "consequent_support": 0.0695,
+  "confidence": 0.964286,
+  "lift": 13.874615,
+  "leverage": 0.012527
+ },
+ {
+  "antecedents": [
+   "P021",
+   "P027"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.0625,
+  "antecedent_support": 0.065,
+  "consequent_support": 0.138,
+  "confidence": 0.961538,
+  "lift": 6.96767,
+  "leverage": 0.05353
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P028"
+  ],
+  "consequents": [
+   "P025"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.0125,
+  "consequent_support": 0.05675,
+  "confidence": 0.96,
+  "lift": 16.9163,
+  "leverage": 0.011291
+ },
+ {
+  "antecedents": [
+   "P047",
+   "P049"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.0115,
+  "antecedent_support": 0.012,
+  "consequent_support": 0.078,
+  "confidence": 0.958333,
+  "lift": 12.286325,
+  "leverage": 0.010564
+ },
+ {
+  "antecedents": [
+   "P027",
+   "P028"
+  ],
+  "consequents": [
+   "P025"
+  ],
+  "support": 0.017,
+  "antecedent_support": 0.01775,
+  "consequent_support": 0.05675,
+  "confidence": 0.957746,
+  "lift": 16.87659,
+  "leverage": 0.015993
+ },
+ {
+  "antecedents": [
+   "P027",
+   "P028"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.017,
+  "antecedent_support": 0.01775,
+  "consequent_support": 0.138,
+  "confidence": 0.957746,
+  "lift": 6.940192,
+  "leverage": 0.014551
+ },
+ {
+  "antecedents": [
+   "P011",
+   "P037"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.01175,
+  "consequent_support": 0.0695,
+  "confidence": 0.957447,
+  "lift": 13.776213,
+  "leverage": 0.010433
+ },
+ {
+  "antecedents": [
+   "P007",
+   "P015"
+  ],
+  "consequents": [
+   "P002"
+  ],
+  "support": 0.03925,
+  "antecedent_support": 0.041,
+  "consequent_support": 0.06725,
+  "confidence": 0.957317,
+  "lift": 14.235198,
+  "leverage": 0.036493
+ },
+ {
+  "antecedents": [
+   "P009",
+   "P036"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.01075,
+  "consequent_support": 0.0695,
+  "confidence": 0.953488,
+  "lift": 13.719257,
+  "leverage": 0.009503
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P022"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.02025,
+  "antecedent_support": 0.02125,
+  "consequent_support": 0.138,
+  "confidence": 0.952941,
+  "lift": 6.905371,
+  "leverage": 0.017317
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P026"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.014,
+  "antecedent_support": 0.01475,
+  "consequent_support": 0.1245,
+  "confidence": 0.949153,
+  "lift": 7.623715,
+  "leverage": 0.012164
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P018"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.0365,
+  "antecedent_support": 0.0385,
+  "consequent_support": 0.08825,
+  "confidence": 0.948052,
+  "lift": 10.742798,
+  "leverage": 0.033102
+ },
+ {
+  "antecedents": [
+   "P007",
+   "P038"
+  ],
+  "consequents": [
+   "P002"
+  ],
+  "support": 0.02175,
+  "antecedent_support": 0.023,
+  "consequent_support": 0.06725,
+  "confidence": 0.945652,
+  "lift": 14.061742,
+  "leverage": 0.020203
+ },
+ {
+  "antecedents": [
+   "P025",
+   "P027"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.021,
+  "antecedent_support": 0.02225,
+  "consequent_support": 0.138,
+  "confidence": 0.94382,
+  "lift": 6.839277,
+  "leverage": 0.01793
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P028"
+  ],
+  "consequents": [
+   "P025"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.0205,
+  "consequent_support": 0.05675,
+  "confidence": 0.939024,
+  "lift": 16.546685,
+  "leverage": 0.018087
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P021"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.03375,
+  "antecedent_support": 0.036,
+  "consequent_support": 0.1245,
+  "confidence": 0.9375,
+  "lift": 7.53012,
+  "leverage": 0.029268
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P038"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.022,
+  "antecedent_support": 0.0235,
+  "consequent_support": 0.08825,
+  "confidence": 0.93617,
+  "lift": 10.608161,
+  "leverage": 0.019926
+ },
+ {
+  "antecedents": [
+   "P026",
+   "P027"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.014,
+  "antecedent_support": 0.015,
+  "consequent_support": 0.138,
+  "confidence": 0.933333,
+  "lift": 6.763285,
+  "leverage": 0.01193
+ },
+ {
+  "antecedents": [
+   "P006",
+   "P018"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.011,
+  "consequent_support": 0.08825,
+  "confidence": 0.931818,
+  "lift": 10.558846,
+  "leverage": 0.009279
+ },
+ {
+  "antecedents": [
+   "P021",
+   "P024"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.0625,
+  "antecedent_support": 0.06725,
+  "consequent_support": 0.1245,
+  "confidence": 0.929368,
+  "lift": 7.464803,
+  "leverage": 0.054127
+ },
+ {
+  "antecedents": [
+   "P015",
+   "P038"
+  ],
+  "consequents": [
+   "P002"
+  ],
+  "support": 0.0195,
+  "antecedent_support": 0.021,
+  "consequent_support": 0.06725,
+  "confidence": 0.928571,
+  "lift": 13.807754,
+  "leverage": 0.018088
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P018"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.04225,
+  "antecedent_support": 0.0455,
+  "consequent_support": 0.08825,
+  "confidence": 0.928571,
+  "lift": 10.522056,
+  "leverage": 0.038235
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P038"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.0255,
+  "antecedent_support": 0.0275,
+  "consequent_support": 0.08825,
+  "confidence": 0.927273,
+  "lift": 10.50734,
+  "leverage": 0.023073
+ },
+ {
+  "antecedents": [
+   "P021",
+   "P022"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.01325,
+  "antecedent_support": 0.0145,
+  "consequent_support": 0.1245,
+  "confidence": 0.913793,
+  "lift": 7.339704,
+  "leverage": 0.011445
+ },
+ {
+  "antecedents": [
+   "P048",
+   "P049"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.01175,
+  "antecedent_support": 0.013,
+  "consequent_support": 0.078,
+  "confidence": 0.903846,
+  "lift": 11.587771,
+  "leverage": 0.010736
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P006"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.0125,
+  "consequent_support": 0.08825,
+  "confidence": 0.9,
+  "lift": 10.1983,
+  "leverage": 0.010147
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P004"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.049,
+  "antecedent_support": 0.0545,
+  "consequent_support": 0.09925,
+  "confidence": 0.899083,
+  "lift": 9.058766,
+  "leverage": 0.043591
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P035"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.026,
+  "antecedent_support": 0.029,
+  "consequent_support": 0.09925,
+  "confidence": 0.896552,
+  "lift": 9.033267,
+  "leverage": 0.023122
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P024"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.0595,
+  "antecedent_support": 0.06675,
+  "consequent_support": 0.1245,
+  "confidence": 0.891386,
+  "lift": 7.159725,
+  "leverage": 0.05119
+ },
+ {
+  "antecedents": [
+   "P041",
+   "P043"
+  ],
+  "consequents": [
+   "P042"
+  ],
+  "support": 0.0265,
+  "antecedent_support": 0.02975,
+  "consequent_support": 0.06725,
+  "confidence": 0.890756,
+  "lift": 13.245447,
+  "leverage": 0.024499
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P018"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.03425,
+  "antecedent_support": 0.0385,
+  "consequent_support": 0.09925,
+  "confidence": 0.88961,
+  "lift": 8.963329,
+  "leverage": 0.030429
+ },
+ {
+  "antecedents": [
+   "P002",
+   "P038"
+  ],
+  "consequents": [
+   "P007"
+  ],
+  "support": 0.02175,
+  "antecedent_support": 0.0245,
+  "consequent_support": 0.07425,
+  "confidence": 0.887755,
+  "lift": 11.956298,
+  "leverage": 0.019931
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P039"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.02225,
+  "consequent_support": 0.09925,
+  "confidence": 0.88764,
+  "lift": 8.943481,
+  "leverage": 0.017542
+ },
+ {
+  "antecedents": [
+   "P002",
+   "P008"
+  ],
+  "consequents": [
+   "P015"
+  ],
+  "support": 0.0115,
+  "antecedent_support": 0.013,
+  "consequent_support": 0.06525,
+  "confidence": 0.884615,
+  "lift": 13.557324,
+  "leverage": 0.010652
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P035"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.03425,
+  "antecedent_support": 0.03875,
+  "consequent_support": 0.09925,
+  "confidence": 0.883871,
+  "lift": 8.905501,
+  "leverage": 0.030404
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P011"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.01275,
+  "consequent_support": 0.057,
+  "confidence": 0.882353,
+  "lift": 15.479876,
+  "leverage": 0.010523
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P016"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.0275,
+  "antecedent_support": 0.0315,
+  "consequent_support": 0.0605,
+  "confidence": 0.873016,
+  "lift": 14.430014,
+  "leverage": 0.025594
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P038"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.0205,
+  "antecedent_support": 0.0235,
+  "consequent_support": 0.09925,
+  "confidence": 0.87234,
+  "lift": 8.789324,
+  "leverage": 0.018168
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P040"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.02275,
+  "consequent_support": 0.057,
+  "confidence": 0.868132,
+  "lift": 15.230384,
+  "leverage": 0.018453
+ },
+ {
+  "antecedents": [
+   "P008",
+   "P015"
+  ],
+  "consequents": [
+   "P002"
+  ],
+  "support": 0.0115,
+  "antecedent_support": 0.01325,
+  "consequent_support": 0.06725,
+  "confidence": 0.867925,
+  "lift": 12.905941,
+  "leverage": 0.010609
+ },
+ {
+  "antecedents": [
+   "P021",
+   "P025"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.0115,
+  "antecedent_support": 0.01325,
+  "consequent_support": 0.138,
+  "confidence": 0.867925,
+  "lift": 6.289308,
+  "leverage": 0.009671
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P035"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.02125,
+  "antecedent_support": 0.0245,
+  "consequent_support": 0.09925,
+  "confidence": 0.867347,
+  "lift": 8.739012,
+  "leverage": 0.018818
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P037"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.02275,
+  "antecedent_support": 0.02625,
+  "consequent_support": 0.0605,
+  "confidence": 0.866667,
+  "lift": 14.325069,
+  "leverage": 0.021162
+ },
+ {
+  "antecedents": [
+   "P027"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.10775,
+  "antecedent_support": 0.1245,
+  "consequent_support": 0.138,
+  "confidence": 0.865462,
+  "lift": 6.271463,
+  "leverage": 0.090569
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P018"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.04225,
+  "antecedent_support": 0.049,
+  "consequent_support": 0.09925,
+  "confidence": 0.862245,
+  "lift": 8.687606,
+  "leverage": 0.037387
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P028"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.01075,
+  "antecedent_support": 0.0125,
+  "consequent_support": 0.138,
+  "confidence": 0.86,
+  "lift": 6.231884,
+  "leverage": 0.009025
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P006"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.01225,
+  "antecedent_support": 0.01425,
+  "consequent_support": 0.09925,
+  "confidence": 0.859649,
+  "lift": 8.661452,
+  "leverage": 0.010836
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P039"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.02425,
+  "antecedent_support": 0.02825,
+  "consequent_support": 0.09925,
+  "confidence": 0.858407,
+  "lift": 8.648938,
+  "leverage": 0.021446
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P040"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.014,
+  "consequent_support": 0.057,
+  "confidence": 0.857143,
+  "lift": 15.037594,
+  "leverage": 0.011202
+ },
+ {
+  "antecedents": [
+   "P046",
+   "P048"
+  ],
+  "consequents": [
+   "P047"
+  ],
+  "support": 0.018,
+  "antecedent_support": 0.021,
+  "consequent_support": 0.05875,
+  "confidence": 0.857143,
+  "lift": 14.589666,
+  "leverage": 0.016766
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P040"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.014,
+  "consequent_support": 0.0605,
+  "confidence": 0.857143,
+  "lift": 14.167651,
+  "leverage": 0.011153
+ },
+ {
+  "antecedents": [
+   "P046",
+   "P048"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.018,
+  "antecedent_support": 0.021,
+  "consequent_support": 0.078,
+  "confidence": 0.857143,
+  "lift": 10.989011,
+  "leverage": 0.016362
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P009"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.012,
+  "consequent_support": 0.0605,
+  "confidence": 0.854167,
+  "lift": 14.118457,
+  "leverage": 0.009524
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P038"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.0175,
+  "antecedent_support": 0.0205,
+  "consequent_support": 0.09925,
+  "confidence": 0.853659,
+  "lift": 8.601094,
+  "leverage": 0.015465
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P040"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.016,
+  "antecedent_support": 0.01875,
+  "consequent_support": 0.057,
+  "confidence": 0.853333,
+  "lift": 14.97076,
+  "leverage": 0.014931
+ },
+ {
+  "antecedents": [
+   "P002",
+   "P015"
+  ],
+  "consequents": [
+   "P007"
+  ],
+  "support": 0.03925,
+  "antecedent_support": 0.046,
+  "consequent_support": 0.07425,
+  "confidence": 0.853261,
+  "lift": 11.491729,
+  "leverage": 0.035834
+ },
+ {
+  "antecedents": [
+   "P021",
+   "P025"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.01325,
+  "consequent_support": 0.1245,
+  "confidence": 0.849057,
+  "lift": 6.819732,
+  "leverage": 0.0096
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P025"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.021,
+  "antecedent_support": 0.02475,
+  "consequent_support": 0.1245,
+  "confidence": 0.848485,
+  "lift": 6.815139,
+  "leverage": 0.017919
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P040"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.02275,
+  "consequent_support": 0.0605,
+  "confidence": 0.846154,
+  "lift": 13.986014,
+  "leverage": 0.017874
+ },
+ {
+  "antecedents": [
+   "P015",
+   "P038"
+  ],
+  "consequents": [
+   "P007"
+  ],
+  "support": 0.01775,
+  "antecedent_support": 0.021,
+  "consequent_support": 0.07425,
+  "confidence": 0.845238,
+  "lift": 11.383678,
+  "leverage": 0.016191
+ },
+ {
+  "antecedents": [
+   "P035",
+   "P039"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.01425,
+  "consequent_support": 0.09925,
+  "confidence": 0.842105,
+  "lift": 8.484688,
+  "leverage": 0.010586
+ },
+ {
+  "antecedents": [
+   "P041",
+   "P042"
+  ],
+  "consequents": [
+   "P043"
+  ],
+  "support": 0.0265,
+  "antecedent_support": 0.0315,
+  "consequent_support": 0.05175,
+  "confidence": 0.84127,
+  "lift": 16.256422,
+  "leverage": 0.02487
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P006"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.0125,
+  "consequent_support": 0.09925,
+  "confidence": 0.84,
+  "lift": 8.463476,
+  "leverage": 0.009259
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P025"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.013,
+  "antecedent_support": 0.0155,
+  "consequent_support": 0.138,
+  "confidence": 0.83871,
+  "lift": 6.077606,
+  "leverage": 0.010861
+ },
+ {
+  "antecedents": [
+   "P046",
+   "P047"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.02425,
+  "antecedent_support": 0.029,
+  "consequent_support": 0.078,
+  "confidence": 0.836207,
+  "lift": 10.720601,
+  "leverage": 0.021988
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P038"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.0255,
+  "antecedent_support": 0.0305,
+  "consequent_support": 0.09925,
+  "confidence": 0.836066,
+  "lift": 8.423834,
+  "leverage": 0.022473
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P039"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.0165,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.09925,
+  "confidence": 0.835443,
+  "lift": 8.417562,
+  "leverage": 0.01454
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P016"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.02625,
+  "antecedent_support": 0.0315,
+  "consequent_support": 0.057,
+  "confidence": 0.833333,
+  "lift": 14.619883,
+  "leverage": 0.024455
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P037"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.03575,
+  "antecedent_support": 0.043,
+  "consequent_support": 0.0605,
+  "confidence": 0.831395,
+  "lift": 13.742072,
+  "leverage": 0.033148
+ },
+ {
+  "antecedents": [
+   "P002",
+   "P007"
+  ],
+  "consequents": [
+   "P015"
+  ],
+  "support": 0.03925,
+  "antecedent_support": 0.04725,
+  "consequent_support": 0.06525,
+  "confidence": 0.830688,
+  "lift": 12.730848,
+  "leverage": 0.036167
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P014"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.049,
+  "antecedent_support": 0.059,
+  "consequent_support": 0.08825,
+  "confidence": 0.830508,
+  "lift": 9.410861,
+  "leverage": 0.043793
+ },
+ {
+  "antecedents": [
+   "P006",
+   "P014"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.01225,
+  "antecedent_support": 0.01475,
+  "consequent_support": 0.08825,
+  "confidence": 0.830508,
+  "lift": 9.410861,
+  "leverage": 0.010948
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P028"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.017,
+  "antecedent_support": 0.0205,
+  "consequent_support": 0.1245,
+  "confidence": 0.829268,
+  "lift": 6.660789,
+  "leverage": 0.014448
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P010"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.03625,
+  "antecedent_support": 0.04375,
+  "consequent_support": 0.0605,
+  "confidence": 0.828571,
+  "lift": 13.695396,
+  "leverage": 0.033603
+ },
+ {
+  "antecedents": [
+   "P002",
+   "P008"
+  ],
+  "consequents": [
+   "P007"
+  ],
+  "support": 0.01075,
+  "antecedent_support": 0.013,
+  "consequent_support": 0.07425,
+  "confidence": 0.826923,
+  "lift": 11.137011,
+  "leverage": 0.009785
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P040"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.0155,
+  "antecedent_support": 0.01875,
+  "consequent_support": 0.0605,
+  "confidence": 0.826667,
+  "lift": 13.663912,
+  "leverage": 0.014366
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P040"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.01875,
+  "antecedent_support": 0.02275,
+  "consequent_support": 0.085,
+  "confidence": 0.824176,
+  "lift": 9.696186,
+  "leverage": 0.016816
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P011"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.01275,
+  "consequent_support": 0.0605,
+  "confidence": 0.823529,
+  "lift": 13.612056,
+  "leverage": 0.009729
+ },
+ {
+  "antecedents": [
+   "P036",
+   "P040"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.01625,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.057,
+  "confidence": 0.822785,
+  "lift": 14.434821,
+  "leverage": 0.015124
+ },
+ {
+  "antecedents": [
+   "P037",
+   "P040"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.01625,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.0605,
+  "confidence": 0.822785,
+  "lift": 13.599749,
+  "leverage": 0.015055
+ },
+ {
+  "antecedents": [
+   "P035",
+   "P038"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.015,
+  "antecedent_support": 0.01825,
+  "consequent_support": 0.09925,
+  "confidence": 0.821918,
+  "lift": 8.281288,
+  "leverage": 0.013189
+ },
+ {
+  "antecedents": [
+   "P022",
+   "P024"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.0305,
+  "antecedent_support": 0.03725,
+  "consequent_support": 0.1245,
+  "confidence": 0.818792,
+  "lift": 6.576642,
+  "leverage": 0.025862
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P036"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.02275,
+  "antecedent_support": 0.028,
+  "consequent_support": 0.057,
+  "confidence": 0.8125,
+  "lift": 14.254386,
+  "leverage": 0.021154
+ },
+ {
+  "antecedents": [
+   "P037",
+   "P040"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.016,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.085,
+  "confidence": 0.810127,
+  "lift": 9.530901,
+  "leverage": 0.014321
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P011"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.01275,
+  "consequent_support": 0.085,
+  "confidence": 0.803922,
+  "lift": 9.457901,
+  "leverage": 0.009166
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P037"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.0345,
+  "antecedent_support": 0.043,
+  "consequent_support": 0.085,
+  "confidence": 0.802326,
+  "lift": 9.439124,
+  "leverage": 0.030845
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P036"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.03625,
+  "antecedent_support": 0.04525,
+  "consequent_support": 0.085,
+  "confidence": 0.801105,
+  "lift": 9.424764,
+  "leverage": 0.032404
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P022"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.017,
+  "antecedent_support": 0.02125,
+  "consequent_support": 0.1245,
+  "confidence": 0.8,
+  "lift": 6.425703,
+  "leverage": 0.014354
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P037"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.02775,
+  "antecedent_support": 0.03475,
+  "consequent_support": 0.0605,
+  "confidence": 0.798561,
+  "lift": 13.199358,
+  "leverage": 0.025648
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P039"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.02475,
+  "consequent_support": 0.083,
+  "confidence": 0.79798,
+  "lift": 9.614214,
+  "leverage": 0.017696
+ },
+ {
+  "antecedents": [
+   "P002",
+   "P038"
+  ],
+  "consequents": [
+   "P015"
+  ],
+  "support": 0.0195,
+  "antecedent_support": 0.0245,
+  "consequent_support": 0.06525,
+  "confidence": 0.795918,
+  "lift": 12.197983,
+  "leverage": 0.017901
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P036"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.03575,
+  "antecedent_support": 0.04525,
+  "consequent_support": 0.057,
+  "confidence": 0.790055,
+  "lift": 13.860618,
+  "leverage": 0.033171
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P006"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.01425,
+  "consequent_support": 0.083,
+  "confidence": 0.789474,
+  "lift": 9.511731,
+  "leverage": 0.010067
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P010"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.0345,
+  "antecedent_support": 0.04375,
+  "consequent_support": 0.057,
+  "confidence": 0.788571,
+  "lift": 13.834586,
+  "leverage": 0.032006
+ },
+ {
+  "antecedents": [
+   "P036",
+   "P040"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.0155,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.085,
+  "confidence": 0.78481,
+  "lift": 9.23306,
+  "leverage": 0.013821
+ },
+ {
+  "antecedents": [
+   "P007",
+   "P008"
+  ],
+  "consequents": [
+   "P002"
+  ],
+  "support": 0.01075,
+  "antecedent_support": 0.01375,
+  "consequent_support": 0.06725,
+  "confidence": 0.781818,
+  "lift": 11.625549,
+  "leverage": 0.009825
+ },
+ {
+  "antecedents": [
+   "P024"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.10775,
+  "antecedent_support": 0.138,
+  "consequent_support": 0.1245,
+  "confidence": 0.780797,
+  "lift": 6.271463,
+  "leverage": 0.090569
+ },
+ {
+  "antecedents": [
+   "P021"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.06725,
+  "antecedent_support": 0.08625,
+  "consequent_support": 0.138,
+  "confidence": 0.77971,
+  "lift": 5.650074,
+  "leverage": 0.055348
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P039"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.022,
+  "antecedent_support": 0.02825,
+  "consequent_support": 0.083,
+  "confidence": 0.778761,
+  "lift": 9.382663,
+  "leverage": 0.019655
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P025"
+  ],
+  "consequents": [
+   "P028"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.02475,
+  "consequent_support": 0.04775,
+  "confidence": 0.777778,
+  "lift": 16.28854,
+  "leverage": 0.018068
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P016"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.0315,
+  "consequent_support": 0.085,
+  "confidence": 0.777778,
+  "lift": 9.150327,
+  "leverage": 0.021823
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P014"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.049,
+  "antecedent_support": 0.06325,
+  "consequent_support": 0.083,
+  "confidence": 0.774704,
+  "lift": 9.333778,
+  "leverage": 0.04375
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P025"
+  ],
+  "consequents": [
+   "P028"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.0155,
+  "consequent_support": 0.04775,
+  "confidence": 0.774194,
+  "lift": 16.213477,
+  "leverage": 0.01126
+ },
+ {
+  "antecedents": [
+   "P008",
+   "P015"
+  ],
+  "consequents": [
+   "P007"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.01325,
+  "consequent_support": 0.07425,
+  "confidence": 0.773585,
+  "lift": 10.418652,
+  "leverage": 0.009266
+ },
+ {
+  "antecedents": [
+   "P007",
+   "P038"
+  ],
+  "consequents": [
+   "P015"
+  ],
+  "support": 0.01775,
+  "antecedent_support": 0.023,
+  "consequent_support": 0.06525,
+  "confidence": 0.771739,
+  "lift": 11.82742,
+  "leverage": 0.016249
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P016"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.03175,
+  "consequent_support": 0.0695,
+  "confidence": 0.771654,
+  "lift": 11.102929,
+  "leverage": 0.022293
+ },
+ {
+  "antecedents": [
+   "P036",
+   "P037"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.02775,
+  "antecedent_support": 0.036,
+  "consequent_support": 0.085,
+  "confidence": 0.770833,
+  "lift": 9.068627,
+  "leverage": 0.02469
+ },
+ {
+  "antecedents": [
+   "P025",
+   "P027"
+  ],
+  "consequents": [
+   "P028"
+  ],
+  "support": 0.017,
+  "antecedent_support": 0.02225,
+  "consequent_support": 0.04775,
+  "confidence": 0.764045,
+  "lift": 16.000941,
+  "leverage": 0.015938
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P039"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.015,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.083,
+  "confidence": 0.759494,
+  "lift": 9.150526,
+  "leverage": 0.013361
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P036"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.02775,
+  "antecedent_support": 0.03675,
+  "consequent_support": 0.057,
+  "confidence": 0.755102,
+  "lift": 13.247404,
+  "leverage": 0.025655
+ },
+ {
+  "antecedents": [
+   "P037"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.043,
+  "antecedent_support": 0.057,
+  "consequent_support": 0.0695,
+  "confidence": 0.754386,
+  "lift": 10.854474,
+  "leverage": 0.039038
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P035"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.026,
+  "antecedent_support": 0.0345,
+  "consequent_support": 0.083,
+  "confidence": 0.753623,
+  "lift": 9.079797,
+  "leverage": 0.023136
+ },
+ {
+  "antecedents": [
+   "P021"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.065,
+  "antecedent_support": 0.08625,
+  "consequent_support": 0.1245,
+  "confidence": 0.753623,
+  "lift": 6.053198,
+  "leverage": 0.054262
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P018"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.03425,
+  "antecedent_support": 0.0455,
+  "consequent_support": 0.083,
+  "confidence": 0.752747,
+  "lift": 9.069244,
+  "leverage": 0.030474
+ },
+ {
+  "antecedents": [
+   "P048",
+   "P050"
+  ],
+  "consequents": [
+   "P047"
+  ],
+  "support": 0.0225,
+  "antecedent_support": 0.03,
+  "consequent_support": 0.05875,
+  "confidence": 0.75,
+  "lift": 12.765957,
+  "leverage": 0.020737
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P040"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.014,
+  "consequent_support": 0.085,
+  "confidence": 0.75,
+  "lift": 8.823529,
+  "leverage": 0.00931
+ },
+ {
+  "antecedents": [
+   "P036"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.04525,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.0695,
+  "confidence": 0.747934,
+  "lift": 10.761639,
+  "leverage": 0.041045
+ },
+ {
+  "antecedents": [
+   "P019"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.06675,
+  "antecedent_support": 0.0895,
+  "consequent_support": 0.138,
+  "confidence": 0.74581,
+  "lift": 5.404421,
+  "leverage": 0.054399
+ },
+ {
+  "antecedents": [
+   "P007",
+   "P008"
+  ],
+  "consequents": [
+   "P015"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.01375,
+  "consequent_support": 0.06525,
+  "confidence": 0.745455,
+  "lift": 11.424591,
+  "leverage": 0.009353
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P038"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0205,
+  "antecedent_support": 0.0275,
+  "consequent_support": 0.083,
+  "confidence": 0.745455,
+  "lift": 8.98138,
+  "leverage": 0.018218
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P018"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0365,
+  "antecedent_support": 0.049,
+  "consequent_support": 0.083,
+  "confidence": 0.744898,
+  "lift": 8.974674,
+  "leverage": 0.032433
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P037"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.0195,
+  "antecedent_support": 0.02625,
+  "consequent_support": 0.085,
+  "confidence": 0.742857,
+  "lift": 8.739496,
+  "leverage": 0.017269
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P036"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.02075,
+  "antecedent_support": 0.028,
+  "consequent_support": 0.085,
+  "confidence": 0.741071,
+  "lift": 8.718487,
+  "leverage": 0.01837
+ },
+ {
+  "antecedents": [
+   "P047",
+   "P050"
+  ],
+  "consequents": [
+   "P046"
+  ],
+  "support": 0.02425,
+  "antecedent_support": 0.03275,
+  "consequent_support": 0.063,
+  "confidence": 0.740458,
+  "lift": 11.753302,
+  "leverage": 0.022187
+ },
+ {
+  "antecedents": [
+   "P035",
+   "P039"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.01425,
+  "consequent_support": 0.083,
+  "confidence": 0.736842,
+  "lift": 8.877616,
+  "leverage": 0.009317
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P035"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0285,
+  "antecedent_support": 0.03875,
+  "consequent_support": 0.083,
+  "confidence": 0.735484,
+  "lift": 8.861251,
+  "leverage": 0.025284
+ },
+ {
+  "antecedents": [
+   "P035"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.03875,
+  "antecedent_support": 0.05275,
+  "consequent_support": 0.08825,
+  "confidence": 0.734597,
+  "lift": 8.324047,
+  "leverage": 0.034095
+ },
+ {
+  "antecedents": [
+   "P018"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.049,
+  "antecedent_support": 0.0675,
+  "consequent_support": 0.08825,
+  "confidence": 0.725926,
+  "lift": 8.22579,
+  "leverage": 0.043043
+ },
+ {
+  "antecedents": [
+   "P029",
+   "P031"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.01575,
+  "antecedent_support": 0.02175,
+  "consequent_support": 0.1,
+  "confidence": 0.724138,
+  "lift": 7.241379,
+  "leverage": 0.013575
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P038"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.022,
+  "antecedent_support": 0.0305,
+  "consequent_support": 0.083,
+  "confidence": 0.721311,
+  "lift": 8.6905,
+  "leverage": 0.019468
+ },
+ {
+  "antecedents": [
+   "P042",
+   "P043"
+  ],
+  "consequents": [
+   "P041"
+  ],
+  "support": 0.0265,
+  "antecedent_support": 0.03675,
+  "consequent_support": 0.05275,
+  "confidence": 0.721088,
+  "lift": 13.669923,
+  "leverage": 0.024561
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P006"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.01425,
+  "consequent_support": 0.0675,
+  "confidence": 0.719298,
+  "lift": 10.65627,
+  "leverage": 0.009288
+ },
+ {
+  "antecedents": [
+   "P001"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.06325,
+  "antecedent_support": 0.08825,
+  "consequent_support": 0.09925,
+  "confidence": 0.716714,
+  "lift": 7.221299,
+  "leverage": 0.054491
+ },
+ {
+  "antecedents": [
+   "P006",
+   "P014"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.01475,
+  "consequent_support": 0.083,
+  "confidence": 0.711864,
+  "lift": 8.57668,
+  "leverage": 0.009276
+ },
+ {
+  "antecedents": [
+   "P004"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.059,
+  "antecedent_support": 0.083,
+  "consequent_support": 0.09925,
+  "confidence": 0.710843,
+  "lift": 7.16215,
+  "leverage": 0.050762
+ },
+ {
+  "antecedents": [
+   "P043"
+  ],
+  "consequents": [
+   "P042"
+  ],
+  "support": 0.03675,
+  "antecedent_support": 0.05175,
+  "consequent_support": 0.06725,
+  "confidence": 0.710145,
+  "lift": 10.559776,
+  "leverage": 0.03327
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P025"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.011,
+  "antecedent_support": 0.0155,
+  "consequent_support": 0.1245,
+  "confidence": 0.709677,
+  "lift": 5.70022,
+  "leverage": 0.00907
+ },
+ {
+  "antecedents": [
+   "P015"
+  ],
+  "consequents": [
+   "P002"
+  ],
+  "support": 0.046,
+  "antecedent_support": 0.06525,
+  "consequent_support": 0.06725,
+  "confidence": 0.704981,
+  "lift": 10.482987,
+  "leverage": 0.041612
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P035"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.01725,
+  "antecedent_support": 0.0245,
+  "consequent_support": 0.083,
+  "confidence": 0.704082,
+  "lift": 8.482911,
+  "leverage": 0.015217
+ },
+ {
+  "antecedents": [
+   "P009",
+   "P010"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.016,
+  "consequent_support": 0.05975,
+  "confidence": 0.703125,
+  "lift": 11.767782,
+  "leverage": 0.010294
+ },
+ {
+  "antecedents": [
+   "P002"
+  ],
+  "consequents": [
+   "P007"
+  ],
+  "support": 0.04725,
+  "antecedent_support": 0.06725,
+  "consequent_support": 0.07425,
+  "confidence": 0.702602,
+  "lift": 9.462656,
+  "leverage": 0.042257
+ },
+ {
+  "antecedents": [
+   "P035",
+   "P038"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.01275,
+  "antecedent_support": 0.01825,
+  "consequent_support": 0.083,
+  "confidence": 0.69863,
+  "lift": 8.417231,
+  "leverage": 0.011235
+ },
+ {
+  "antecedents": [
+   "P047",
+   "P048"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.0225,
+  "antecedent_support": 0.03225,
+  "consequent_support": 0.078,
+  "confidence": 0.697674,
+  "lift": 8.944544,
+  "leverage": 0.019984
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P038"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.01425,
+  "antecedent_support": 0.0205,
+  "consequent_support": 0.083,
+  "confidence": 0.695122,
+  "lift": 8.374963,
+  "leverage": 0.012549
+ },
+ {
+  "antecedents": [
+   "P039"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.02825,
+  "antecedent_support": 0.04075,
+  "consequent_support": 0.08825,
+  "confidence": 0.693252,
+  "lift": 7.855541,
+  "leverage": 0.024654
+ },
+ {
+  "antecedents": [
+   "P046",
+   "P050"
+  ],
+  "consequents": [
+   "P047"
+  ],
+  "support": 0.02425,
+  "antecedent_support": 0.035,
+  "consequent_support": 0.05875,
+  "confidence": 0.692857,
+  "lift": 11.793313,
+  "leverage": 0.022194
+ },
+ {
+  "antecedents": [
+   "P047",
+   "P050"
+  ],
+  "consequents": [
+   "P048"
+  ],
+  "support": 0.0225,
+  "antecedent_support": 0.03275,
+  "consequent_support": 0.0605,
+  "confidence": 0.687023,
+  "lift": 11.35575,
+  "leverage": 0.020519
+ },
+ {
+  "antecedents": [
+   "P002"
+  ],
+  "consequents": [
+   "P015"
+  ],
+  "support": 0.046,
+  "antecedent_support": 0.06725,
+  "consequent_support": 0.06525,
+  "confidence": 0.684015,
+  "lift": 10.482987,
+  "leverage": 0.041612
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P039"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.02825,
+  "consequent_support": 0.0675,
+  "confidence": 0.681416,
+  "lift": 10.095051,
+  "leverage": 0.017343
+ },
+ {
+  "antecedents": [
+   "P022"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.03725,
+  "antecedent_support": 0.05475,
+  "consequent_support": 0.138,
+  "confidence": 0.680365,
+  "lift": 4.930183,
+  "leverage": 0.029694
+ },
+ {
+  "antecedents": [
+   "P019"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.0605,
+  "antecedent_support": 0.0895,
+  "consequent_support": 0.1245,
+  "confidence": 0.675978,
+  "lift": 5.429539,
+  "leverage": 0.049357
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P039"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.015,
+  "antecedent_support": 0.02225,
+  "consequent_support": 0.0675,
+  "confidence": 0.674157,
+  "lift": 9.987516,
+  "leverage": 0.013498
+ },
+ {
+  "antecedents": [
+   "P018"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.0455,
+  "antecedent_support": 0.0675,
+  "consequent_support": 0.09925,
+  "confidence": 0.674074,
+  "lift": 6.791678,
+  "leverage": 0.038801
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P004"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.0365,
+  "antecedent_support": 0.0545,
+  "consequent_support": 0.0675,
+  "confidence": 0.669725,
+  "lift": 9.921848,
+  "leverage": 0.032821
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P014"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.04225,
+  "antecedent_support": 0.06325,
+  "consequent_support": 0.0675,
+  "confidence": 0.667984,
+  "lift": 9.896062,
+  "leverage": 0.037981
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P039"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.0165,
+  "antecedent_support": 0.02475,
+  "consequent_support": 0.0675,
+  "confidence": 0.666667,
+  "lift": 9.876543,
+  "leverage": 0.014829
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P038"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.02025,
+  "antecedent_support": 0.0305,
+  "consequent_support": 0.0675,
+  "confidence": 0.663934,
+  "lift": 9.836066,
+  "leverage": 0.018191
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P011"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.0155,
+  "consequent_support": 0.0695,
+  "confidence": 0.66129,
+  "lift": 9.514969,
+  "leverage": 0.009173
+ },
+ {
+  "antecedents": [
+   "P028"
+  ],
+  "consequents": [
+   "P025"
+  ],
+  "support": 0.0315,
+  "antecedent_support": 0.04775,
+  "consequent_support": 0.05675,
+  "confidence": 0.659686,
+  "lift": 11.624421,
+  "leverage": 0.02879
+ },
+ {
+  "antecedents": [
+   "P004"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.0545,
+  "antecedent_support": 0.083,
+  "consequent_support": 0.08825,
+  "confidence": 0.656627,
+  "lift": 7.440527,
+  "leverage": 0.047175
+ },
+ {
+  "antecedents": [
+   "P035"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.0345,
+  "antecedent_support": 0.05275,
+  "consequent_support": 0.09925,
+  "confidence": 0.654028,
+  "lift": 6.589707,
+  "leverage": 0.029265
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P016"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.02075,
+  "antecedent_support": 0.03175,
+  "consequent_support": 0.0605,
+  "confidence": 0.653543,
+  "lift": 10.802369,
+  "leverage": 0.018829
+ },
+ {
+  "antecedents": [
+   "P003"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.04525,
+  "antecedent_support": 0.0695,
+  "consequent_support": 0.0605,
+  "confidence": 0.651079,
+  "lift": 10.761639,
+  "leverage": 0.041045
+ },
+ {
+  "antecedents": [
+   "P040"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.02275,
+  "antecedent_support": 0.0355,
+  "consequent_support": 0.0695,
+  "confidence": 0.640845,
+  "lift": 9.220792,
+  "leverage": 0.020283
+ },
+ {
+  "antecedents": [
+   "P014"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.06325,
+  "antecedent_support": 0.09925,
+  "consequent_support": 0.08825,
+  "confidence": 0.63728,
+  "lift": 7.221299,
+  "leverage": 0.054491
+ },
+ {
+  "antecedents": [
+   "P007"
+  ],
+  "consequents": [
+   "P002"
+  ],
+  "support": 0.04725,
+  "antecedent_support": 0.07425,
+  "consequent_support": 0.06725,
+  "confidence": 0.636364,
+  "lift": 9.462656,
+  "leverage": 0.042257
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P038"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.0175,
+  "antecedent_support": 0.0275,
+  "consequent_support": 0.0675,
+  "confidence": 0.636364,
+  "lift": 9.427609,
+  "leverage": 0.015644
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P035"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.03875,
+  "consequent_support": 0.0675,
+  "confidence": 0.632258,
+  "lift": 9.366786,
+  "leverage": 0.021884
+ },
+ {
+  "antecedents": [
+   "P036",
+   "P037"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.02275,
+  "antecedent_support": 0.036,
+  "consequent_support": 0.05975,
+  "confidence": 0.631944,
+  "lift": 10.576476,
+  "leverage": 0.020599
+ },
+ {
+  "antecedents": [
+   "P037"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.036,
+  "antecedent_support": 0.057,
+  "consequent_support": 0.0605,
+  "confidence": 0.631579,
+  "lift": 10.439321,
+  "leverage": 0.032551
+ },
+ {
+  "antecedents": [
+   "P003"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.04375,
+  "antecedent_support": 0.0695,
+  "consequent_support": 0.085,
+  "confidence": 0.629496,
+  "lift": 7.40584,
+  "leverage": 0.037842
+ },
+ {
+  "antecedents": [
+   "P015"
+  ],
+  "consequents": [
+   "P007"
+  ],
+  "support": 0.041,
+  "antecedent_support": 0.06525,
+  "consequent_support": 0.07425,
+  "confidence": 0.628352,
+  "lift": 8.46266,
+  "leverage": 0.036155
+ },
+ {
+  "antecedents": [
+   "P046",
+   "P047"
+  ],
+  "consequents": [
+   "P048"
+  ],
+  "support": 0.018,
+  "antecedent_support": 0.029,
+  "consequent_support": 0.0605,
+  "confidence": 0.62069,
+  "lift": 10.259333,
+  "leverage": 0.016245
+ },
+ {
+  "antecedents": [
+   "P003"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.043,
+  "antecedent_support": 0.0695,
+  "consequent_support": 0.057,
+  "confidence": 0.618705,
+  "lift": 10.854474,
+  "leverage": 0.039038
+ },
+ {
+  "antecedents": [
+   "P001"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0545,
+  "antecedent_support": 0.08825,
+  "consequent_support": 0.083,
+  "confidence": 0.617564,
+  "lift": 7.440527,
+  "leverage": 0.047175
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P035"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.02125,
+  "antecedent_support": 0.0345,
+  "consequent_support": 0.0675,
+  "confidence": 0.615942,
+  "lift": 9.125067,
+  "leverage": 0.018921
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P016"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.0195,
+  "antecedent_support": 0.03175,
+  "consequent_support": 0.057,
+  "confidence": 0.614173,
+  "lift": 10.774969,
+  "leverage": 0.01769
+ },
+ {
+  "antecedents": [
+   "P025",
+   "P028"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.0315,
+  "consequent_support": 0.138,
+  "confidence": 0.611111,
+  "lift": 4.428341,
+  "leverage": 0.014903
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P037"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.02625,
+  "antecedent_support": 0.043,
+  "consequent_support": 0.05975,
+  "confidence": 0.610465,
+  "lift": 10.216989,
+  "leverage": 0.023681
+ },
+ {
+  "antecedents": [
+   "P037"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.03475,
+  "antecedent_support": 0.057,
+  "consequent_support": 0.085,
+  "confidence": 0.609649,
+  "lift": 7.172343,
+  "leverage": 0.029905
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P036"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.0275,
+  "antecedent_support": 0.04525,
+  "consequent_support": 0.05975,
+  "confidence": 0.607735,
+  "lift": 10.171294,
+  "leverage": 0.024796
+ },
+ {
+  "antecedents": [
+   "P036",
+   "P040"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.05975,
+  "confidence": 0.607595,
+  "lift": 10.168953,
+  "leverage": 0.01082
+ },
+ {
+  "antecedents": [
+   "P037",
+   "P040"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.01975,
+  "consequent_support": 0.05975,
+  "confidence": 0.607595,
+  "lift": 10.168953,
+  "leverage": 0.01082
+ },
+ {
+  "antecedents": [
+   "P036"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.03675,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.085,
+  "confidence": 0.607438,
+  "lift": 7.14633,
+  "leverage": 0.031607
+ },
+ {
+  "antecedents": [
+   "P039"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.02475,
+  "antecedent_support": 0.04075,
+  "consequent_support": 0.09925,
+  "confidence": 0.607362,
+  "lift": 6.119516,
+  "leverage": 0.020706
+ },
+ {
+  "antecedents": [
+   "P029"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.03125,
+  "antecedent_support": 0.0515,
+  "consequent_support": 0.1,
+  "confidence": 0.606796,
+  "lift": 6.067961,
+  "leverage": 0.0261
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P038"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.01425,
+  "antecedent_support": 0.0235,
+  "consequent_support": 0.0675,
+  "confidence": 0.606383,
+  "lift": 8.983452,
+  "leverage": 0.012664
+ },
+ {
+  "antecedents": [
+   "P035",
+   "P038"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.011,
+  "antecedent_support": 0.01825,
+  "consequent_support": 0.0675,
+  "confidence": 0.60274,
+  "lift": 8.929477,
+  "leverage": 0.009768
+ },
+ {
+  "antecedents": [
+   "P048",
+   "P050"
+  ],
+  "consequents": [
+   "P046"
+  ],
+  "support": 0.018,
+  "antecedent_support": 0.03,
+  "consequent_support": 0.063,
+  "confidence": 0.6,
+  "lift": 9.52381,
+  "leverage": 0.01611
+ },
+ {
+  "antecedents": [
+   "P041"
+  ],
+  "consequents": [
+   "P042"
+  ],
+  "support": 0.0315,
+  "antecedent_support": 0.05275,
+  "consequent_support": 0.06725,
+  "confidence": 0.597156,
+  "lift": 8.879649,
+  "leverage": 0.027953
+ },
+ {
+  "antecedents": [
+   "P036"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.036,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.057,
+  "confidence": 0.595041,
+  "lift": 10.439321,
+  "leverage": 0.032551
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P035"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.01725,
+  "antecedent_support": 0.029,
+  "consequent_support": 0.0675,
+  "confidence": 0.594828,
+  "lift": 8.812261,
+  "leverage": 0.015293
+ },
+ {
+  "antecedents": [
+   "P014"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.059,
+  "antecedent_support": 0.09925,
+  "consequent_support": 0.083,
+  "confidence": 0.594458,
+  "lift": 7.16215,
+  "leverage": 0.050762
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P040"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.0135,
+  "antecedent_support": 0.02275,
+  "consequent_support": 0.05975,
+  "confidence": 0.593407,
+  "lift": 9.931491,
+  "leverage": 0.012141
+ },
+ {
+  "antecedents": [
+   "P049"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.0225,
+  "antecedent_support": 0.038,
+  "consequent_support": 0.078,
+  "confidence": 0.592105,
+  "lift": 7.591093,
+  "leverage": 0.019536
+ },
+ {
+  "antecedents": [
+   "P009",
+   "P016"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.019,
+  "consequent_support": 0.085,
+  "confidence": 0.592105,
+  "lift": 6.965944,
+  "leverage": 0.009635
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P038"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.01775,
+  "antecedent_support": 0.0305,
+  "consequent_support": 0.05275,
+  "confidence": 0.581967,
+  "lift": 11.032554,
+  "leverage": 0.016141
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P014"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.03425,
+  "antecedent_support": 0.059,
+  "consequent_support": 0.0675,
+  "confidence": 0.580508,
+  "lift": 8.600126,
+  "leverage": 0.030268
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P027"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.0625,
+  "antecedent_support": 0.10775,
+  "consequent_support": 0.08625,
+  "confidence": 0.580046,
+  "lift": 6.725176,
+  "leverage": 0.053207
+ },
+ {
+  "antecedents": [
+   "P043"
+  ],
+  "consequents": [
+   "P041"
+  ],
+  "support": 0.02975,
+  "antecedent_support": 0.05175,
+  "consequent_support": 0.05275,
+  "confidence": 0.574879,
+  "lift": 10.898184,
+  "leverage": 0.02702
+ },
+ {
+  "antecedents": [
+   "P018"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0385,
+  "antecedent_support": 0.0675,
+  "consequent_support": 0.083,
+  "confidence": 0.57037,
+  "lift": 6.871932,
+  "leverage": 0.032897
+ },
+ {
+  "antecedents": [
+   "P022"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.031,
+  "antecedent_support": 0.05475,
+  "consequent_support": 0.1245,
+  "confidence": 0.56621,
+  "lift": 4.547872,
+  "leverage": 0.024184
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P036"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.02075,
+  "antecedent_support": 0.03675,
+  "consequent_support": 0.05975,
+  "confidence": 0.564626,
+  "lift": 9.449805,
+  "leverage": 0.018554
+ },
+ {
+  "antecedents": [
+   "P041"
+  ],
+  "consequents": [
+   "P043"
+  ],
+  "support": 0.02975,
+  "antecedent_support": 0.05275,
+  "consequent_support": 0.05175,
+  "confidence": 0.563981,
+  "lift": 10.898184,
+  "leverage": 0.02702
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P037"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.0195,
+  "antecedent_support": 0.03475,
+  "consequent_support": 0.05975,
+  "confidence": 0.561151,
+  "lift": 9.39165,
+  "leverage": 0.017424
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P010"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.04375,
+  "consequent_support": 0.05975,
+  "confidence": 0.56,
+  "lift": 9.372385,
+  "leverage": 0.021886
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P040"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.01875,
+  "consequent_support": 0.05975,
+  "confidence": 0.56,
+  "lift": 9.372385,
+  "leverage": 0.00938
+ },
+ {
+  "antecedents": [
+   "P047",
+   "P048"
+  ],
+  "consequents": [
+   "P046"
+  ],
+  "support": 0.018,
+  "antecedent_support": 0.03225,
+  "consequent_support": 0.063,
+  "confidence": 0.55814,
+  "lift": 8.859358,
+  "leverage": 0.015968
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P027"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.03375,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.08625,
+  "confidence": 0.557851,
+  "lift": 6.46784,
+  "leverage": 0.028532
+ },
+ {
+  "antecedents": [
+   "P047"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.03275,
+  "antecedent_support": 0.05875,
+  "consequent_support": 0.078,
+  "confidence": 0.557447,
+  "lift": 7.146754,
+  "leverage": 0.028168
+ },
+ {
+  "antecedents": [
+   "P040"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.0355,
+  "consequent_support": 0.057,
+  "confidence": 0.556338,
+  "lift": 9.760316,
+  "leverage": 0.017726
+ },
+ {
+  "antecedents": [
+   "P040"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.0355,
+  "consequent_support": 0.0605,
+  "confidence": 0.556338,
+  "lift": 9.19567,
+  "leverage": 0.017602
+ },
+ {
+  "antecedents": [
+   "P046"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.035,
+  "antecedent_support": 0.063,
+  "consequent_support": 0.078,
+  "confidence": 0.555556,
+  "lift": 7.122507,
+  "leverage": 0.030086
+ },
+ {
+  "antecedents": [
+   "P001"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.049,
+  "antecedent_support": 0.08825,
+  "consequent_support": 0.0675,
+  "confidence": 0.555241,
+  "lift": 8.22579,
+  "leverage": 0.043043
+ },
+ {
+  "antecedents": [
+   "P025"
+  ],
+  "consequents": [
+   "P028"
+  ],
+  "support": 0.0315,
+  "antecedent_support": 0.05675,
+  "consequent_support": 0.04775,
+  "confidence": 0.555066,
+  "lift": 11.624421,
+  "leverage": 0.02879
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P027"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.0595,
+  "antecedent_support": 0.10775,
+  "consequent_support": 0.0895,
+  "confidence": 0.552204,
+  "lift": 6.169879,
+  "leverage": 0.049856
+ },
+ {
+  "antecedents": [
+   "P007"
+  ],
+  "consequents": [
+   "P015"
+  ],
+  "support": 0.041,
+  "antecedent_support": 0.07425,
+  "consequent_support": 0.06525,
+  "confidence": 0.552189,
+  "lift": 8.46266,
+  "leverage": 0.036155
+ },
+ {
+  "antecedents": [
+   "P035"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.029,
+  "antecedent_support": 0.05275,
+  "consequent_support": 0.083,
+  "confidence": 0.549763,
+  "lift": 6.623651,
+  "leverage": 0.024622
+ },
+ {
+  "antecedents": [
+   "P047"
+  ],
+  "consequents": [
+   "P048"
+  ],
+  "support": 0.03225,
+  "antecedent_support": 0.05875,
+  "consequent_support": 0.0605,
+  "confidence": 0.548936,
+  "lift": 9.073325,
+  "leverage": 0.028696
+ },
+ {
+  "antecedents": [
+   "P022",
+   "P027"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.017,
+  "antecedent_support": 0.031,
+  "consequent_support": 0.0895,
+  "confidence": 0.548387,
+  "lift": 6.12723,
+  "leverage": 0.014226
+ },
+ {
+  "antecedents": [
+   "P042"
+  ],
+  "consequents": [
+   "P043"
+  ],
+  "support": 0.03675,
+  "antecedent_support": 0.06725,
+  "consequent_support": 0.05175,
+  "confidence": 0.546468,
+  "lift": 10.559776,
+  "leverage": 0.03327
+ },
+ {
+  "antecedents": [
+   "P039"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.02225,
+  "antecedent_support": 0.04075,
+  "consequent_support": 0.083,
+  "confidence": 0.546012,
+  "lift": 6.578461,
+  "leverage": 0.018868
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P038"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.015,
+  "antecedent_support": 0.0275,
+  "consequent_support": 0.05275,
+  "confidence": 0.545455,
+  "lift": 10.340371,
+  "leverage": 0.013549
+ },
+ {
+  "antecedents": [
+   "P022",
+   "P024"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.02025,
+  "antecedent_support": 0.03725,
+  "consequent_support": 0.0895,
+  "confidence": 0.543624,
+  "lift": 6.074013,
+  "leverage": 0.016916
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P038"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.01275,
+  "antecedent_support": 0.0235,
+  "consequent_support": 0.05275,
+  "confidence": 0.542553,
+  "lift": 10.285369,
+  "leverage": 0.01151
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P014"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.03425,
+  "antecedent_support": 0.06325,
+  "consequent_support": 0.05275,
+  "confidence": 0.541502,
+  "lift": 10.26544,
+  "leverage": 0.030914
+ },
+ {
+  "antecedents": [
+   "P025",
+   "P028"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.017,
+  "antecedent_support": 0.0315,
+  "consequent_support": 0.1245,
+  "confidence": 0.539683,
+  "lift": 4.3348,
+  "leverage": 0.013078
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P038"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.011,
+  "antecedent_support": 0.0205,
+  "consequent_support": 0.05275,
+  "confidence": 0.536585,
+  "lift": 10.172234,
+  "leverage": 0.009919
+ },
+ {
+  "antecedents": [
+   "P048"
+  ],
+  "consequents": [
+   "P047"
+  ],
+  "support": 0.03225,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.05875,
+  "confidence": 0.533058,
+  "lift": 9.073325,
+  "leverage": 0.028696
+ },
+ {
+  "antecedents": [
+   "P016"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.03175,
+  "antecedent_support": 0.05975,
+  "consequent_support": 0.085,
+  "confidence": 0.531381,
+  "lift": 6.251538,
+  "leverage": 0.026671
+ },
+ {
+  "antecedents": [
+   "P040"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.01875,
+  "antecedent_support": 0.0355,
+  "consequent_support": 0.085,
+  "confidence": 0.528169,
+  "lift": 6.213753,
+  "leverage": 0.015732
+ },
+ {
+  "antecedents": [
+   "P016"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.0315,
+  "antecedent_support": 0.05975,
+  "consequent_support": 0.0695,
+  "confidence": 0.527197,
+  "lift": 7.585563,
+  "leverage": 0.027347
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P025"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.013,
+  "antecedent_support": 0.02475,
+  "consequent_support": 0.0895,
+  "confidence": 0.525253,
+  "lift": 5.868743,
+  "leverage": 0.010785
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P028"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.01075,
+  "antecedent_support": 0.0205,
+  "consequent_support": 0.0895,
+  "confidence": 0.52439,
+  "lift": 5.859109,
+  "leverage": 0.008915
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P024"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.035,
+  "antecedent_support": 0.06675,
+  "consequent_support": 0.08625,
+  "confidence": 0.524345,
+  "lift": 6.079357,
+  "leverage": 0.029243
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P004"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.0285,
+  "antecedent_support": 0.0545,
+  "consequent_support": 0.05275,
+  "confidence": 0.522936,
+  "lift": 9.913474,
+  "leverage": 0.025625
+ },
+ {
+  "antecedents": [
+   "P049",
+   "P050"
+  ],
+  "consequents": [
+   "P048"
+  ],
+  "support": 0.01175,
+  "antecedent_support": 0.0225,
+  "consequent_support": 0.0605,
+  "confidence": 0.522222,
+  "lift": 8.631772,
+  "leverage": 0.010389
+ },
+ {
+  "antecedents": [
+   "P027"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.065,
+  "antecedent_support": 0.1245,
+  "consequent_support": 0.08625,
+  "confidence": 0.522088,
+  "lift": 6.053198,
+  "leverage": 0.054262
+ },
+ {
+  "antecedents": [
+   "P021",
+   "P024"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.035,
+  "antecedent_support": 0.06725,
+  "consequent_support": 0.0895,
+  "confidence": 0.520446,
+  "lift": 5.81504,
+  "leverage": 0.028981
+ },
+ {
+  "antecedents": [
+   "P021",
+   "P027"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.03375,
+  "antecedent_support": 0.065,
+  "consequent_support": 0.0895,
+  "confidence": 0.519231,
+  "lift": 5.801461,
+  "leverage": 0.027933
+ },
+ {
+  "antecedents": [
+   "P030"
+  ],
+  "consequents": [
+   "P031"
+  ],
+  "support": 0.0205,
+  "antecedent_support": 0.03975,
+  "consequent_support": 0.045,
+  "confidence": 0.515723,
+  "lift": 11.460517,
+  "leverage": 0.018711
+ },
+ {
+  "antecedents": [
+   "P010"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.04375,
+  "antecedent_support": 0.085,
+  "consequent_support": 0.0695,
+  "confidence": 0.514706,
+  "lift": 7.40584,
+  "leverage": 0.037842
+ },
+ {
+  "antecedents": [
+   "P046",
+   "P050"
+  ],
+  "consequents": [
+   "P048"
+  ],
+  "support": 0.018,
+  "antecedent_support": 0.035,
+  "consequent_support": 0.0605,
+  "confidence": 0.514286,
+  "lift": 8.50059,
+  "leverage": 0.015882
+ },
+ {
+  "antecedents": [
+   "P049",
+   "P050"
+  ],
+  "consequents": [
+   "P047"
+  ],
+  "support": 0.0115,
+  "antecedent_support": 0.0225,
+  "consequent_support": 0.05875,
+  "confidence": 0.511111,
+  "lift": 8.699764,
+  "leverage": 0.010178
+ },
+ {
+  "antecedents": [
+   "P025",
+   "P027"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.02225,
+  "consequent_support": 0.08625,
+  "confidence": 0.505618,
+  "lift": 5.862237,
+  "leverage": 0.009331
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P039"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.01425,
+  "antecedent_support": 0.02825,
+  "consequent_support": 0.05275,
+  "confidence": 0.504425,
+  "lift": 9.562555,
+  "leverage": 0.01276
+ },
+ {
+  "antecedents": [
+   "P029",
+   "P038"
+  ],
+  "consequents": [
+   "P031"
+  ],
+  "support": 0.01575,
+  "antecedent_support": 0.03125,
+  "consequent_support": 0.045,
+  "confidence": 0.504,
+  "lift": 11.2,
+  "leverage": 0.014344
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P018"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.049,
+  "consequent_support": 0.05275,
+  "confidence": 0.5,
+  "lift": 9.478673,
+  "leverage": 0.021915
+ },
+ {
+  "antecedents": [
+   "P048"
+  ],
+  "consequents": [
+   "P050"
+  ],
+  "support": 0.03,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.078,
+  "confidence": 0.495868,
+  "lift": 6.357279,
+  "leverage": 0.025281
+ },
+ {
+  "antecedents": [
+   "P025",
+   "P027"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.011,
+  "antecedent_support": 0.02225,
+  "consequent_support": 0.0895,
+  "confidence": 0.494382,
+  "lift": 5.523821,
+  "leverage": 0.009009
+ },
+ {
+  "antecedents": [
+   "P047"
+  ],
+  "consequents": [
+   "P046"
+  ],
+  "support": 0.029,
+  "antecedent_support": 0.05875,
+  "consequent_support": 0.063,
+  "confidence": 0.493617,
+  "lift": 7.835191,
+  "leverage": 0.025299
+ },
+ {
+  "antecedents": [
+   "P024"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.06725,
+  "antecedent_support": 0.138,
+  "consequent_support": 0.08625,
+  "confidence": 0.487319,
+  "lift": 5.650074,
+  "leverage": 0.055348
+ },
+ {
+  "antecedents": [
+   "P027"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.0605,
+  "antecedent_support": 0.1245,
+  "consequent_support": 0.0895,
+  "confidence": 0.485944,
+  "lift": 5.429539,
+  "leverage": 0.049357
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P039"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.02475,
+  "consequent_support": 0.05275,
+  "confidence": 0.484848,
+  "lift": 9.19144,
+  "leverage": 0.010694
+ },
+ {
+  "antecedents": [
+   "P039"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.04075,
+  "consequent_support": 0.0675,
+  "confidence": 0.484663,
+  "lift": 7.180186,
+  "leverage": 0.016999
+ },
+ {
+  "antecedents": [
+   "P024"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.06675,
+  "antecedent_support": 0.138,
+  "consequent_support": 0.0895,
+  "confidence": 0.483696,
+  "lift": 5.404421,
+  "leverage": 0.054399
+ },
+ {
+  "antecedents": [
+   "P031"
+  ],
+  "consequents": [
+   "P029"
+  ],
+  "support": 0.02175,
+  "antecedent_support": 0.045,
+  "consequent_support": 0.0515,
+  "confidence": 0.483333,
+  "lift": 9.385113,
+  "leverage": 0.019432
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P039"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.02225,
+  "consequent_support": 0.05275,
+  "confidence": 0.47191,
+  "lift": 8.946163,
+  "leverage": 0.009326
+ },
+ {
+  "antecedents": [
+   "P016"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.028,
+  "antecedent_support": 0.05975,
+  "consequent_support": 0.0605,
+  "confidence": 0.468619,
+  "lift": 7.745773,
+  "leverage": 0.024385
+ },
+ {
+  "antecedents": [
+   "P042"
+  ],
+  "consequents": [
+   "P041"
+  ],
+  "support": 0.0315,
+  "antecedent_support": 0.06725,
+  "consequent_support": 0.05275,
+  "confidence": 0.468401,
+  "lift": 8.879649,
+  "leverage": 0.027953
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P018"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.02125,
+  "antecedent_support": 0.0455,
+  "consequent_support": 0.05275,
+  "confidence": 0.467033,
+  "lift": 8.853706,
+  "leverage": 0.01885
+ },
+ {
+  "antecedents": [
+   "P024",
+   "P025"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.0115,
+  "antecedent_support": 0.02475,
+  "consequent_support": 0.08625,
+  "confidence": 0.464646,
+  "lift": 5.387205,
+  "leverage": 0.009365
+ },
+ {
+  "antecedents": [
+   "P035"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.05275,
+  "consequent_support": 0.0675,
+  "confidence": 0.464455,
+  "lift": 6.880814,
+  "leverage": 0.020939
+ },
+ {
+  "antecedents": [
+   "P004"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.0385,
+  "antecedent_support": 0.083,
+  "consequent_support": 0.0675,
+  "confidence": 0.463855,
+  "lift": 6.871932,
+  "leverage": 0.032897
+ },
+ {
+  "antecedents": [
+   "P036"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.028,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.05975,
+  "confidence": 0.46281,
+  "lift": 7.745773,
+  "leverage": 0.024385
+ },
+ {
+  "antecedents": [
+   "P037"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.02625,
+  "antecedent_support": 0.057,
+  "consequent_support": 0.05975,
+  "confidence": 0.460526,
+  "lift": 7.707553,
+  "leverage": 0.022844
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P037"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.016,
+  "antecedent_support": 0.03475,
+  "consequent_support": 0.0355,
+  "confidence": 0.460432,
+  "lift": 12.969906,
+  "leverage": 0.014766
+ },
+ {
+  "antecedents": [
+   "P046"
+  ],
+  "consequents": [
+   "P047"
+  ],
+  "support": 0.029,
+  "antecedent_support": 0.063,
+  "consequent_support": 0.05875,
+  "confidence": 0.460317,
+  "lift": 7.835191,
+  "leverage": 0.025299
+ },
+ {
+  "antecedents": [
+   "P002",
+   "P007"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.02175,
+  "antecedent_support": 0.04725,
+  "consequent_support": 0.1,
+  "confidence": 0.460317,
+  "lift": 4.603175,
+  "leverage": 0.017025
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P037"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.043,
+  "consequent_support": 0.0355,
+  "confidence": 0.459302,
+  "lift": 12.938094,
+  "leverage": 0.018224
+ },
+ {
+  "antecedents": [
+   "P014"
+  ],
+  "consequents": [
+   "P018"
+  ],
+  "support": 0.0455,
+  "antecedent_support": 0.09925,
+  "consequent_support": 0.0675,
+  "confidence": 0.458438,
+  "lift": 6.791678,
+  "leverage": 0.038801
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P035"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.01775,
+  "antecedent_support": 0.03875,
+  "consequent_support": 0.1,
+  "confidence": 0.458065,
+  "lift": 4.580645,
+  "leverage": 0.013875
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P037"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.02625,
+  "consequent_support": 0.0355,
+  "confidence": 0.457143,
+  "lift": 12.877264,
+  "leverage": 0.011068
+ },
+ {
+  "antecedents": [
+   "P031"
+  ],
+  "consequents": [
+   "P030"
+  ],
+  "support": 0.0205,
+  "antecedent_support": 0.045,
+  "consequent_support": 0.03975,
+  "confidence": 0.455556,
+  "lift": 11.460517,
+  "leverage": 0.018711
+ },
+ {
+  "antecedents": [
+   "P003"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.0315,
+  "antecedent_support": 0.0695,
+  "consequent_support": 0.05975,
+  "confidence": 0.453237,
+  "lift": 7.585563,
+  "leverage": 0.027347
+ },
+ {
+  "antecedents": [
+   "P036",
+   "P037"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.01625,
+  "antecedent_support": 0.036,
+  "consequent_support": 0.0355,
+  "confidence": 0.451389,
+  "lift": 12.71518,
+  "leverage": 0.014972
+ },
+ {
+  "antecedents": [
+   "P018",
+   "P035"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.011,
+  "antecedent_support": 0.0245,
+  "consequent_support": 0.1,
+  "confidence": 0.44898,
+  "lift": 4.489796,
+  "leverage": 0.00855
+ },
+ {
+  "antecedents": [
+   "P050"
+  ],
+  "consequents": [
+   "P046"
+  ],
+  "support": 0.035,
+  "antecedent_support": 0.078,
+  "consequent_support": 0.063,
+  "confidence": 0.448718,
+  "lift": 7.122507,
+  "leverage": 0.030086
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P018"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.01725,
+  "antecedent_support": 0.0385,
+  "consequent_support": 0.05275,
+  "confidence": 0.448052,
+  "lift": 8.493876,
+  "leverage": 0.015219
+ },
+ {
+  "antecedents": [
+   "P009"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.019,
+  "antecedent_support": 0.043,
+  "consequent_support": 0.05975,
+  "confidence": 0.44186,
+  "lift": 7.395154,
+  "leverage": 0.016431
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P014"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.026,
+  "antecedent_support": 0.059,
+  "consequent_support": 0.05275,
+  "confidence": 0.440678,
+  "lift": 8.354085,
+  "leverage": 0.022888
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P035"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.01275,
+  "antecedent_support": 0.029,
+  "consequent_support": 0.1,
+  "confidence": 0.439655,
+  "lift": 4.396552,
+  "leverage": 0.00985
+ },
+ {
+  "antecedents": [
+   "P016"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.02625,
+  "antecedent_support": 0.05975,
+  "consequent_support": 0.057,
+  "confidence": 0.439331,
+  "lift": 7.707553,
+  "leverage": 0.022844
+ },
+ {
+  "antecedents": [
+   "P001"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.03875,
+  "antecedent_support": 0.08825,
+  "consequent_support": 0.05275,
+  "confidence": 0.439093,
+  "lift": 8.324047,
+  "leverage": 0.034095
+ },
+ {
+  "antecedents": [
+   "P025"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.02475,
+  "antecedent_support": 0.05675,
+  "consequent_support": 0.138,
+  "confidence": 0.436123,
+  "lift": 3.160314,
+  "leverage": 0.016918
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P035"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.015,
+  "antecedent_support": 0.0345,
+  "consequent_support": 0.1,
+  "confidence": 0.434783,
+  "lift": 4.347826,
+  "leverage": 0.01155
+ },
+ {
+  "antecedents": [
+   "P007",
+   "P015"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.01775,
+  "antecedent_support": 0.041,
+  "consequent_support": 0.1,
+  "confidence": 0.432927,
+  "lift": 4.329268,
+  "leverage": 0.01365
+ },
+ {
+  "antecedents": [
+   "P010"
+  ],
+  "consequents": [
+   "P036"
+  ],
+  "support": 0.03675,
+  "antecedent_support": 0.085,
+  "consequent_support": 0.0605,
+  "confidence": 0.432353,
+  "lift": 7.14633,
+  "leverage": 0.031607
+ },
+ {
+  "antecedents": [
+   "P028"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.0205,
+  "antecedent_support": 0.04775,
+  "consequent_support": 0.138,
+  "confidence": 0.429319,
+  "lift": 3.11101,
+  "leverage": 0.01391
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P010"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.01875,
+  "antecedent_support": 0.04375,
+  "consequent_support": 0.0355,
+  "confidence": 0.428571,
+  "lift": 12.072435,
+  "leverage": 0.017197
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P016"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.0135,
+  "antecedent_support": 0.0315,
+  "consequent_support": 0.0355,
+  "confidence": 0.428571,
+  "lift": 12.072435,
+  "leverage": 0.012382
+ },
+ {
+  "antecedents": [
+   "P016",
+   "P036"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.028,
+  "consequent_support": 0.0355,
+  "confidence": 0.428571,
+  "lift": 12.072435,
+  "leverage": 0.011006
+ },
+ {
+  "antecedents": [
+   "P022",
+   "P027"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.01325,
+  "antecedent_support": 0.031,
+  "consequent_support": 0.08625,
+  "confidence": 0.427419,
+  "lift": 4.955587,
+  "leverage": 0.010576
+ },
+ {
+  "antecedents": [
+   "P003",
+   "P036"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.04525,
+  "consequent_support": 0.0355,
+  "confidence": 0.425414,
+  "lift": 11.983503,
+  "leverage": 0.017644
+ },
+ {
+  "antecedents": [
+   "P002",
+   "P015"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.0195,
+  "antecedent_support": 0.046,
+  "consequent_support": 0.1,
+  "confidence": 0.423913,
+  "lift": 4.23913,
+  "leverage": 0.0149
+ },
+ {
+  "antecedents": [
+   "P029"
+  ],
+  "consequents": [
+   "P031"
+  ],
+  "support": 0.02175,
+  "antecedent_support": 0.0515,
+  "consequent_support": 0.045,
+  "confidence": 0.42233,
+  "lift": 9.385113,
+  "leverage": 0.019432
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P036"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.0155,
+  "antecedent_support": 0.03675,
+  "consequent_support": 0.0355,
+  "confidence": 0.421769,
+  "lift": 11.880809,
+  "leverage": 0.014195
+ },
+ {
+  "antecedents": [
+   "P050"
+  ],
+  "consequents": [
+   "P047"
+  ],
+  "support": 0.03275,
+  "antecedent_support": 0.078,
+  "consequent_support": 0.05875,
+  "confidence": 0.419872,
+  "lift": 7.146754,
+  "leverage": 0.028168
+ },
+ {
+  "antecedents": [
+   "P021"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.036,
+  "antecedent_support": 0.08625,
+  "consequent_support": 0.0895,
+  "confidence": 0.417391,
+  "lift": 4.66359,
+  "leverage": 0.028281
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P018"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.02025,
+  "antecedent_support": 0.049,
+  "consequent_support": 0.1,
+  "confidence": 0.413265,
+  "lift": 4.132653,
+  "leverage": 0.01535
+ },
+ {
+  "antecedents": [
+   "P010"
+  ],
+  "consequents": [
+   "P037"
+  ],
+  "support": 0.03475,
+  "antecedent_support": 0.085,
+  "consequent_support": 0.057,
+  "confidence": 0.408824,
+  "lift": 7.172343,
+  "leverage": 0.029905
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P004"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.022,
+  "antecedent_support": 0.0545,
+  "consequent_support": 0.04075,
+  "confidence": 0.40367,
+  "lift": 9.906006,
+  "leverage": 0.019779
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P004"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.022,
+  "antecedent_support": 0.0545,
+  "consequent_support": 0.1,
+  "confidence": 0.40367,
+  "lift": 4.036697,
+  "leverage": 0.01655
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P014"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.0255,
+  "antecedent_support": 0.06325,
+  "consequent_support": 0.1,
+  "confidence": 0.403162,
+  "lift": 4.031621,
+  "leverage": 0.019175
+ },
+ {
+  "antecedents": [
+   "P019"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.036,
+  "antecedent_support": 0.0895,
+  "consequent_support": 0.08625,
+  "confidence": 0.402235,
+  "lift": 4.66359,
+  "leverage": 0.028281
+ },
+ {
+  "antecedents": [
+   "P040"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.014,
+  "antecedent_support": 0.0355,
+  "consequent_support": 0.05975,
+  "confidence": 0.394366,
+  "lift": 6.600271,
+  "leverage": 0.011879
+ },
+ {
+  "antecedents": [
+   "P023"
+  ],
+  "consequents": [
+   "P025"
+  ],
+  "support": 0.013,
+  "antecedent_support": 0.033,
+  "consequent_support": 0.05675,
+  "confidence": 0.393939,
+  "lift": 6.941663,
+  "leverage": 0.011127
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P018"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.01925,
+  "antecedent_support": 0.049,
+  "consequent_support": 0.04075,
+  "confidence": 0.392857,
+  "lift": 9.640666,
+  "leverage": 0.017253
+ },
+ {
+  "antecedents": [
+   "P025"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.02225,
+  "antecedent_support": 0.05675,
+  "consequent_support": 0.1245,
+  "confidence": 0.39207,
+  "lift": 3.149161,
+  "leverage": 0.015185
+ },
+ {
+  "antecedents": [
+   "P048",
+   "P050"
+  ],
+  "consequents": [
+   "P049"
+  ],
+  "support": 0.01175,
+  "antecedent_support": 0.03,
+  "consequent_support": 0.038,
+  "confidence": 0.391667,
+  "lift": 10.307018,
+  "leverage": 0.01061
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P018"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.015,
+  "antecedent_support": 0.0385,
+  "consequent_support": 0.04075,
+  "confidence": 0.38961,
+  "lift": 9.560991,
+  "leverage": 0.013431
+ },
+ {
+  "antecedents": [
+   "P022",
+   "P024"
+  ],
+  "consequents": [
+   "P021"
+  ],
+  "support": 0.0145,
+  "antecedent_support": 0.03725,
+  "consequent_support": 0.08625,
+  "confidence": 0.389262,
+  "lift": 4.51318,
+  "leverage": 0.011287
+ },
+ {
+  "antecedents": [
+   "P022"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.02125,
+  "antecedent_support": 0.05475,
+  "consequent_support": 0.0895,
+  "confidence": 0.388128,
+  "lift": 4.336624,
+  "leverage": 0.01635
+ },
+ {
+  "antecedents": [
+   "P050"
+  ],
+  "consequents": [
+   "P048"
+  ],
+  "support": 0.03,
+  "antecedent_support": 0.078,
+  "consequent_support": 0.0605,
+  "confidence": 0.384615,
+  "lift": 6.357279,
+  "leverage": 0.025281
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P018"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.0175,
+  "antecedent_support": 0.0455,
+  "consequent_support": 0.1,
+  "confidence": 0.384615,
+  "lift": 3.846154,
+  "leverage": 0.01295
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P014"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.02425,
+  "antecedent_support": 0.06325,
+  "consequent_support": 0.04075,
+  "confidence": 0.383399,
+  "lift": 9.40857,
+  "leverage": 0.021673
+ },
+ {
+  "antecedents": [
+   "P025",
+   "P028"
+  ],
+  "consequents": [
+   "P019"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.0315,
+  "consequent_support": 0.0895,
+  "confidence": 0.380952,
+  "lift": 4.256451,
+  "leverage": 0.009181
+ },
+ {
+  "antecedents": [
+   "P011"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.0155,
+  "antecedent_support": 0.04125,
+  "consequent_support": 0.085,
+  "confidence": 0.375758,
+  "lift": 4.420677,
+  "leverage": 0.011994
+ },
+ {
+  "antecedents": [
+   "P010"
+  ],
+  "consequents": [
+   "P016"
+  ],
+  "support": 0.03175,
+  "antecedent_support": 0.085,
+  "consequent_support": 0.05975,
+  "confidence": 0.373529,
+  "lift": 6.251538,
+  "leverage": 0.026671
+ },
+ {
+  "antecedents": [
+   "P006"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.01475,
+  "antecedent_support": 0.0395,
+  "consequent_support": 0.09925,
+  "confidence": 0.373418,
+  "lift": 3.762395,
+  "leverage": 0.01083
+ },
+ {
+  "antecedents": [
+   "P009"
+  ],
+  "consequents": [
+   "P010"
+  ],
+  "support": 0.016,
+  "antecedent_support": 0.043,
+  "consequent_support": 0.085,
+  "confidence": 0.372093,
+  "lift": 4.377565,
+  "leverage": 0.012345
+ },
+ {
+  "antecedents": [
+   "P028"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.01775,
+  "antecedent_support": 0.04775,
+  "consequent_support": 0.1245,
+  "confidence": 0.371728,
+  "lift": 2.985765,
+  "leverage": 0.011805
+ },
+ {
+  "antecedents": [
+   "P026"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.015,
+  "antecedent_support": 0.0405,
+  "consequent_support": 0.1245,
+  "confidence": 0.37037,
+  "lift": 2.974862,
+  "leverage": 0.009958
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P018"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.01425,
+  "antecedent_support": 0.0385,
+  "consequent_support": 0.1,
+  "confidence": 0.37013,
+  "lift": 3.701299,
+  "leverage": 0.0104
+ },
+ {
+  "antecedents": [
+   "P001",
+   "P035"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.01425,
+  "antecedent_support": 0.03875,
+  "consequent_support": 0.04075,
+  "confidence": 0.367742,
+  "lift": 9.024342,
+  "leverage": 0.012671
+ },
+ {
+  "antecedents": [
+   "P002"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.06725,
+  "consequent_support": 0.1,
+  "confidence": 0.364312,
+  "lift": 3.643123,
+  "leverage": 0.017775
+ },
+ {
+  "antecedents": [
+   "P026"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.01475,
+  "antecedent_support": 0.0405,
+  "consequent_support": 0.138,
+  "confidence": 0.364198,
+  "lift": 2.639113,
+  "leverage": 0.009161
+ },
+ {
+  "antecedents": [
+   "P018"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.0245,
+  "antecedent_support": 0.0675,
+  "consequent_support": 0.05275,
+  "confidence": 0.362963,
+  "lift": 6.880814,
+  "leverage": 0.020939
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P018"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.0165,
+  "antecedent_support": 0.0455,
+  "consequent_support": 0.04075,
+  "confidence": 0.362637,
+  "lift": 8.899076,
+  "leverage": 0.014646
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P035"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.029,
+  "consequent_support": 0.04075,
+  "confidence": 0.362069,
+  "lift": 8.885128,
+  "leverage": 0.009318
+ },
+ {
+  "antecedents": [
+   "P031"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.01625,
+  "antecedent_support": 0.045,
+  "consequent_support": 0.1,
+  "confidence": 0.361111,
+  "lift": 3.611111,
+  "leverage": 0.01175
+ },
+ {
+  "antecedents": [
+   "P006"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.01425,
+  "antecedent_support": 0.0395,
+  "consequent_support": 0.08825,
+  "confidence": 0.360759,
+  "lift": 4.087926,
+  "leverage": 0.010764
+ },
+ {
+  "antecedents": [
+   "P032"
+  ],
+  "consequents": [
+   "P034"
+  ],
+  "support": 0.01075,
+  "antecedent_support": 0.03,
+  "consequent_support": 0.03075,
+  "confidence": 0.358333,
+  "lift": 11.653117,
+  "leverage": 0.009827
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P016"
+  ],
+  "consequents": [
+   "P009"
+  ],
+  "support": 0.01125,
+  "antecedent_support": 0.03175,
+  "consequent_support": 0.043,
+  "confidence": 0.354331,
+  "lift": 8.240249,
+  "leverage": 0.009885
+ },
+ {
+  "antecedents": [
+   "P047",
+   "P050"
+  ],
+  "consequents": [
+   "P049"
+  ],
+  "support": 0.0115,
+  "antecedent_support": 0.03275,
+  "consequent_support": 0.038,
+  "confidence": 0.351145,
+  "lift": 9.240659,
+  "leverage": 0.010256
+ },
+ {
+  "antecedents": [
+   "P008"
+  ],
+  "consequents": [
+   "P007"
+  ],
+  "support": 0.01375,
+  "antecedent_support": 0.03925,
+  "consequent_support": 0.07425,
+  "confidence": 0.350318,
+  "lift": 4.718094,
+  "leverage": 0.010836
+ },
+ {
+  "antecedents": [
+   "P013"
+  ],
+  "consequents": [
+   "P046"
+  ],
+  "support": 0.01575,
+  "antecedent_support": 0.045,
+  "consequent_support": 0.063,
+  "confidence": 0.35,
+  "lift": 5.555556,
+  "leverage": 0.012915
+ },
+ {
+  "antecedents": [
+   "P039"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.01425,
+  "antecedent_support": 0.04075,
+  "consequent_support": 0.05275,
+  "confidence": 0.349693,
+  "lift": 6.629256,
+  "leverage": 0.0121
+ },
+ {
+  "antecedents": [
+   "P034"
+  ],
+  "consequents": [
+   "P032"
+  ],
+  "support": 0.01075,
+  "antecedent_support": 0.03075,
+  "consequent_support": 0.03,
+  "confidence": 0.349593,
+  "lift": 11.653117,
+  "leverage": 0.009827
+ },
+ {
+  "antecedents": [
+   "P004"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.029,
+  "antecedent_support": 0.083,
+  "consequent_support": 0.05275,
+  "confidence": 0.349398,
+  "lift": 6.623651,
+  "leverage": 0.024622
+ },
+ {
+  "antecedents": [
+   "P014",
+   "P035"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.0345,
+  "consequent_support": 0.04075,
+  "confidence": 0.347826,
+  "lift": 8.535609,
+  "leverage": 0.010594
+ },
+ {
+  "antecedents": [
+   "P014"
+  ],
+  "consequents": [
+   "P035"
+  ],
+  "support": 0.0345,
+  "antecedent_support": 0.09925,
+  "consequent_support": 0.05275,
+  "confidence": 0.347607,
+  "lift": 6.589707,
+  "leverage": 0.029265
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P014"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.0205,
+  "antecedent_support": 0.059,
+  "consequent_support": 0.1,
+  "confidence": 0.347458,
+  "lift": 3.474576,
+  "leverage": 0.0146
+ },
+ {
+  "antecedents": [
+   "P048"
+  ],
+  "consequents": [
+   "P046"
+  ],
+  "support": 0.021,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.063,
+  "confidence": 0.347107,
+  "lift": 5.509642,
+  "leverage": 0.017189
+ },
+ {
+  "antecedents": [
+   "P037"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.057,
+  "consequent_support": 0.0355,
+  "confidence": 0.346491,
+  "lift": 9.760316,
+  "leverage": 0.017726
+ },
+ {
+  "antecedents": [
+   "P035"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.01825,
+  "antecedent_support": 0.05275,
+  "consequent_support": 0.1,
+  "confidence": 0.345972,
+  "lift": 3.459716,
+  "leverage": 0.012975
+ },
+ {
+  "antecedents": [
+   "P001"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.0305,
+  "antecedent_support": 0.08825,
+  "consequent_support": 0.1,
+  "confidence": 0.345609,
+  "lift": 3.456091,
+  "leverage": 0.021675
+ },
+ {
+  "antecedents": [
+   "P049"
+  ],
+  "consequents": [
+   "P048"
+  ],
+  "support": 0.013,
+  "antecedent_support": 0.038,
+  "consequent_support": 0.0605,
+  "confidence": 0.342105,
+  "lift": 5.654632,
+  "leverage": 0.010701
+ },
+ {
+  "antecedents": [
+   "P008"
+  ],
+  "consequents": [
+   "P015"
+  ],
+  "support": 0.01325,
+  "antecedent_support": 0.03925,
+  "consequent_support": 0.06525,
+  "confidence": 0.33758,
+  "lift": 5.173634,
+  "leverage": 0.010689
+ },
+ {
+  "antecedents": [
+   "P004",
+   "P014"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.059,
+  "consequent_support": 0.04075,
+  "confidence": 0.334746,
+  "lift": 8.21462,
+  "leverage": 0.017346
+ },
+ {
+  "antecedents": [
+   "P046"
+  ],
+  "consequents": [
+   "P048"
+  ],
+  "support": 0.021,
+  "antecedent_support": 0.063,
+  "consequent_support": 0.0605,
+  "confidence": 0.333333,
+  "lift": 5.509642,
+  "leverage": 0.017189
+ },
+ {
+  "antecedents": [
+   "P008"
+  ],
+  "consequents": [
+   "P002"
+  ],
+  "support": 0.013,
+  "antecedent_support": 0.03925,
+  "consequent_support": 0.06725,
+  "confidence": 0.33121,
+  "lift": 4.925059,
+  "leverage": 0.01036
+ },
+ {
+  "antecedents": [
+   "P010",
+   "P016"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.03175,
+  "consequent_support": 0.0355,
+  "confidence": 0.330709,
+  "lift": 9.315737,
+  "leverage": 0.009373
+ },
+ {
+  "antecedents": [
+   "P005"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.032,
+  "consequent_support": 0.083,
+  "confidence": 0.328125,
+  "lift": 3.953313,
+  "leverage": 0.007844
+ },
+ {
+  "antecedents": [
+   "P005"
+  ],
+  "consequents": [
+   "P014"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.032,
+  "consequent_support": 0.09925,
+  "confidence": 0.328125,
+  "lift": 3.306045,
+  "leverage": 0.007324
+ },
+ {
+  "antecedents": [
+   "P003"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.02275,
+  "antecedent_support": 0.0695,
+  "consequent_support": 0.0355,
+  "confidence": 0.327338,
+  "lift": 9.220792,
+  "leverage": 0.020283
+ },
+ {
+  "antecedents": [
+   "P036"
+  ],
+  "consequents": [
+   "P040"
+  ],
+  "support": 0.01975,
+  "antecedent_support": 0.0605,
+  "consequent_support": 0.0355,
+  "confidence": 0.326446,
+  "lift": 9.19567,
+  "leverage": 0.017602
+ },
+ {
+  "antecedents": [
+   "P015"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.021,
+  "antecedent_support": 0.06525,
+  "consequent_support": 0.1,
+  "confidence": 0.321839,
+  "lift": 3.218391,
+  "leverage": 0.014475
+ },
+ {
+  "antecedents": [
+   "P001"
+  ],
+  "consequents": [
+   "P039"
+  ],
+  "support": 0.02825,
+  "antecedent_support": 0.08825,
+  "consequent_support": 0.04075,
+  "confidence": 0.320113,
+  "lift": 7.855541,
+  "leverage": 0.024654
+ },
+ {
+  "antecedents": [
+   "P023"
+  ],
+  "consequents": [
+   "P027"
+  ],
+  "support": 0.0105,
+  "antecedent_support": 0.033,
+  "consequent_support": 0.1245,
+  "confidence": 0.318182,
+  "lift": 2.555677,
+  "leverage": 0.006392
+ },
+ {
+  "antecedents": [
+   "P016"
+  ],
+  "consequents": [
+   "P009"
+  ],
+  "support": 0.019,
+  "antecedent_support": 0.05975,
+  "consequent_support": 0.043,
+  "confidence": 0.317992,
+  "lift": 7.395154,
+  "leverage": 0.016431
+ },
+ {
+  "antecedents": [
+   "P006"
+  ],
+  "consequents": [
+   "P004"
+  ],
+  "support": 0.0125,
+  "antecedent_support": 0.0395,
+  "consequent_support": 0.083,
+  "confidence": 0.316456,
+  "lift": 3.812719,
+  "leverage": 0.009222
+ },
+ {
+  "antecedents": [
+   "P049"
+  ],
+  "consequents": [
+   "P047"
+  ],
+  "support": 0.012,
+  "antecedent_support": 0.038,
+  "consequent_support": 0.05875,
+  "confidence": 0.315789,
+  "lift": 5.37514,
+  "leverage": 0.009768
+ },
+ {
+  "antecedents": [
+   "P038"
+  ],
+  "consequents": [
+   "P029"
+  ],
+  "support": 0.03125,
+  "antecedent_support": 0.1,
+  "consequent_support": 0.0515,
+  "confidence": 0.3125,
+  "lift": 6.067961,
+  "leverage": 0.0261
+ },
+ {
+  "antecedents": [
+   "P023"
+  ],
+  "consequents": [
+   "P024"
+  ],
+  "support": 0.01025,
+  "antecedent_support": 0.033,
+  "consequent_support": 0.138,
+  "confidence": 0.310606,
+  "lift": 2.250769,
+  "leverage": 0.005696
+ },
+ {
+  "antecedents": [
+   "P007"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.023,
+  "antecedent_support": 0.07425,
+  "consequent_support": 0.1,
+  "confidence": 0.309764,
+  "lift": 3.097643,
+  "leverage": 0.015575
+ },
+ {
+  "antecedents": [
+   "P011"
+  ],
+  "consequents": [
+   "P003"
+  ],
+  "support": 0.01275,
+  "antecedent_support": 0.04125,
+  "consequent_support": 0.0695,
+  "confidence": 0.309091,
+  "lift": 4.447351,
+  "leverage": 0.009883
+ },
+ {
+  "antecedents": [
+   "P038"
+  ],
+  "consequents": [
+   "P001"
+  ],
+  "support": 0.0305,
+  "antecedent_support": 0.1,
+  "consequent_support": 0.08825,
+  "confidence": 0.305,
+  "lift": 3.456091,
+  "leverage": 0.021675
+ },
+ {
+  "antecedents": [
+   "P018"
+  ],
+  "consequents": [
+   "P038"
+  ],
+  "support": 0.0205,
+  "antecedent_support": 0.0675,
+  "consequent_support": 0.1,
+  "confidence": 0.303704,
+  "lift": 3.037037,
+  "leverage": 0.01375
+ },
+ {
+  "antecedents": [
+   "P019",
+   "P024"
+  ],
+  "consequents": [
+   "P022"
+  ],
+  "support": 0.02025,
+  "antecedent_support": 0.06675,
+  "consequent_support": 0.05475,
+  "confidence": 0.303371,
+  "lift": 5.541019,
+  "leverage": 0.016595
+ },
+ {
+  "antecedents": [
+   "P023"
+  ],
+  "consequents": [
+   "P028"
+  ],
+  "support": 0.01,
+  "antecedent_support": 0.033,
+  "consequent_support": 0.04775,
+  "confidence": 0.30303,
+  "lift": 6.346184,
+  "leverage": 0.008424
+ }
+]

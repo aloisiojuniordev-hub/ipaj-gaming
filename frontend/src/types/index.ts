@@ -64,7 +64,7 @@ export interface Metrics {
 }
 
 export interface User {
-  id: number;
+  id: string; // UUID do Supabase Auth
   name: string;
   email: string;
   created_at: string;
@@ -79,8 +79,8 @@ export interface CartItem {
 export interface Order {
   id: number;
   status: string;
-  total: string;
+  total: string | number; // NUMERIC do PostgreSQL (o Supabase pode devolver número ou texto)
   created_at: string;
   is_guest: boolean;
-  items: { product_id: string; quantity: number; unit_price: string; from_recommendation: boolean }[];
+  items: { product_id: string; quantity: number; unit_price: string | number; from_recommendation: boolean }[];
 }

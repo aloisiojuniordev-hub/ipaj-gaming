@@ -58,7 +58,7 @@ async def artifacts_unavailable(_: Request, exc: ArtifactsUnavailable):
     return JSONResponse(status_code=503, content={"detail": "Motor de recomendação indisponível."})
 
 
-@app.get("/health", tags=["Infra"], summary="Health check (Render)")
+@app.get("/health", tags=["Infra"], summary="Health check")
 def health():
     status = {"status": "ok", "database": "ok", "recommender": "ok"}
     try:

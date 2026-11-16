@@ -1,5 +1,10 @@
 # API
 
+> **Produção:** o site publicado no Netlify **não** usa esta API. Ele lê as regras Apriori exportadas
+> (`frontend/src/data`) e usa o Supabase para login e pedidos. A função `public.create_order` está descrita em
+> `database/migrations/003_frontend_supabase_access.sql`. Esta API FastAPI é a **referência local** com as mesmas
+> regras de negócio, coberta por testes.
+
 Base local: `http://localhost:8000`. A documentação interativa OpenAPI é gerada pelo FastAPI:
 
 - Swagger UI: `/docs`
